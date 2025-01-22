@@ -24,54 +24,23 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
-import 'package:sapphire/pages/home_page.dart';
-import 'package:sapphire/pages/search_page.dart';
-import 'package:sapphire/pages/settings_page.dart';
 
-class Navigation extends StatefulWidget {
-  const Navigation({super.key});
+class SettingsPage extends StatefulWidget {
+  const SettingsPage({super.key});
 
   @override
-  _NavigationState createState() => _NavigationState();
+  _SettingsPageState createState() => _SettingsPageState();
 }
 
-class _NavigationState extends State<Navigation> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  final List<Widget> _widgetOptions = <Widget>[
-    const HomePage(),
-    const SearchPage(),
-    const SettingsPage(),
-  ];
-
+class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _widgetOptions[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        onTap: _onItemTapped,
+      appBar: AppBar(
+        title: const Text('Settings'),
+      ),
+      body: const Center(
+        child: Text('Settings Page'),
       ),
     );
   }
