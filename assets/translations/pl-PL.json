@@ -1,0 +1,10 @@
+{
+    "createdByLabel": "Utworzony przez: {name}",
+    "gcdShortName": "NWD",
+    "gcdLongName": "Kalkulator NWD",
+    "gcdShortDescription": "Znajdź największy wspólny dzielnik dwóch liczb",
+    "gcdLongDescription": "Największy wspólny dzielnik (NWD) dwóch liczb to największa liczba, która dzieli obie bez reszty.",
+    "gcdFirstButtonLabel": "Wprowadź pierwszą liczbę",
+    "gcdSecondButtonLabel": "Wprowadź drugą liczbę",
+    "gcdResultLabel": "NWD: {result}"
+}

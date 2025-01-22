@@ -1,0 +1,10 @@
+{
+    "createdByLabel": "Created by: {name}",
+    "gcdShortName": "GCD",
+    "gcdLongName": "GCD Calculator",
+    "gcdShortDescription": "Find the greatest common divisor of two numbers",
+    "gcdLongDescription": "The greatest common divisor (GCD) of two numbers is the largest number that divides both of them without leaving a remainder.",
+    "gcdFirstButtonLabel": "Enter the first number",
+    "gcdSecondButtonLabel": "Enter the second number",
+    "gcdResultLabel": "GCD: {result}"
+}

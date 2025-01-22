@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import '../function_list.dart';
 import '../default_home_list.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -73,8 +74,8 @@ class _HomePageState extends State<HomePage> {
                     itemCount: defaultHomeList[index].length,
                     itemBuilder: (BuildContext context, int itemIndex) {
                       return Tooltip(
-                        message: functionList[defaultHomeList[index][itemIndex]]
-                            .description,
+                        message: context.tr(
+                            '${functionList[defaultHomeList[index][itemIndex]].name}ShortDescription'),
                         child: Card(
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
@@ -122,9 +123,8 @@ class _HomePageState extends State<HomePage> {
                                     size: 50,
                                   ),
                                   Text(
-                                    functionList[defaultHomeList[index]
-                                            [itemIndex]]
-                                        .name,
+                                    context.tr(
+                                        '${functionList[defaultHomeList[index][itemIndex]].name}ShortName'),
                                   ),
                                 ],
                               ),

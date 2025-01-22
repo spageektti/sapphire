@@ -29,7 +29,6 @@ import 'package:sapphire/functions/math/gcd.dart';
 class FunctionItem {
   final Widget widget;
   final String name;
-  final String description;
   final String author;
   final int id;
   final IconData icon;
@@ -38,7 +37,6 @@ class FunctionItem {
   FunctionItem({
     required this.widget,
     required this.name,
-    required this.description,
     required this.author,
     required this.id,
     required this.icon,
@@ -49,8 +47,7 @@ class FunctionItem {
 List<FunctionItem> functionList = [
   FunctionItem(
       widget: const GcdWidget(),
-      name: 'GCD',
-      description: 'Calculate Greatest Common Divisor',
+      name: 'gcd',
       author: 'spageektti',
       id: 0,
       icon: Icons.calculate,

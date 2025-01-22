@@ -24,6 +24,7 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class InfoModalBottomSheet extends StatelessWidget {
   const InfoModalBottomSheet(
@@ -65,7 +66,7 @@ class InfoModalBottomSheet extends StatelessWidget {
           ),
           const SizedBox(height: 32),
           Text(
-            'Created by: $author',
+            context.tr('createdByLabel', namedArgs: {'name': author}),
             style: const TextStyle(fontSize: 16),
           ),
           const SizedBox(height: 16),

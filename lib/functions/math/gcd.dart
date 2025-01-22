@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class GcdWidget extends StatefulWidget {
   const GcdWidget({super.key});
@@ -51,17 +52,16 @@ class _GcdWidgetState extends State<GcdWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GCD Calculator'),
+        title: Text(context.tr('gcdLongName')),
         actions: [
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
               showModalBottomSheet(
                   context: context,
-                  builder: (context) => const InfoModalBottomSheet(
-                      name: 'GCD',
-                      description:
-                          'The greatest common divisor (gcd) of two integers is the largest positive integer that divides both numbers without a remainder.',
+                  builder: (context) => InfoModalBottomSheet(
+                      name: context.tr('gcdLongName'),
+                      description: context.tr('gcdLongDescription'),
                       author: 'Wiktor Perskawiec (spageektti)',
                       authorUrl: 'https://spageektti.cc'));
             },
@@ -74,16 +74,18 @@ class _GcdWidgetState extends State<GcdWidget> {
           children: [
             Padding(
               padding: const EdgeInsets.only(bottom: 32),
-              child:
-                  Text('GCD: $_result', style: const TextStyle(fontSize: 24)),
+              child: Text(
+                  context
+                      .tr("gcdResultLabel", namedArgs: {"result": "$_result"}),
+                  style: const TextStyle(fontSize: 24)),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
                 maxLength: 18,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Enter first number',
+                decoration: InputDecoration(
+                  border: const OutlineInputBorder(),
+                  labelText: context.tr("gcdFirstButtonLabel"),
                 ),
                 keyboardType: TextInputType.number,
                 inputFormatters: <TextInputFormatter>[
@@ -101,9 +103,9 @@ class _GcdWidgetState extends State<GcdWidget> {
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
                 maxLength: 18,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Enter second number',
+                decoration: InputDecoration(
+                  border: const OutlineInputBorder(),
+                  labelText: context.tr("gcdSecondButtonLabel"),
                 ),
                 keyboardType: TextInputType.number,
                 inputFormatters: <TextInputFormatter>[
