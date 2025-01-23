@@ -10,6 +10,15 @@
     "settingsPageThemeDark": "Ciemny",
     "settingsPageThemeSystem": "System",
 
+    "languageSelectPageTitle": "Wybierz język",
+
+    "en_US": "język angielski (US)",
+    "en_USNotTranslated": "English (US)",
+    "en_GB": "język angielski (UK)",
+    "en_GBNotTranslated": "English (UK)",
+    "pl_PL": "język polski",
+    "pl_PLNotTranslated": "język polski",
+
     "createdByLabel": "Utworzony przez: {name}",
 
     "gcdShortName": "NWD",

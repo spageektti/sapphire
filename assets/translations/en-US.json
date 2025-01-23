@@ -10,6 +10,15 @@
     "settingsPageThemeDark": "Dark",
     "settingsPageThemeSystem": "System",
 
+    "languageSelectPageTitle": "Select language",
+
+    "en_US": "English (US)",
+    "en_USNotTranslated": "English (US)",
+    "en_GB": "English (UK)",
+    "en_GBNotTranslated": "English (UK)",
+    "pl_PL": "Polish",
+    "pl_PLNotTranslated": "język polski",
+
     "createdByLabel": "Created by: {name}",
 
     "gcdShortName": "GCD",

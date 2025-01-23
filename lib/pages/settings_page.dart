@@ -25,7 +25,7 @@
 */
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:sapphire/language_full_names.dart';
+import 'package:sapphire/pages/language_select_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -45,35 +45,26 @@ class _SettingsPageState extends State<SettingsPage> {
         ],
       ),
       body: Center(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: <Widget>[
-                Text(
-                  context.tr("settingsPageLanguageLabel"),
-                  style: const TextStyle(fontSize: 24),
-                ),
-                DropdownButton<Locale>(
-                  value: context.locale,
-                  onChanged: (Locale? newLocale) {
-                    if (newLocale != null) {
-                      context.setLocale(newLocale);
-                    }
-                  },
-                  items: context.supportedLocales
-                      .map<DropdownMenuItem<Locale>>((Locale locale) {
-                    return DropdownMenuItem<Locale>(
-                      value: locale,
-                      child: Text(languageFullNames[locale.toString()]!),
-                    );
-                  }).toList(),
-                )
-              ],
-            ),
+          child: ListView(
+        children: [
+          ListTile(
+            leading: const Icon(Icons.language),
+            title: Text(context.tr("settingsPageLanguageLabel")),
+            subtitle: Text(context.tr(context.locale.toString())),
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const LanguageSelectPage()));
+            },
           ),
-        ),
-      ),
+          ListTile(
+            leading: const Icon(Icons.brightness_6),
+            title: Text(context.tr("settingsPageThemeLabel")),
+            onTap: () {
+              // Handle theme change
+            },
+          ),
+        ],
+      )),
     );
   }
 }
