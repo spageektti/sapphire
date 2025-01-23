@@ -9,6 +9,8 @@
     "settingsPageThemeLight": "Light",
     "settingsPageThemeDark": "Dark",
     "settingsPageThemeSystem": "System",
+    "settingsPageBackupsLabel": "Backups",
+    "settingsPageAboutLabel": "About the app",
 
     "languageSelectPageTitle": "Select language",
 

@@ -63,6 +63,20 @@ class _SettingsPageState extends State<SettingsPage> {
               // Handle theme change
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.backup_outlined),
+            title: Text(context.tr("settingsPageBackupsLabel")),
+            onTap: () {
+              // Handle backup
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.info_outline),
+            title: Text(context.tr("settingsPageAboutLabel")),
+            onTap: () {
+              // Handle about dialog
+            },
+          ),
         ],
       )),
     );
