@@ -1,5 +1,17 @@
 {
+    "homePageTitle": "Strona główna",
+
+    "searchPageTitle": "Szukaj",
+
+    "settingsPageTitle": "Ustawienia",
+    "settingsPageLanguageLabel": "Język",
+    "settingsPageThemeLabel": "Motyw",
+    "settingsPageThemeLight": "Jasny",
+    "settingsPageThemeDark": "Ciemny",
+    "settingsPageThemeSystem": "System",
+
     "createdByLabel": "Utworzony przez: {name}",
+
     "gcdShortName": "NWD",
     "gcdLongName": "Kalkulator NWD",
     "gcdShortDescription": "Znajdź największy wspólny dzielnik dwóch liczb",

@@ -1,5 +1,17 @@
 {
+    "homePageTitle": "Home",
+
+    "searchPageTitle": "Search",
+
+    "settingsPageTitle": "Settings",
+    "settingsPageLanguageLabel": "Language",
+    "settingsPageThemeLabel": "Theme",
+    "settingsPageThemeLight": "Light",
+    "settingsPageThemeDark": "Dark",
+    "settingsPageThemeSystem": "System",
+
     "createdByLabel": "Created by: {name}",
+
     "gcdShortName": "GCD",
     "gcdLongName": "GCD Calculator",
     "gcdShortDescription": "Find the greatest common divisor of two numbers",

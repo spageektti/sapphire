@@ -24,6 +24,8 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/language_full_names.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -37,10 +39,40 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(context.tr("settingsPageTitle")),
+        actions: [
+          IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
+        ],
       ),
-      body: const Center(
-        child: Text('Settings Page'),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  context.tr("settingsPageLanguageLabel"),
+                  style: const TextStyle(fontSize: 24),
+                ),
+                DropdownButton<Locale>(
+                  value: context.locale,
+                  onChanged: (Locale? newLocale) {
+                    if (newLocale != null) {
+                      context.setLocale(newLocale);
+                    }
+                  },
+                  items: context.supportedLocales
+                      .map<DropdownMenuItem<Locale>>((Locale locale) {
+                    return DropdownMenuItem<Locale>(
+                      value: locale,
+                      child: Text(languageFullNames[locale.toString()]!),
+                    );
+                  }).toList(),
+                )
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
