@@ -35,6 +35,9 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  String _searchQuery = "";
+  List<FunctionItem> _searchResults = functionList;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,29 +47,58 @@ class _SearchPageState extends State<SearchPage> {
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: TextField(
                 decoration: InputDecoration(
                   labelText: context.tr("searchPageSearchBar"),
+                  prefixIcon: const Icon(Icons.search),
                 ),
+                onChanged: (value) {
+                  setState(() {
+                    _searchQuery = value;
+                    if (_searchQuery.isEmpty) {
+                      _searchResults = functionList;
+                    } else {
+                      _searchResults = functionList
+                          .where((element) =>
+                              context
+                                  .tr("${element.name}ShortName")
+                                  .toLowerCase()
+                                  .contains(_searchQuery.toLowerCase()) ||
+                              context
+                                  .tr("${element.name}LongName")
+                                  .toLowerCase()
+                                  .contains(_searchQuery.toLowerCase()) ||
+                              context
+                                  .tr("${element.name}ShortDescription")
+                                  .toLowerCase()
+                                  .contains(_searchQuery.toLowerCase()) ||
+                              context
+                                  .tr("${element.name}LongDescription")
+                                  .toLowerCase()
+                                  .contains(_searchQuery.toLowerCase()))
+                          .toList();
+                    }
+                  });
+                },
               ),
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: functionList.length,
+                itemCount: _searchResults.length,
                 itemBuilder: (context, index) {
                   return ListTile(
                     title: Text(
-                        context.tr("${functionList[index].name}ShortName")),
+                        context.tr("${_searchResults[index].name}ShortName")),
                     subtitle: Text(context
-                        .tr("${functionList[index].name}ShortDescription")),
+                        .tr("${_searchResults[index].name}ShortDescription")),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => functionList[index].widget));
+                          builder: (context) => _searchResults[index].widget));
                     },
                     trailing: IconButton(
                         onPressed: () {}, icon: const Icon(Icons.add)),
-                    leading: Icon(functionList[index].icon),
+                    leading: Icon(_searchResults[index].icon),
                   );
                 },
               ),
