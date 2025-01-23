@@ -2,6 +2,7 @@
     "homePageTitle": "Strona główna",
 
     "searchPageTitle": "Szukaj",
+    "searchPageSearchBar": "Wyszukaj...",
 
     "settingsPageTitle": "Ustawienia",
     "settingsPageLanguageLabel": "Język",
@@ -9,7 +10,7 @@
     "settingsPageThemeLight": "Jasny",
     "settingsPageThemeDark": "Ciemny",
     "settingsPageThemeSystem": "System",
-    "settingsPageBackupLabel": "Kopie zapasowe",
+    "settingsPageBackupsLabel": "Kopie zapasowe",
     "settingsPageAboutLabel": "O aplikacji",
 
     "languageSelectPageTitle": "Wybierz język",

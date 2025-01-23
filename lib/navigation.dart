@@ -27,6 +27,7 @@ import 'package:flutter/material.dart';
 import 'package:sapphire/pages/home_page.dart';
 import 'package:sapphire/pages/search_page.dart';
 import 'package:sapphire/pages/settings_page.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -55,18 +56,18 @@ class _NavigationState extends State<Navigation> {
     return Scaffold(
       body: _widgetOptions[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: const Icon(Icons.home),
+            label: context.tr("homePageTitle"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: const Icon(Icons.search),
+            label: context.tr("searchPageTitle"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: const Icon(Icons.settings),
+            label: context.tr("settingsPageTitle"),
           ),
         ],
         currentIndex: _selectedIndex,

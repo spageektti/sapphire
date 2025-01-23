@@ -26,10 +26,8 @@
 
 List<List<int>> defaultHomeList = [
   [0],
-  [0],
 ];
 
 List<String> defaultHomeListNames = [
   'Math',
-  'Test second category',
 ];

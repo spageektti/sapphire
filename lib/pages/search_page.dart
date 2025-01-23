@@ -24,6 +24,8 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/function_list.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -36,12 +38,40 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search Page'),
-      ),
-      body: const Center(
-        child: Text('Search Page Content'),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(context.tr("searchPageTitle")),
+        ),
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: context.tr("searchPageSearchBar"),
+                ),
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: functionList.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(
+                        context.tr("${functionList[index].name}ShortName")),
+                    subtitle: Text(context
+                        .tr("${functionList[index].name}ShortDescription")),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => functionList[index].widget));
+                    },
+                    trailing: IconButton(
+                        onPressed: () {}, icon: const Icon(Icons.add)),
+                    leading: Icon(functionList[index].icon),
+                  );
+                },
+              ),
+            ),
+          ],
+        ));
   }
 }

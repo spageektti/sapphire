@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: Text(context.tr("homePageTitle")),
       ),
       body: Center(
         child: ListView.builder(
