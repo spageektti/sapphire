@@ -25,12 +25,12 @@
 */
 import 'package:flutter/material.dart';
 import 'package:sapphire/functions/math/gcd.dart';
+import 'package:sapphire/functions/math/lcm.dart';
 
 class FunctionItem {
   final Widget widget;
   final String name;
   final String author;
-  final int id;
   final IconData icon;
   final List<String> tags;
 
@@ -38,7 +38,6 @@ class FunctionItem {
     required this.widget,
     required this.name,
     required this.author,
-    required this.id,
     required this.icon,
     required this.tags,
   });
@@ -49,7 +48,12 @@ List<FunctionItem> functionList = [
       widget: const GcdWidget(),
       name: 'gcd',
       author: 'spageektti',
-      id: 0,
       icon: Icons.calculate,
-      tags: ['math', 'gcd']),
+      tags: ['math', 'gcd', 'lcm']),
+  FunctionItem(
+      widget: const LcmWidget(),
+      name: 'lcm',
+      author: 'spageektti',
+      icon: Icons.calculate,
+      tags: ['math', 'lcm', 'gcd']),
 ];
