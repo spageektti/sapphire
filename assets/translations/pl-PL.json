@@ -30,5 +30,13 @@
     "gcdLongDescription": "Największy wspólny dzielnik (NWD) dwóch liczb to największa liczba, która dzieli obie bez reszty.",
     "gcdFirstButtonLabel": "Wprowadź pierwszą liczbę",
     "gcdSecondButtonLabel": "Wprowadź drugą liczbę",
-    "gcdResultLabel": "NWD: {result}"
+    "gcdResultLabel": "NWD: {result}",
+
+    "lcmShortName": "NWW",
+    "lcmLongName": "Kalkulator NWW",
+    "lcmShortDescription": "Znajdź najmniejszą wspólną wielokrotność dwóch liczb",
+    "lcmLongDescription": "Najmniejsza wspólna wielokrotność (NWW) dwóch liczb to najmniejsza liczba, która jest wielokrotnością obu liczb.",
+    "lcmFirstButtonLabel": "Wprowadź pierwszą liczbę",
+    "lcmSecondButtonLabel": "Wprowadź drugą liczbę",
+    "lcmResultLabel": "NWW: {result}"
 }
