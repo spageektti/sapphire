@@ -24,37 +24,69 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/pages/home_page.dart';
 import 'package:sapphire/pages/search_page.dart';
 import 'package:sapphire/pages/settings_page.dart';
-import 'package:easy_localization/easy_localization.dart';
 
-class Navigation extends StatefulWidget {
-  const Navigation({super.key});
+class NavigationWidget extends StatefulWidget {
+  final int selectedIndex;
+
+  const NavigationWidget({
+    super.key,
+    this.selectedIndex = 0,
+  });
 
   @override
-  _NavigationState createState() => _NavigationState();
+  _NavigationWidgetState createState() => _NavigationWidgetState();
 }
 
-class _NavigationState extends State<Navigation> {
-  int _selectedIndex = 0;
+class _NavigationWidgetState extends State<NavigationWidget> {
+  late PageController _pageController;
+  late List<Widget> _pages;
+  late int _selectedIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedIndex = widget.selectedIndex;
+    _pageController = PageController(initialPage: _selectedIndex);
+    _pages = <Widget>[
+      const HomePage(),
+      const SearchPage(),
+      const SettingsPage(),
+    ];
+  }
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
+    _pageController.animateToPage(
+      index,
+      duration: const Duration(milliseconds: 400),
+      curve: Curves.easeInOut,
+    );
   }
 
-  final List<Widget> _widgetOptions = <Widget>[
-    const HomePage(),
-    const SearchPage(),
-    const SettingsPage(),
-  ];
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _widgetOptions[_selectedIndex],
+      body: PageView(
+        controller: _pageController,
+        children: _pages,
+        onPageChanged: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -71,8 +103,8 @@ class _NavigationState extends State<Navigation> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
         onTap: _onItemTapped,
+        selectedItemColor: Colors.blue,
       ),
     );
   }
