@@ -30,5 +30,13 @@
     "gcdLongDescription": "The greatest common divisor (GCD) of two numbers is the largest number that divides both of them without leaving a remainder.",
     "gcdFirstButtonLabel": "Enter the first number",
     "gcdSecondButtonLabel": "Enter the second number",
-    "gcdResultLabel": "GCD: {result}"
+    "gcdResultLabel": "GCD: {result}",
+    
+    "lcmShortName": "LCM",
+    "lcmLongName": "LCM Calculator",
+    "lcmShortDescription": "Find the least common multiple of two numbers",
+    "lcmLongDescription": "The least common multiple (LCM) of two numbers is the smallest number that is a multiple of both numbers.",
+    "lcmFirstButtonLabel": "Enter the first number",
+    "lcmSecondButtonLabel": "Enter the second number",
+    "lcmResultLabel": "LCM: {result}"
 }
