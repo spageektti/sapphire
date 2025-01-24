@@ -36,17 +36,17 @@ class GcdWidget extends StatefulWidget {
 }
 
 class _GcdWidgetState extends State<GcdWidget> {
-  int gcd(int a, int b) {
-    if (b == 0) {
+  BigInt gcd(BigInt a, BigInt b) {
+    if (b == BigInt.zero) {
       return a;
     } else {
       return gcd(b, a % b);
     }
   }
 
-  int _a = 0;
-  int _b = 0;
-  int _result = 0;
+  BigInt _a = BigInt.zero;
+  BigInt _b = BigInt.zero;
+  BigInt _result = BigInt.zero;
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,6 @@ class _GcdWidgetState extends State<GcdWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
-                maxLength: 18,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
                   labelText: context.tr("gcdFirstButtonLabel"),
@@ -93,7 +92,7 @@ class _GcdWidgetState extends State<GcdWidget> {
                 ],
                 onChanged: (value) {
                   setState(() {
-                    _a = int.tryParse(value) ?? 0;
+                    _a = BigInt.tryParse(value) ?? BigInt.zero;
                     _result = gcd(_a, _b);
                   });
                 },
@@ -113,7 +112,7 @@ class _GcdWidgetState extends State<GcdWidget> {
                 ],
                 onChanged: (value) {
                   setState(() {
-                    _b = int.tryParse(value) ?? 0;
+                    _b = BigInt.tryParse(value) ?? BigInt.zero;
                     _result = gcd(_a, _b);
                   });
                 },
