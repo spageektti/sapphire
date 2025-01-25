@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   easy_localization: ^3.0.7
   country_flags: ^3.2.0
+  flutter_math_fork: ^0.7.3
+  decimal: ^3.0.2
 
 dev_dependencies:
   flutter_test:

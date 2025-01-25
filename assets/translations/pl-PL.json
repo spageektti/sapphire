@@ -38,5 +38,12 @@
     "lcmLongDescription": "Najmniejsza wspólna wielokrotność (NWW) dwóch liczb to najmniejsza liczba, która jest wielokrotnością obu liczb.",
     "lcmFirstButtonLabel": "Wprowadź pierwszą liczbę",
     "lcmSecondButtonLabel": "Wprowadź drugą liczbę",
-    "lcmResultLabel": "NWW: {result}"
+    "lcmResultLabel": "NWW: {result}",
+
+    "rootShortName": "Pierwiastek",
+    "rootLongName": "Kalkulator pierwiastków",
+    "rootShortDescription": "Znajdź n-ty pierwiastek liczby",
+    "rootLongDescription": "Pierwiastek liczby to wartość, która po pomnożeniu przez siebie określoną liczbę razy daje liczbę początkową.",
+    "rootFirstButtonLabel": "Wprowadź liczbę",
+    "rootSecondButtonLabel": "Wprowadź stopień pierwiastka"
 }

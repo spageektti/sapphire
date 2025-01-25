@@ -38,5 +38,12 @@
     "lcmLongDescription": "The least common multiple (LCM) of two numbers is the smallest number that is a multiple of both numbers.",
     "lcmFirstButtonLabel": "Enter the first number",
     "lcmSecondButtonLabel": "Enter the second number",
-    "lcmResultLabel": "LCM: {result}"
+    "lcmResultLabel": "LCM: {result}",
+
+    "rootShortName": "Root",
+    "rootLongName": "Root Calculator",
+    "rootShortDescription": "Find the nth root of a number",
+    "rootLongDescription": "The root of a number is a value that, when multiplied by itself a certain number of times, gives the original number.",
+    "rootFirstButtonLabel": "Enter the number",
+    "rootSecondButtonLabel": "Enter the root index"
 }

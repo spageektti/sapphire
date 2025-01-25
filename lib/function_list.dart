@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
+import 'package:sapphire/functions/math/root.dart' as math_root;
 
 class FunctionItem {
   final Widget widget;
@@ -56,4 +57,10 @@ List<FunctionItem> functionList = [
       author: 'spageektti',
       icon: Icons.calculate,
       tags: ['math', 'lcm', 'gcd']),
+  FunctionItem(
+      widget: const math_root.RootWidget(),
+      name: 'root',
+      author: 'spageektti',
+      icon: Icons.square_foot,
+      tags: ['math', 'root', 'power']),
 ];
