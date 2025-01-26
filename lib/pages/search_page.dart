@@ -76,7 +76,10 @@ class _SearchPageState extends State<SearchPage> {
                               context
                                   .tr("${element.name}LongDescription")
                                   .toLowerCase()
-                                  .contains(_searchQuery.toLowerCase()))
+                                  .contains(_searchQuery.toLowerCase()) ||
+                              element.tags.any((tag) => tag
+                                  .toLowerCase()
+                                  .contains(_searchQuery.toLowerCase())))
                           .toList();
                     }
                   });
