@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
+import 'package:sapphire/functions/math/power.dart';
 import 'package:sapphire/functions/math/root.dart' as math_root;
 
 class FunctionItem {
@@ -63,4 +64,10 @@ List<FunctionItem> functionList = [
       author: 'spageektti',
       icon: Icons.square_foot,
       tags: ['math', 'root', 'power']),
+  FunctionItem(
+      widget: const PowerWidget(),
+      name: 'power',
+      author: 'spageektti',
+      icon: Icons.bolt,
+      tags: ['math', 'power', 'root']),
 ];

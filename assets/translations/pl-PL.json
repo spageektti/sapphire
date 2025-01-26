@@ -45,5 +45,12 @@
     "rootShortDescription": "Znajdź n-ty pierwiastek liczby",
     "rootLongDescription": "Pierwiastek liczby to wartość, która po pomnożeniu przez siebie określoną liczbę razy daje liczbę początkową.",
     "rootFirstButtonLabel": "Wprowadź liczbę",
-    "rootSecondButtonLabel": "Wprowadź stopień pierwiastka"
+    "rootSecondButtonLabel": "Wprowadź stopień pierwiastka",
+
+    "powerShortName": "Potęga",
+    "powerLongName": "Kalkulator potęg",
+    "powerShortDescription": "Podnieś liczbę do potęgi",
+    "powerLongDescription": "Potęga liczby to liczba, która jest wynikiem mnożenia liczby przez siebie określoną liczbę razy.",
+    "powerFirstButtonLabel": "Wprowadź podstawę",
+    "powerSecondButtonLabel": "Wprowadź wykładnik"
 }

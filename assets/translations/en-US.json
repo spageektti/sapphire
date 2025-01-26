@@ -45,5 +45,12 @@
     "rootShortDescription": "Find the nth root of a number",
     "rootLongDescription": "The root of a number is a value that, when multiplied by itself a certain number of times, gives the original number.",
     "rootFirstButtonLabel": "Enter the number",
-    "rootSecondButtonLabel": "Enter the root index"
+    "rootSecondButtonLabel": "Enter the root index",
+
+    "powerShortName": "Power",
+    "powerLongName": "Power Calculator",
+    "powerShortDescription": "Raise a number to a power",
+    "powerLongDescription": "The power of a number is the number of times the number is multiplied by itself.",
+    "powerFirstButtonLabel": "Enter the base",
+    "powerSecondButtonLabel": "Enter the exponent"
 }

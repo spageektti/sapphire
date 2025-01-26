@@ -25,7 +25,7 @@
 */
 
 List<List<int>> defaultHomeList = [
-  [0, 1, 2],
+  [0, 1, 2, 3],
 ];
 
 List<String> defaultHomeListNames = [
