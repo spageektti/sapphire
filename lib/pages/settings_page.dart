@@ -26,6 +26,9 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/pages/language_select_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:convert';
+import 'package:sapphire/default_home_list.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});

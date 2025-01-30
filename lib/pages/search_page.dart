@@ -26,6 +26,9 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/function_list.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:convert';
+import 'package:sapphire/default_home_list.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -37,6 +40,49 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   String _searchQuery = "";
   List<FunctionItem> _searchResults = functionList;
+
+  Future<void> loadHomePageList() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? homePageListString = prefs.getString('homePageList');
+    String? homePageListNamesString = prefs.getString('homePageListNames');
+
+    if (homePageListString == null || homePageListString.isEmpty) {
+      homePageListString = jsonEncode(defaultHomeList);
+      await prefs.setString('homePageList', homePageListString);
+    }
+
+    if (homePageListNamesString == null ||
+        homePageListNamesString.isEmpty ||
+        homePageListNamesString == '[]') {
+      homePageListNamesString = jsonEncode(defaultHomeListNames);
+      await prefs.setString('homePageListNames', homePageListNamesString);
+    }
+
+    print(homePageListString);
+    print(homePageListNamesString);
+
+    List<List<int>> homePageList = (jsonDecode(homePageListString) as List)
+        .map((e) => (e as List).map((e) => e as int).toList())
+        .toList();
+
+    List<String> homePageListNames =
+        (jsonDecode(homePageListNamesString) as List)
+            .map((e) => e as String)
+            .toList();
+
+    setState(() {
+      defaultHomeList = homePageList;
+      defaultHomeListNames = homePageListNames;
+    });
+  }
+
+  Future<void> addFunction(int categoryIndex, int itemIndex) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    defaultHomeList[categoryIndex].add(itemIndex);
+    await prefs.setString('homePageList', jsonEncode(defaultHomeList));
+    await prefs.setString(
+        'homePageListNames', jsonEncode(defaultHomeListNames));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +146,34 @@ class _SearchPageState extends State<SearchPage> {
                           builder: (context) => _searchResults[index].widget));
                     },
                     trailing: IconButton(
-                        onPressed: () {}, icon: const Icon(Icons.add)),
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text(
+                                      context.tr("searchPageSelectCategory")),
+                                  content: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: defaultHomeListNames
+                                        .asMap()
+                                        .entries
+                                        .map((entry) => ListTile(
+                                              title: Text(entry.value),
+                                              onTap: () {
+                                                addFunction(
+                                                    entry.key,
+                                                    _searchResults[index]
+                                                        .index);
+                                                Navigator.of(context).pop();
+                                              },
+                                            ))
+                                        .toList(),
+                                  ),
+                                );
+                              });
+                        },
+                        icon: const Icon(Icons.add)),
                     leading: Icon(_searchResults[index].icon),
                   );
                 },

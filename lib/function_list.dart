@@ -35,6 +35,7 @@ class FunctionItem {
   final String author;
   final IconData icon;
   final List<String> tags;
+  final int index;
 
   FunctionItem({
     required this.widget,
@@ -42,32 +43,38 @@ class FunctionItem {
     required this.author,
     required this.icon,
     required this.tags,
+    required this.index,
   });
 }
 
 List<FunctionItem> functionList = [
   FunctionItem(
-      widget: const GcdWidget(),
-      name: 'gcd',
-      author: 'spageektti',
-      icon: Icons.calculate,
-      tags: ['math', 'gcd', 'lcm']),
+    widget: const GcdWidget(),
+    name: 'gcd',
+    author: 'spageektti',
+    icon: Icons.calculate,
+    tags: ['math', 'gcd', 'lcm'],
+    index: 0,
+  ),
   FunctionItem(
       widget: const LcmWidget(),
       name: 'lcm',
       author: 'spageektti',
       icon: Icons.calculate,
-      tags: ['math', 'lcm', 'gcd']),
+      tags: ['math', 'lcm', 'gcd'],
+      index: 1),
   FunctionItem(
       widget: const math_root.RootWidget(),
       name: 'root',
       author: 'spageektti',
       icon: Icons.square_foot,
-      tags: ['math', 'root', 'power']),
+      tags: ['math', 'root', 'power'],
+      index: 2),
   FunctionItem(
       widget: const PowerWidget(),
       name: 'power',
       author: 'spageektti',
       icon: Icons.bolt,
-      tags: ['math', 'power', 'root']),
+      tags: ['math', 'power', 'root'],
+      index: 3),
 ];
