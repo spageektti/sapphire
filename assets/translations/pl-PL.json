@@ -63,6 +63,7 @@
     "versionSecurityPathLongDescription": "Poziom zabezpieczeń Androida to data, w której producenci urządzeń z Androidem wydają poprawki zabezpieczeń.",
 
     "unknownOrNotAndroidNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z Androidem.",
+    "unknownOrNotIosNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z iOS.",
 
     "boardShortName": "Płyta",
     "boardLongName": "Informacje o płycie głównej",
@@ -200,5 +201,75 @@
     "versionSdkIntLongDescription": "Wersja SDK dostarcza numer wersji zestawu Software Development Kit (SDK) używanego przez system operacyjny.",
 
     "yes": "Tak",
-    "no": "Nie"
+    "no": "Nie",
+
+    "identifierForVendorShortName": "Identyfikator dla dostawcy (iOS)",
+    "identifierForVendorLongName": "Identyfikator dla dostawcy",
+    "identifierForVendorShortDescription": "Uzyskaj identyfikator dla dostawcy",
+    "identifierForVendorLongDescription": "Identyfikator dla dostawcy zapewnia unikalny identyfikator dla urządzenia, który jest spójny w aplikacjach od tego samego dostawcy.",
+
+    "iosisPhysicalDeviceShortName": "Urządzenie fizyczne (iOS)",
+    "iosisPhysicalDeviceLongName": "Sprawdzanie urządzenia fizycznego",
+    "iosisPhysicalDeviceShortDescription": "Sprawdź, czy urządzenie jest fizycznym urządzeniem",
+    "iosisPhysicalDeviceLongDescription": "To narzędzie określa, czy urządzenie jest fizycznym urządzeniem, czy emulatorem.",
+
+    "iosmodelShortName": "Model (iOS)",
+    "iosmodelLongName": "Model urządzenia",
+    "iosmodelShortDescription": "Uzyskaj model urządzenia",
+    "iosmodelLongDescription": "Model urządzenia podaje konkretną nazwę lub numer modelu urządzenia.",
+
+    "nameShortName": "Nazwa (iOS)",
+    "nameLongName": "Nazwa urządzenia",
+    "nameShortDescription": "Uzyskaj nazwę urządzenia",
+    "nameLongDescription": "Nazwa urządzenia podaje nazwę przypisaną do urządzenia przez użytkownika.",
+
+    "systemVersionShortName": "Wersja systemu (iOS)",
+    "systemVersionLongName": "Informacje o wersji systemu",
+    "systemVersionShortDescription": "Uzyskaj wersję systemu",
+    "systemVersionLongDescription": "Wersja systemu podaje numer wersji systemu operacyjnego działającego na urządzeniu.",
+
+    "utsnameNodenameShortName": "Nazwa węzła (iOS)",
+    "utsnameNodenameLongName": "Nazwa węzła UTS",
+    "utsnameNodenameShortDescription": "Uzyskaj nazwę węzła UTS",
+    "utsnameNodenameLongDescription": "Nazwa węzła UTS podaje nazwę sieciową urządzenia.",
+
+    "utsnameSysnameShortName": "Nazwa systemu (iOS)",
+    "utsnameSysnameLongName": "Nazwa systemu UTS",
+    "utsnameSysnameShortDescription": "Uzyskaj nazwę systemu UTS",
+    "utsnameSysnameLongDescription": "Nazwa systemu UTS podaje nazwę systemu operacyjnego.",
+
+    "isIosAppOnMacShortName": "Aplikacja iOS na Macu (iOS)",
+    "isIosAppOnMacLongName": "Sprawdzanie aplikacji iOS na Macu",
+    "isIosAppOnMacShortDescription": "Sprawdź, czy aplikacja działa na Macu",
+    "isIosAppOnMacLongDescription": "To narzędzie określa, czy aplikacja iOS działa na Macu.",
+
+    "localizedModelShortName": "Zlokalizowany model (iOS)",
+    "localizedModelLongName": "Zlokalizowany model urządzenia",
+    "localizedModelShortDescription": "Uzyskaj zlokalizowany model urządzenia",
+    "localizedModelLongDescription": "Zlokalizowany model urządzenia podaje nazwę modelu urządzenia w bieżącej lokalizacji.",
+
+    "modelNameShortName": "Nazwa modelu (iOS)",
+    "modelNameLongName": "Nazwa modelu urządzenia",
+    "modelNameShortDescription": "Uzyskaj nazwę modelu urządzenia",
+    "modelNameLongDescription": "Nazwa modelu urządzenia podaje konkretną nazwę modelu urządzenia.",
+
+    "systemNameShortName": "Nazwa systemu (iOS)",
+    "systemNameLongName": "Informacje o nazwie systemu",
+    "systemNameShortDescription": "Uzyskaj nazwę systemu",
+    "systemNameLongDescription": "Nazwa systemu podaje nazwę systemu operacyjnego działającego na urządzeniu.",
+
+    "utsnameMachineShortName": "Maszyna (iOS)",
+    "utsnameMachineLongName": "Maszyna UTS",
+    "utsnameMachineShortDescription": "Uzyskaj maszynę UTS",
+    "utsnameMachineLongDescription": "Maszyna UTS podaje identyfikator sprzętu urządzenia.",
+
+    "utsnameReleaseShortName": "Wydanie (iOS)",
+    "utsnameReleaseLongName": "Wydanie UTS",
+    "utsnameReleaseShortDescription": "Uzyskaj wydanie UTS",
+    "utsnameReleaseLongDescription": "Wydanie UTS podaje poziom wydania systemu operacyjnego.",
+
+    "utsnameVersionShortName": "Wersja (iOS)",
+    "utsnameVersionLongName": "Wersja UTS",
+    "utsnameVersionShortDescription": "Uzyskaj wersję UTS",
+    "utsnameVersionLongDescription": "Wersja UTS podaje poziom wersji systemu operacyjnego."
 }

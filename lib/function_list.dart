@@ -56,6 +56,20 @@ import 'package:sapphire/functions/android/supported_abis.dart';
 import 'package:sapphire/functions/android/type.dart';
 import 'package:sapphire/functions/android/version_incremental.dart';
 import 'package:sapphire/functions/android/version_sdk_int.dart';
+import 'package:sapphire/functions/ios/identifier_for_vendor.dart';
+import 'package:sapphire/functions/ios/is_physical_device.dart' as ios_physical;
+import 'package:sapphire/functions/ios/model.dart' as ios_model;
+import 'package:sapphire/functions/ios/name.dart';
+import 'package:sapphire/functions/ios/system_version.dart';
+import 'package:sapphire/functions/ios/utsname_nodename.dart';
+import 'package:sapphire/functions/ios/utsname_sysname.dart';
+import 'package:sapphire/functions/ios/is_ios_app_on_mac.dart';
+import 'package:sapphire/functions/ios/localized_model.dart';
+import 'package:sapphire/functions/ios/model_name.dart';
+import 'package:sapphire/functions/ios/system_name.dart';
+import 'package:sapphire/functions/ios/utsname_machine.dart';
+import 'package:sapphire/functions/ios/utsname_release.dart';
+import 'package:sapphire/functions/ios/utsname_version.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -327,5 +341,117 @@ List<FunctionItem> functionList = [
     icon: Icons.developer_board,
     tags: ['android', 'version_sdk_int'],
     index: 31,
+  ),
+  FunctionItem(
+    widget: const IdentifierForVendorWidget(),
+    name: 'identifierForVendor',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['ios', 'identifier_for_vendor'],
+    index: 32,
+  ),
+  FunctionItem(
+    widget: const ios_physical.IsPhysicalDeviceWidget(),
+    name: 'iosisPhysicalDevice',
+    author: 'spageektti',
+    icon: Icons.device_hub,
+    tags: ['ios', 'physical_device'],
+    index: 33,
+  ),
+  FunctionItem(
+    widget: const ios_model.ModelWidget(),
+    name: 'iosmodel',
+    author: 'spageektti',
+    icon: Icons.phone_android,
+    tags: ['ios', 'model'],
+    index: 34,
+  ),
+  FunctionItem(
+    widget: const NameWidget(),
+    name: 'name',
+    author: 'spageektti',
+    icon: Icons.text_fields,
+    tags: ['ios', 'name'],
+    index: 35,
+  ),
+  FunctionItem(
+    widget: const SystemVersionWidget(),
+    name: 'systemVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['ios', 'system_version'],
+    index: 36,
+  ),
+  FunctionItem(
+    widget: const UtsnameNodenameWidget(),
+    name: 'utsnameNodename',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['ios', 'utsname_nodename'],
+    index: 37,
+  ),
+  FunctionItem(
+    widget: const UtsnameSysnameWidget(),
+    name: 'utsnameSysname',
+    author: 'spageektti',
+    icon: Icons.system_security_update,
+    tags: ['ios', 'utsname_sysname'],
+    index: 38,
+  ),
+  FunctionItem(
+    widget: const IsIosAppOnMacWidget(),
+    name: 'isIosAppOnMac',
+    author: 'spageektti',
+    icon: Icons.desktop_mac,
+    tags: ['ios', 'is_ios_app_on_mac'],
+    index: 39,
+  ),
+  FunctionItem(
+    widget: const LocalizedModelWidget(),
+    name: 'localizedModel',
+    author: 'spageektti',
+    icon: Icons.language,
+    tags: ['ios', 'localized_model'],
+    index: 40,
+  ),
+  FunctionItem(
+    widget: const ModelNameWidget(),
+    name: 'modelName',
+    author: 'spageektti',
+    icon: Icons.phone_iphone,
+    tags: ['ios', 'model_name'],
+    index: 41,
+  ),
+  FunctionItem(
+    widget: const SystemNameWidget(),
+    name: 'systemName',
+    author: 'spageektti',
+    icon: Icons.system_update_alt,
+    tags: ['ios', 'system_name'],
+    index: 42,
+  ),
+  FunctionItem(
+    widget: const UtsnameMachineWidget(),
+    name: 'utsnameMachine',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['ios', 'utsname_machine'],
+    index: 43,
+  ),
+  FunctionItem(
+    widget: const UtsnameReleaseWidget(),
+    name: 'utsnameRelease',
+    author: 'spageektti',
+    icon: Icons.update,
+    tags: ['ios', 'utsname_release'],
+    index: 44,
+  ),
+  FunctionItem(
+    widget: const UtsnameVersionWidget(),
+    name: 'utsnameVersion',
+    author: 'spageektti',
+    icon: Icons.verified,
+    tags: ['ios', 'utsname_version'],
+    index: 45,
   ),
 ];
