@@ -29,6 +29,33 @@ import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
 import 'package:sapphire/functions/math/root.dart' as math_root;
+import 'package:sapphire/functions/android/board.dart';
+import 'package:sapphire/functions/android/device.dart';
+import 'package:sapphire/functions/android/hardware.dart';
+import 'package:sapphire/functions/android/is_low_ram_device.dart';
+import 'package:sapphire/functions/android/model.dart';
+import 'package:sapphire/functions/android/supported_32_bit_abis.dart';
+import 'package:sapphire/functions/android/system_features.dart';
+import 'package:sapphire/functions/android/version_base_os.dart';
+import 'package:sapphire/functions/android/version_preview_sdk_int.dart';
+import 'package:sapphire/functions/android/bootloader.dart';
+import 'package:sapphire/functions/android/display.dart';
+import 'package:sapphire/functions/android/host.dart';
+import 'package:sapphire/functions/android/is_physical_device.dart';
+import 'package:sapphire/functions/android/product.dart';
+import 'package:sapphire/functions/android/supported_64_bit_abis.dart';
+import 'package:sapphire/functions/android/tags.dart';
+import 'package:sapphire/functions/android/version_codename.dart';
+import 'package:sapphire/functions/android/version_release.dart';
+import 'package:sapphire/functions/android/brand.dart';
+import 'package:sapphire/functions/android/fingerprint.dart';
+import 'package:sapphire/functions/android/id.dart';
+import 'package:sapphire/functions/android/manufacturer.dart';
+import 'package:sapphire/functions/android/serial_number.dart';
+import 'package:sapphire/functions/android/supported_abis.dart';
+import 'package:sapphire/functions/android/type.dart';
+import 'package:sapphire/functions/android/version_incremental.dart';
+import 'package:sapphire/functions/android/version_sdk_int.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -84,5 +111,221 @@ List<FunctionItem> functionList = [
       author: 'spageektti',
       icon: Icons.info_outline,
       tags: ['android', 'version', 'security', 'patch'],
-      index: 4)
+      index: 4),
+  FunctionItem(
+    widget: const BoardWidget(),
+    name: 'board',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['android', 'board'],
+    index: 5,
+  ),
+  FunctionItem(
+    widget: const DeviceWidget(),
+    name: 'device',
+    author: 'spageektti',
+    icon: Icons.devices,
+    tags: ['android', 'device'],
+    index: 6,
+  ),
+  FunctionItem(
+    widget: const HardwareWidget(),
+    name: 'hardware',
+    author: 'spageektti',
+    icon: Icons.hardware,
+    tags: ['android', 'hardware'],
+    index: 7,
+  ),
+  FunctionItem(
+    widget: const IsLowRamDeviceWidget(),
+    name: 'isLowRamDevice',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['android', 'low_ram'],
+    index: 8,
+  ),
+  FunctionItem(
+    widget: const ModelWidget(),
+    name: 'model',
+    author: 'spageektti',
+    icon: Icons.phone_android,
+    tags: ['android', 'model'],
+    index: 9,
+  ),
+  FunctionItem(
+    widget: const Supported32BitAbisWidget(),
+    name: 'supported32BitAbis',
+    author: 'spageektti',
+    icon: Icons.architecture,
+    tags: ['android', '32_bit_abis'],
+    index: 10,
+  ),
+  FunctionItem(
+    widget: const SystemFeaturesWidget(),
+    name: 'systemFeatures',
+    author: 'spageektti',
+    icon: Icons.featured_play_list,
+    tags: ['android', 'system_features'],
+    index: 11,
+  ),
+  FunctionItem(
+    widget: const VersionBaseOsWidget(),
+    name: 'versionBaseOs',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['android', 'version_base_os'],
+    index: 12,
+  ),
+  FunctionItem(
+    widget: const VersionPreviewSdkIntWidget(),
+    name: 'versionPreviewSdkInt',
+    author: 'spageektti',
+    icon: Icons.developer_mode,
+    tags: ['android', 'version_preview_sdk_int'],
+    index: 13,
+  ),
+  FunctionItem(
+    widget: const BootloaderWidget(),
+    name: 'bootloader',
+    author: 'spageektti',
+    icon: Icons.settings_backup_restore,
+    tags: ['android', 'bootloader'],
+    index: 14,
+  ),
+  FunctionItem(
+    widget: const DisplayWidget(),
+    name: 'display',
+    author: 'spageektti',
+    icon: Icons.display_settings,
+    tags: ['android', 'display'],
+    index: 15,
+  ),
+  FunctionItem(
+    widget: const HostWidget(),
+    name: 'host',
+    author: 'spageektti',
+    icon: Icons.router,
+    tags: ['android', 'host'],
+    index: 16,
+  ),
+  FunctionItem(
+    widget: const IsPhysicalDeviceWidget(),
+    name: 'isPhysicalDevice',
+    author: 'spageektti',
+    icon: Icons.device_hub,
+    tags: ['android', 'physical_device'],
+    index: 17,
+  ),
+  FunctionItem(
+    widget: const ProductWidget(),
+    name: 'product',
+    author: 'spageektti',
+    icon: Icons.production_quantity_limits,
+    tags: ['android', 'product'],
+    index: 18,
+  ),
+  FunctionItem(
+    widget: const Supported64BitAbisWidget(),
+    name: 'supported64BitAbis',
+    author: 'spageektti',
+    icon: Icons.architecture,
+    tags: ['android', '64_bit_abis'],
+    index: 19,
+  ),
+  FunctionItem(
+    widget: const TagsWidget(),
+    name: 'tags',
+    author: 'spageektti',
+    icon: Icons.tag,
+    tags: ['android', 'tags'],
+    index: 20,
+  ),
+  FunctionItem(
+    widget: const VersionCodenameWidget(),
+    name: 'versionCodename',
+    author: 'spageektti',
+    icon: Icons.code,
+    tags: ['android', 'version_codename'],
+    index: 21,
+  ),
+  FunctionItem(
+    widget: const VersionReleaseWidget(),
+    name: 'versionRelease',
+    author: 'spageektti',
+    icon: Icons.system_update_alt,
+    tags: ['android', 'version_release'],
+    index: 22,
+  ),
+  FunctionItem(
+    widget: const BrandWidget(),
+    name: 'brand',
+    author: 'spageektti',
+    icon: Icons.branding_watermark,
+    tags: ['android', 'brand'],
+    index: 23,
+  ),
+  FunctionItem(
+    widget: const FingerprintWidget(),
+    name: 'fingerprint',
+    author: 'spageektti',
+    icon: Icons.fingerprint,
+    tags: ['android', 'fingerprint'],
+    index: 24,
+  ),
+  FunctionItem(
+    widget: const IdWidget(),
+    name: 'id',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['android', 'id'],
+    index: 25,
+  ),
+  FunctionItem(
+    widget: const ManufacturerWidget(),
+    name: 'manufacturer',
+    author: 'spageektti',
+    icon: Icons.factory,
+    tags: ['android', 'manufacturer'],
+    index: 26,
+  ),
+  FunctionItem(
+    widget: const SerialNumberWidget(),
+    name: 'serialNumber',
+    author: 'spageektti',
+    icon: Icons.confirmation_number,
+    tags: ['android', 'serial_number'],
+    index: 27,
+  ),
+  FunctionItem(
+    widget: const SupportedAbisWidget(),
+    name: 'supportedAbis',
+    author: 'spageektti',
+    icon: Icons.architecture,
+    tags: ['android', 'supported_abis'],
+    index: 28,
+  ),
+  FunctionItem(
+    widget: const TypeWidget(),
+    name: 'type',
+    author: 'spageektti',
+    icon: Icons.category,
+    tags: ['android', 'type'],
+    index: 29,
+  ),
+  FunctionItem(
+    widget: const VersionIncrementalWidget(),
+    name: 'versionIncremental',
+    author: 'spageektti',
+    icon: Icons.update,
+    tags: ['android', 'version_incremental'],
+    index: 30,
+  ),
+  FunctionItem(
+    widget: const VersionSdkIntWidget(),
+    name: 'versionSdkInt',
+    author: 'spageektti',
+    icon: Icons.developer_board,
+    tags: ['android', 'version_sdk_int'],
+    index: 31,
+  ),
 ];

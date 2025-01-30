@@ -61,6 +61,144 @@
     "versionSecurityPathLongName": "Version Security Path Checker",
     "versionSecurityPathShortDescription": "Check the security patch level of your Android device",
     "versionSecurityPathLongDescription": "The Android security patch level is a date that Android device manufacturers release security patches.",
-    
-    "unknownOrNotAndroidNotice": "We couldn't determine the security patch level of your device. Make sure you're using an Android device."
+
+    "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device.",
+
+    "boardShortName": "Board",
+    "boardLongName": "Board Information",
+    "boardShortDescription": "Get the board information of the device",
+    "boardLongDescription": "The board information provides details about the main circuit board of the device.",
+
+    "deviceShortName": "Device",
+    "deviceLongName": "Device Information",
+    "deviceShortDescription": "Get the device information",
+    "deviceLongDescription": "The device information includes details about the device model, manufacturer, and other specifications.",
+
+    "hardwareShortName": "Hardware",
+    "hardwareLongName": "Hardware Information",
+    "hardwareShortDescription": "Get the hardware information",
+    "hardwareLongDescription": "The hardware information provides details about the physical components of the device.",
+
+    "isLowRamDeviceShortName": "Low RAM Device",
+    "isLowRamDeviceLongName": "Low RAM Device Checker",
+    "isLowRamDeviceShortDescription": "Check if the device is a low RAM device",
+    "isLowRamDeviceLongDescription": "This checker determines if the device is classified as a low RAM device, which may affect performance.",
+
+    "modelShortName": "Model",
+    "modelLongName": "Device Model",
+    "modelShortDescription": "Get the device model",
+    "modelLongDescription": "The device model provides the specific model name or number of the device.",
+
+    "supported32BitAbisShortName": "32-bit ABIs",
+    "supported32BitAbisLongName": "Supported 32-bit ABIs",
+    "supported32BitAbisShortDescription": "Get the supported 32-bit ABIs",
+    "supported32BitAbisLongDescription": "The supported 32-bit ABIs list the 32-bit Application Binary Interfaces that the device supports.",
+
+    "systemFeaturesShortName": "System Features",
+    "systemFeaturesLongName": "System Features Information",
+    "systemFeaturesShortDescription": "Get the system features",
+    "systemFeaturesLongDescription": "The system features provide a list of features supported by the device's operating system.",
+
+    "versionBaseOsShortName": "Base OS Version",
+    "versionBaseOsLongName": "Base Operating System Version",
+    "versionBaseOsShortDescription": "Get the base OS version",
+    "versionBaseOsLongDescription": "The base OS version provides the version of the base operating system running on the device.",
+
+    "versionPreviewSdkIntShortName": "Preview SDK",
+    "versionPreviewSdkIntLongName": "Preview SDK Version",
+    "versionPreviewSdkIntShortDescription": "Get the preview SDK version",
+    "versionPreviewSdkIntLongDescription": "The preview SDK version provides the version number of the preview SDK installed on the device.",
+
+    "bootloaderShortName": "Bootloader",
+    "bootloaderLongName": "Bootloader Information",
+    "bootloaderShortDescription": "Get the bootloader version",
+    "bootloaderLongDescription": "The bootloader version provides details about the bootloader software on the device.",
+
+    "displayShortName": "Display",
+    "displayLongName": "Display Information",
+    "displayShortDescription": "Get the display information",
+    "displayLongDescription": "The display information provides details about the device's screen, including resolution and density.",
+
+    "hostShortName": "Host",
+    "hostLongName": "Host Information",
+    "hostShortDescription": "Get the host information",
+    "hostLongDescription": "The host information provides details about the host system on which the device is running.",
+
+    "isPhysicalDeviceShortName": "Physical Device",
+    "isPhysicalDeviceLongName": "Physical Device Checker",
+    "isPhysicalDeviceShortDescription": "Check if the device is a physical device",
+    "isPhysicalDeviceLongDescription": "This checker determines if the device is a physical device or an emulator.",
+
+    "productShortName": "Product",
+    "productLongName": "Product Information",
+    "productShortDescription": "Get the product information",
+    "productLongDescription": "The product information provides details about the product name and version of the device.",
+
+    "supported64BitAbisShortName": "64-bit ABIs",
+    "supported64BitAbisLongName": "Supported 64-bit ABIs",
+    "supported64BitAbisShortDescription": "Get the supported 64-bit ABIs",
+    "supported64BitAbisLongDescription": "The supported 64-bit ABIs list the 64-bit Application Binary Interfaces that the device supports.",
+
+    "tagsShortName": "Tags",
+    "tagsLongName": "Build Tags",
+    "tagsShortDescription": "Get the build tags",
+    "tagsLongDescription": "The build tags provide additional information about the build of the device's operating system.",
+
+    "versionCodenameShortName": "Codename",
+    "versionCodenameLongName": "Version Codename",
+    "versionCodenameShortDescription": "Get the version codename",
+    "versionCodenameLongDescription": "The version codename provides the codename of the current operating system version.",
+
+    "versionReleaseShortName": "Release Version",
+    "versionReleaseLongName": "Release Version Information",
+    "versionReleaseShortDescription": "Get the release version",
+    "versionReleaseLongDescription": "The release version provides the version number of the current operating system release.",
+
+    "brandShortName": "Brand",
+    "brandLongName": "Brand Information",
+    "brandShortDescription": "Get the brand information",
+    "brandLongDescription": "The brand information provides details about the brand or manufacturer of the device.",
+
+    "fingerprintShortName": "Fingerprint",
+    "fingerprintLongName": "Build Fingerprint",
+    "fingerprintShortDescription": "Get the build fingerprint",
+    "fingerprintLongDescription": "The build fingerprint provides a unique identifier for the build of the device's operating system.",
+
+    "idShortName": "ID",
+    "idLongName": "Build ID",
+    "idShortDescription": "Get the build ID",
+    "idLongDescription": "The build ID provides a unique identifier for the build of the device's operating system.",
+
+    "manufacturerShortName": "Manufacturer",
+    "manufacturerLongName": "Manufacturer Information",
+    "manufacturerShortDescription": "Get the manufacturer information",
+    "manufacturerLongDescription": "The manufacturer information provides details about the company that manufactured the device.",
+
+    "serialNumberShortName": "Serial Number",
+    "serialNumberLongName": "Device Serial Number",
+    "serialNumberShortDescription": "Get the device serial number",
+    "serialNumberLongDescription": "The device serial number provides a unique identifier for the device.",
+
+    "supportedAbisShortName": "Supported ABIs",
+    "supportedAbisLongName": "Supported ABIs Information",
+    "supportedAbisShortDescription": "Get the supported ABIs",
+    "supportedAbisLongDescription": "The supported ABIs list the Application Binary Interfaces that the device supports.",
+
+    "typeShortName": "Type",
+    "typeLongName": "Build Type",
+    "typeShortDescription": "Get the build type",
+    "typeLongDescription": "The build type provides information about the type of build, such as user or userdebug.",
+
+    "versionIncrementalShortName": "Incremental Version",
+    "versionIncrementalLongName": "Incremental Version Information",
+    "versionIncrementalShortDescription": "Get the incremental version",
+    "versionIncrementalLongDescription": "The incremental version provides the incremental version number of the current operating system build.",
+
+    "versionSdkIntShortName": "SDK Version",
+    "versionSdkIntLongName": "SDK Version Information",
+    "versionSdkIntShortDescription": "Get the SDK version",
+    "versionSdkIntLongDescription": "The SDK version provides the version number of the Software Development Kit (SDK) used by the operating system.",
+
+    "yes": "Yes",
+    "no": "No"
 }

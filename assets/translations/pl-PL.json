@@ -62,5 +62,143 @@
     "versionSecurityPathShortDescription": "Sprawdź poziom zabezpieczeń swojego urządzenia z Androidem",
     "versionSecurityPathLongDescription": "Poziom zabezpieczeń Androida to data, w której producenci urządzeń z Androidem wydają poprawki zabezpieczeń.",
 
-    "unknownOrNotAndroidNotice": "Nie udało nam się określić poziomu zabezpieczeń Twojego urządzenia. Upewnij się, że używasz urządzenia z Androidem."
+    "unknownOrNotAndroidNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z Androidem.",
+
+    "boardShortName": "Płyta",
+    "boardLongName": "Informacje o płycie głównej",
+    "boardShortDescription": "Uzyskaj informacje o płycie głównej urządzenia",
+    "boardLongDescription": "Informacje o płycie głównej zawierają szczegóły dotyczące głównej płyty obwodowej urządzenia.",
+
+    "deviceShortName": "Urządzenie",
+    "deviceLongName": "Informacje o urządzeniu",
+    "deviceShortDescription": "Uzyskaj informacje o urządzeniu",
+    "deviceLongDescription": "Informacje o urządzeniu zawierają szczegóły dotyczące modelu, producenta i innych specyfikacji urządzenia.",
+
+    "hardwareShortName": "Sprzęt",
+    "hardwareLongName": "Informacje o sprzęcie",
+    "hardwareShortDescription": "Uzyskaj informacje o sprzęcie",
+    "hardwareLongDescription": "Informacje o sprzęcie zawierają szczegóły dotyczące fizycznych komponentów urządzenia.",
+    
+    "isLowRamDeviceShortName": "Urządzenie z małą ilością RAM",
+    "isLowRamDeviceLongName": "Sprawdzanie urządzenia z małą ilością RAM",
+    "isLowRamDeviceShortDescription": "Sprawdź, czy urządzenie ma małą ilość RAM",
+    "isLowRamDeviceLongDescription": "To narzędzie sprawdza, czy urządzenie jest klasyfikowane jako urządzenie z małą ilością RAM, co może wpływać na wydajność.",
+    
+    "modelShortName": "Model",
+    "modelLongName": "Model urządzenia",
+    "modelShortDescription": "Uzyskaj model urządzenia",
+    "modelLongDescription": "Model urządzenia podaje konkretną nazwę lub numer modelu urządzenia.",
+    
+    "supported32BitAbisShortName": "ABI 32-bit",
+    "supported32BitAbisLongName": "Obsługiwane ABI 32-bit",
+    "supported32BitAbisShortDescription": "Uzyskaj obsługiwane ABI 32-bit",
+    "supported32BitAbisLongDescription": "Obsługiwane ABI 32-bit to lista 32-bitowych interfejsów binarnych aplikacji, które obsługuje urządzenie.",
+    
+    "systemFeaturesShortName": "Funkcje systemowe",
+    "systemFeaturesLongName": "Informacje o funkcjach systemowych",
+    "systemFeaturesShortDescription": "Uzyskaj funkcje systemowe",
+    "systemFeaturesLongDescription": "Funkcje systemowe zawierają listę funkcji obsługiwanych przez system operacyjny urządzenia.",
+    
+    "versionBaseOsShortName": "Wersja bazowego systemu operacyjnego",
+    "versionBaseOsLongName": "Informacje o bazowym systemie operacyjnym",
+    "versionBaseOsShortDescription": "Uzyskaj wersję bazowego systemu operacyjnego",
+    "versionBaseOsLongDescription": "Wersja bazowego systemu operacyjnego określa wersję systemu operacyjnego działającego na urządzeniu.",
+    
+    "versionPreviewSdkIntShortName": "Podgląd SDK",
+    "versionPreviewSdkIntLongName": "Wersja podglądu SDK",
+    "versionPreviewSdkIntShortDescription": "Uzyskaj wersję podglądu SDK",
+    "versionPreviewSdkIntLongDescription": "Wersja podglądu SDK określa numer wersji podglądowej SDK zainstalowanego na urządzeniu.",
+    
+    "bootloaderShortName": "Bootloader",
+    "bootloaderLongName": "Informacje o bootloaderze",
+    "bootloaderShortDescription": "Uzyskaj wersję bootloadera",
+    "bootloaderLongDescription": "Wersja bootloadera zawiera szczegóły dotyczące oprogramowania bootloadera na urządzeniu.",
+    
+    "displayShortName": "Wyświetlacz",
+    "displayLongName": "Informacje o wyświetlaczu",
+    "displayShortDescription": "Uzyskaj informacje o wyświetlaczu",
+    "displayLongDescription": "Informacje o wyświetlaczu zawierają szczegóły dotyczące ekranu urządzenia, w tym rozdzielczość i gęstość pikseli.",
+    
+    "hostShortName": "Host",
+    "hostLongName": "Informacje o hoście",
+    "hostShortDescription": "Uzyskaj informacje o hoście",
+    "hostLongDescription": "Informacje o hoście zawierają szczegóły dotyczące systemu hosta, na którym działa urządzenie.",
+    
+    "isPhysicalDeviceShortName": "Urządzenie fizyczne",
+    "isPhysicalDeviceLongName": "Sprawdzanie urządzenia fizycznego",
+    "isPhysicalDeviceShortDescription": "Sprawdź, czy urządzenie jest fizycznym urządzeniem",
+    "isPhysicalDeviceLongDescription": "To narzędzie określa, czy urządzenie jest fizycznym urządzeniem, czy emulatorem.",
+    
+    "productShortName": "Produkt",
+    "productLongName": "Informacje o produkcie",
+    "productShortDescription": "Uzyskaj informacje o produkcie",
+    "productLongDescription": "Informacje o produkcie zawierają szczegóły dotyczące nazwy i wersji produktu urządzenia.",
+    
+    "supported64BitAbisShortName": "ABI 64-bit",
+    "supported64BitAbisLongName": "Obsługiwane ABI 64-bit",
+    "supported64BitAbisShortDescription": "Uzyskaj obsługiwane ABI 64-bit",
+    "supported64BitAbisLongDescription": "Obsługiwane ABI 64-bit to lista 64-bitowych interfejsów binarnych aplikacji, które obsługuje urządzenie.",
+    
+    "tagsShortName": "Tagi",
+    "tagsLongName": "Tagi kompilacji",
+    "tagsShortDescription": "Uzyskaj tagi kompilacji",
+    "tagsLongDescription": "Tagi kompilacji dostarczają dodatkowych informacji o kompilacji systemu operacyjnego urządzenia.",
+    
+    "versionCodenameShortName": "Nazwa kodowa",
+    "versionCodenameLongName": "Nazwa kodowa wersji",
+    "versionCodenameShortDescription": "Uzyskaj nazwę kodową wersji",
+    "versionCodenameLongDescription": "Nazwa kodowa wersji określa nazwę kodową bieżącej wersji systemu operacyjnego.",
+    
+    "versionReleaseShortName": "Wersja wydania",
+    "versionReleaseLongName": "Informacje o wersji wydania",
+    "versionReleaseShortDescription": "Uzyskaj wersję wydania",
+    "versionReleaseLongDescription": "Wersja wydania określa numer wersji bieżącego wydania systemu operacyjnego.",
+    
+    "brandShortName": "Marka",
+    "brandLongName": "Informacje o marce",
+    "brandShortDescription": "Uzyskaj informacje o marce",
+    "brandLongDescription": "Informacje o marce zawierają szczegóły dotyczące marki lub producenta urządzenia.",
+    
+    "fingerprintShortName": "Odcisk palca",
+    "fingerprintLongName": "Odcisk palca kompilacji",
+    "fingerprintShortDescription": "Uzyskaj odcisk palca kompilacji",
+    "fingerprintLongDescription": "Odcisk palca kompilacji to unikalny identyfikator kompilacji systemu operacyjnego urządzenia.",
+    
+    "idShortName": "ID",
+    "idLongName": "ID kompilacji",
+    "idShortDescription": "Uzyskaj ID kompilacji",
+    "idLongDescription": "ID kompilacji to unikalny identyfikator kompilacji systemu operacyjnego urządzenia.",
+    
+    "manufacturerShortName": "Producent",
+    "manufacturerLongName": "Informacje o producencie",
+    "manufacturerShortDescription": "Uzyskaj informacje o producencie",
+    "manufacturerLongDescription": "Informacje o producencie zawierają szczegóły dotyczące firmy, która wyprodukowała urządzenie.",
+    
+    "serialNumberShortName": "Numer seryjny",
+    "serialNumberLongName": "Numer seryjny urządzenia",
+    "serialNumberShortDescription": "Uzyskaj numer seryjny urządzenia",
+    "serialNumberLongDescription": "Numer seryjny urządzenia to unikalny identyfikator urządzenia.",
+    
+    "supportedAbisShortName": "Obsługiwane ABI",
+    "supportedAbisLongName": "Informacje o obsługiwanych ABI",
+    "supportedAbisShortDescription": "Uzyskaj obsługiwane ABI",
+    "supportedAbisLongDescription": "Obsługiwane ABI to lista interfejsów binarnych aplikacji, które obsługuje urządzenie.",
+
+    "typeShortName": "Typ",
+    "typeLongName": "Typ kompilacji",
+    "typeShortDescription": "Uzyskaj typ kompilacji",
+    "typeLongDescription": "Typ kompilacji dostarcza informacji o rodzaju kompilacji, takich jak user lub userdebug.",
+
+    "versionIncrementalShortName": "Wersja przyrostowa",
+    "versionIncrementalLongName": "Informacje o wersji przyrostowej",
+    "versionIncrementalShortDescription": "Uzyskaj wersję przyrostową",
+    "versionIncrementalLongDescription": "Wersja przyrostowa dostarcza numer wersji przyrostowej bieżącej kompilacji systemu operacyjnego.",
+
+    "versionSdkIntShortName": "Wersja SDK",
+    "versionSdkIntLongName": "Informacje o wersji SDK",
+    "versionSdkIntShortDescription": "Uzyskaj wersję SDK",
+    "versionSdkIntLongDescription": "Wersja SDK dostarcza numer wersji zestawu Software Development Kit (SDK) używanego przez system operacyjny.",
+
+    "yes": "Tak",
+    "no": "Nie"
 }
