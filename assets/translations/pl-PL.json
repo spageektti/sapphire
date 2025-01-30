@@ -1,8 +1,11 @@
 {
     "homePageTitle": "Strona główna",
+    "newCategoryHint": "Wprowadź nazwę nowej kategorii",
+    "newCategoryButton": "Dodaj kategorię",
 
     "searchPageTitle": "Szukaj",
     "searchPageSearchBar": "Wyszukaj...",
+    "searchPageSelectCategory": "Wybierz kategorię",
 
     "settingsPageTitle": "Ustawienia",
     "settingsPageLanguageLabel": "Język",
@@ -52,5 +55,12 @@
     "powerShortDescription": "Podnieś liczbę do potęgi",
     "powerLongDescription": "Potęga liczby to liczba, która jest wynikiem mnożenia liczby przez siebie określoną liczbę razy.",
     "powerFirstButtonLabel": "Wprowadź podstawę",
-    "powerSecondButtonLabel": "Wprowadź wykładnik"
+    "powerSecondButtonLabel": "Wprowadź wykładnik",
+
+    "versionSecurityPathShortName": "Ścieżka zabezpieczeń Androida",
+    "versionSecurityPathLongName": "Sprawdzanie wersji ścieżki zabezpieczeń",
+    "versionSecurityPathShortDescription": "Sprawdź poziom zabezpieczeń swojego urządzenia z Androidem",
+    "versionSecurityPathLongDescription": "Poziom zabezpieczeń Androida to data, w której producenci urządzeń z Androidem wydają poprawki zabezpieczeń.",
+
+    "unknownOrNotAndroidNotice": "Nie udało nam się określić poziomu zabezpieczeń Twojego urządzenia. Upewnij się, że używasz urządzenia z Androidem."
 }

@@ -26,8 +26,10 @@
 
 List<List<int>> defaultHomeList = [
   [0, 1, 2, 3],
+  [4],
 ];
 
 List<String> defaultHomeListNames = [
   'Math',
+  'Android',
 ];

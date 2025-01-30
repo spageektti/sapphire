@@ -282,6 +282,10 @@ class _HomePageState extends State<HomePage> {
                           key: ValueKey(defaultHomeList[index][itemIndex]),
                           title: Text(context.tr(
                               '${functionList[defaultHomeList[index][itemIndex]].name}ShortName')),
+                          trailing: ReorderableDragStartListener(
+                            index: itemIndex,
+                            child: const Icon(Icons.drag_handle),
+                          ),
                         );
                       }),
                     ),

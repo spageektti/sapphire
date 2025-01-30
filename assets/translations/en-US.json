@@ -1,8 +1,11 @@
 {
     "homePageTitle": "Home",
+    "newCategoryHint": "Enter name of the new category",
+    "newCategoryButton": "Add category",
 
     "searchPageTitle": "Search",
     "searchPageSearchBar": "Search...",
+    "searchPageSelectCategory": "Select category",
 
     "settingsPageTitle": "Settings",
     "settingsPageLanguageLabel": "Language",
@@ -52,5 +55,12 @@
     "powerShortDescription": "Raise a number to a power",
     "powerLongDescription": "The power of a number is the number of times the number is multiplied by itself.",
     "powerFirstButtonLabel": "Enter the base",
-    "powerSecondButtonLabel": "Enter the exponent"
+    "powerSecondButtonLabel": "Enter the exponent",
+
+    "versionSecurityPathShortName": "Android Security Path",
+    "versionSecurityPathLongName": "Version Security Path Checker",
+    "versionSecurityPathShortDescription": "Check the security patch level of your Android device",
+    "versionSecurityPathLongDescription": "The Android security patch level is a date that Android device manufacturers release security patches.",
+    
+    "unknownOrNotAndroidNotice": "We couldn't determine the security patch level of your device. Make sure you're using an Android device."
 }

@@ -24,6 +24,7 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
+import 'package:sapphire/functions/android/version_security_path.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
@@ -77,4 +78,11 @@ List<FunctionItem> functionList = [
       icon: Icons.bolt,
       tags: ['math', 'power', 'root'],
       index: 3),
+  FunctionItem(
+      widget: const VersionSecurityPathWidget(),
+      name: 'versionSecurityPath',
+      author: 'spageektti',
+      icon: Icons.info_outline,
+      tags: ['android', 'version', 'security', 'patch'],
+      index: 4)
 ];
