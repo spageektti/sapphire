@@ -62,8 +62,10 @@
     "versionSecurityPathShortDescription": "Check the security patch level of your Android device",
     "versionSecurityPathLongDescription": "The Android security patch level is a date that Android device manufacturers release security patches.",
 
-    "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device.",
-    "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device.",
+    "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device. Your device may not provide this information.",
+    "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device. Your device may not provide this information.",
+    "unknownOrNotLinuxNotice": "We couldn't check that. Make sure you are using a Linux device. You distribution may not provide this information.",
+
 
     "boardShortName": "Board (Android)",
     "boardLongName": "Board Information",
@@ -271,5 +273,60 @@
     "utsnameVersionShortName": "Version (iOS)",
     "utsnameVersionLongName": "UTS Name Version",
     "utsnameVersionShortDescription": "Get the UTS name version",
-    "utsnameVersionLongDescription": "The UTS name version provides the version level of the operating system."
+    "utsnameVersionLongDescription": "The UTS name version provides the version level of the operating system.",
+
+    "linuxBuildIdShortName": "Build ID (GNU/Linux)",
+    "linuxBuildIdLongName": "GNU/Linux Build ID",
+    "linuxBuildIdShortDescription": "Get the build ID",
+    "linuxBuildIdLongDescription": "The build ID provides a unique identifier for the build of the GNU/Linux operating system.",
+
+    "linuxIdShortName": "ID (GNU/Linux)",
+    "linuxIdLongName": "GNU/Linux ID",
+    "linuxIdShortDescription": "Get the ID",
+    "linuxIdLongDescription": "The ID provides a unique identifier for the GNU/Linux operating system.",
+
+    "linuxIdLikeShortName": "ID Like (GNU/Linux)",
+    "linuxIdLikeLongName": "GNU/Linux ID Like",
+    "linuxIdLikeShortDescription": "Get the ID like",
+    "linuxIdLikeLongDescription": "The ID like provides a list of operating systems that are similar to the GNU/Linux operating system.",
+
+    "linuxMachineIdShortName": "Machine ID (GNU/Linux)",
+    "linuxMachineIdLongName": "GNU/Linux Machine ID",
+    "linuxMachineIdShortDescription": "Get the machine ID",
+    "linuxMachineIdLongDescription": "The machine ID provides a unique identifier for the machine running the GNU/Linux operating system.",
+
+    "linuxNameShortName": "Name (GNU/Linux)",
+    "linuxNameLongName": "GNU/Linux Name",
+    "linuxNameShortDescription": "Get the name",
+    "linuxNameLongDescription": "The name provides the name of the GNU/Linux operating system.",
+
+    "linuxPrettyNameShortName": "Pretty Name (GNU/Linux)",
+    "linuxPrettyNameLongName": "GNU/Linux Pretty Name",
+    "linuxPrettyNameShortDescription": "Get the pretty name",
+    "linuxPrettyNameLongDescription": "The pretty name provides a user-friendly name for the GNU/Linux operating system.",
+
+    "linuxVariantShortName": "Variant (GNU/Linux)",
+    "linuxVariantLongName": "GNU/Linux Variant",
+    "linuxVariantShortDescription": "Get the variant",
+    "linuxVariantLongDescription": "The variant provides the variant name of the GNU/Linux operating system.",
+
+    "linuxVariantIdShortName": "Variant ID (GNU/Linux)",
+    "linuxVariantIdLongName": "GNU/Linux Variant ID",
+    "linuxVariantIdShortDescription": "Get the variant ID",
+    "linuxVariantIdLongDescription": "The variant ID provides a unique identifier for the variant of the GNU/Linux operating system.",
+
+    "linuxVersionCodenameShortName": "Version Codename (GNU/Linux)",
+    "linuxVersionCodenameLongName": "GNU/Linux Version Codename",
+    "linuxVersionCodenameShortDescription": "Get the version codename",
+    "linuxVersionCodenameLongDescription": "The version codename provides the codename of the current version of the GNU/Linux operating system.",
+
+    "linuxVersionShortName": "Version (GNU/Linux)",
+    "linuxVersionLongName": "GNU/Linux Version",
+    "linuxVersionShortDescription": "Get the version",
+    "linuxVersionLongDescription": "The version provides the version number of the GNU/Linux operating system.",
+
+    "linuxVersionIdShortName": "Version ID (GNU/Linux)",
+    "linuxVersionIdLongName": "GNU/Linux Version ID",
+    "linuxVersionIdShortDescription": "Get the version ID",
+    "linuxVersionIdLongDescription": "The version ID provides a unique identifier for the version of the GNU/Linux operating system."
 }

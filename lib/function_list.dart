@@ -70,6 +70,17 @@ import 'package:sapphire/functions/ios/system_name.dart';
 import 'package:sapphire/functions/ios/utsname_machine.dart';
 import 'package:sapphire/functions/ios/utsname_release.dart';
 import 'package:sapphire/functions/ios/utsname_version.dart';
+import 'package:sapphire/functions/linux/linux_build_id.dart';
+import 'package:sapphire/functions/linux/linux_id.dart';
+import 'package:sapphire/functions/linux/linux_id_like.dart';
+import 'package:sapphire/functions/linux/linux_machine_id.dart';
+import 'package:sapphire/functions/linux/linux_name.dart';
+import 'package:sapphire/functions/linux/linux_pretty_name.dart';
+import 'package:sapphire/functions/linux/linux_variant.dart';
+import 'package:sapphire/functions/linux/linux_variant_id.dart';
+import 'package:sapphire/functions/linux/linux_version_codename.dart';
+import 'package:sapphire/functions/linux/linux_version.dart';
+import 'package:sapphire/functions/linux/linux_version_id.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -453,5 +464,93 @@ List<FunctionItem> functionList = [
     icon: Icons.verified,
     tags: ['ios', 'utsname_version'],
     index: 45,
+  ),
+  FunctionItem(
+    widget: const LinuxBuildIdWidget(),
+    name: 'linuxBuildId',
+    author: 'spageektti',
+    icon: Icons.build,
+    tags: ['linux', 'build_id'],
+    index: 46,
+  ),
+  FunctionItem(
+    widget: const LinuxIdWidget(),
+    name: 'linuxId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['linux', 'id'],
+    index: 47,
+  ),
+  FunctionItem(
+    widget: const LinuxIdLikeWidget(),
+    name: 'linuxIdLike',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['linux', 'id_like'],
+    index: 48,
+  ),
+  FunctionItem(
+    widget: const LinuxMachineIdWidget(),
+    name: 'linuxMachineId',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['linux', 'machine_id'],
+    index: 49,
+  ),
+  FunctionItem(
+    widget: const LinuxNameWidget(),
+    name: 'linuxName',
+    author: 'spageektti',
+    icon: Icons.text_fields,
+    tags: ['linux', 'name'],
+    index: 50,
+  ),
+  FunctionItem(
+    widget: const LinuxPrettyNameWidget(),
+    name: 'linuxPrettyName',
+    author: 'spageektti',
+    icon: Icons.text_fields,
+    tags: ['linux', 'pretty_name'],
+    index: 51,
+  ),
+  FunctionItem(
+    widget: const LinuxVariantWidget(),
+    name: 'linuxVariant',
+    author: 'spageektti',
+    icon: Icons.category,
+    tags: ['linux', 'variant'],
+    index: 52,
+  ),
+  FunctionItem(
+    widget: const LinuxVariantIdWidget(),
+    name: 'linuxVariantId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['linux', 'variant_id'],
+    index: 53,
+  ),
+  FunctionItem(
+    widget: const LinuxVersionCodenameWidget(),
+    name: 'linuxVersionCodename',
+    author: 'spageektti',
+    icon: Icons.code,
+    tags: ['linux', 'version_codename'],
+    index: 54,
+  ),
+  FunctionItem(
+    widget: const LinuxVersionWidget(),
+    name: 'linuxVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['linux', 'version'],
+    index: 55,
+  ),
+  FunctionItem(
+    widget: const LinuxVersionIdWidget(),
+    name: 'linuxVersionId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['linux', 'version_id'],
+    index: 56,
   ),
 ];
