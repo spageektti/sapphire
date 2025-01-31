@@ -1,3 +1,5 @@
+![](https://github.com/spageektti/sapphire/blob/main/assets/banner.png?raw=true)
+
 # Sapphire
 
 **Small in Size, Infinite in Value; Your All-in-One Solution**
