@@ -1,0 +1,409 @@
+{
+    "homePageTitle": "Home",
+    "newCategoryHint": "Enter name of the new category",
+    "newCategoryButton": "Add category",
+
+    "searchPageTitle": "Search",
+    "searchPageSearchBar": "Search...",
+    "searchPageSelectCategory": "Select category",
+
+    "settingsPageTitle": "Settings",
+    "settingsPageLanguageLabel": "Language",
+    "settingsPageThemeLabel": "Theme",
+    "settingsPageThemeLight": "Light",
+    "settingsPageThemeDark": "Dark",
+    "settingsPageThemeSystem": "System",
+    "settingsPageBackupsLabel": "Backups",
+    "settingsPageAboutLabel": "About the app",
+
+    "languageSelectPageTitle": "Select language",
+
+    "en_US": "English (US)",
+    "en_USNotTranslated": "English (US)",
+    "en_GB": "English (UK)",
+    "en_GBNotTranslated": "English (UK)",
+    "pl_PL": "Polish",
+    "pl_PLNotTranslated": "język polski",
+
+    "createdByLabel": "Created by: {name}",
+
+    "gcdShortName": "GCD",
+    "gcdLongName": "GCD Calculator",
+    "gcdShortDescription": "Find the greatest common divisor of two numbers",
+    "gcdLongDescription": "The greatest common divisor (GCD) of two numbers is the largest number that divides both of them without leaving a remainder.",
+    "gcdFirstButtonLabel": "Enter the first number",
+    "gcdSecondButtonLabel": "Enter the second number",
+    "gcdResultLabel": "GCD: {result}",
+    
+    "lcmShortName": "LCM",
+    "lcmLongName": "LCM Calculator",
+    "lcmShortDescription": "Find the least common multiple of two numbers",
+    "lcmLongDescription": "The least common multiple (LCM) of two numbers is the smallest number that is a multiple of both numbers.",
+    "lcmFirstButtonLabel": "Enter the first number",
+    "lcmSecondButtonLabel": "Enter the second number",
+    "lcmResultLabel": "LCM: {result}",
+
+    "rootShortName": "Root",
+    "rootLongName": "Root Calculator",
+    "rootShortDescription": "Find the nth root of a number",
+    "rootLongDescription": "The root of a number is a value that, when multiplied by itself a certain number of times, gives the original number.",
+    "rootFirstButtonLabel": "Enter the number",
+    "rootSecondButtonLabel": "Enter the root index",
+
+    "powerShortName": "Power",
+    "powerLongName": "Power Calculator",
+    "powerShortDescription": "Raise a number to a power",
+    "powerLongDescription": "The power of a number is the number of times the number is multiplied by itself.",
+    "powerFirstButtonLabel": "Enter the base",
+    "powerSecondButtonLabel": "Enter the exponent",
+
+    "versionSecurityPathShortName": "Android Security Path",
+    "versionSecurityPathLongName": "Version Security Path Checker",
+    "versionSecurityPathShortDescription": "Check the security patch level of your Android device",
+    "versionSecurityPathLongDescription": "The Android security patch level is a date that Android device manufacturers release security patches.",
+
+    "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device. Your device may not provide this information.",
+    "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device. Your device may not provide this information.",
+    "unknownOrNotLinuxNotice": "We couldn't check that. Make sure you are using a Linux device. You distribution may not provide this information.",
+    "unknownOrNotMacNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
+    "unknownOrNotWindowsNotice": "We couldn't check that. Make sure you are using a Windows device. Your device may not provide this information.",
+    "unknownOrNotWebNotice": "We couldn't check that. Make sure you are using a web browser. Your browser may not provide this information.",
+
+    "boardShortName": "Board (Android)",
+    "boardLongName": "Board Information",
+    "boardShortDescription": "Get the board information of the device",
+    "boardLongDescription": "The board information provides details about the main circuit board of the device.",
+
+    "deviceShortName": "Device (Android)",
+    "deviceLongName": "Device Information",
+    "deviceShortDescription": "Get the device information",
+    "deviceLongDescription": "The device information includes details about the device model, manufacturer, and other specifications.",
+
+    "hardwareShortName": "Hardware (Android)",
+    "hardwareLongName": "Hardware Information",
+    "hardwareShortDescription": "Get the hardware information",
+    "hardwareLongDescription": "The hardware information provides details about the physical components of the device.",
+
+    "isLowRamDeviceShortName": "Low RAM Device (Android)",
+    "isLowRamDeviceLongName": "Low RAM Device Checker",
+    "isLowRamDeviceShortDescription": "Check if the device is a low RAM device",
+    "isLowRamDeviceLongDescription": "This checker determines if the device is classified as a low RAM device, which may affect performance.",
+
+    "modelShortName": "Model (Android)",
+    "modelLongName": "Device Model",
+    "modelShortDescription": "Get the device model",
+    "modelLongDescription": "The device model provides the specific model name or number of the device.",
+
+    "supported32BitAbisShortName": "32-bit ABIs (Android)",
+    "supported32BitAbisLongName": "Supported 32-bit ABIs",
+    "supported32BitAbisShortDescription": "Get the supported 32-bit ABIs",
+    "supported32BitAbisLongDescription": "The supported 32-bit ABIs list the 32-bit Application Binary Interfaces that the device supports.",
+
+    "systemFeaturesShortName": "System Features (Android)",
+    "systemFeaturesLongName": "System Features Information",
+    "systemFeaturesShortDescription": "Get the system features",
+    "systemFeaturesLongDescription": "The system features provide a list of features supported by the device's operating system.",
+
+    "versionBaseOsShortName": "Base OS Version (Android)",
+    "versionBaseOsLongName": "Base Operating System Version",
+    "versionBaseOsShortDescription": "Get the base OS version",
+    "versionBaseOsLongDescription": "The base OS version provides the version of the base operating system running on the device.",
+
+    "versionPreviewSdkIntShortName": "Preview SDK (Android)",
+    "versionPreviewSdkIntLongName": "Preview SDK Version",
+    "versionPreviewSdkIntShortDescription": "Get the preview SDK version",
+    "versionPreviewSdkIntLongDescription": "The preview SDK version provides the version number of the preview SDK installed on the device.",
+
+    "bootloaderShortName": "Bootloader (Android)",
+    "bootloaderLongName": "Bootloader Information",
+    "bootloaderShortDescription": "Get the bootloader version",
+    "bootloaderLongDescription": "The bootloader version provides details about the bootloader software on the device.",
+
+    "displayShortName": "Display (Android)",
+    "displayLongName": "Display Information",
+    "displayShortDescription": "Get the display information",
+    "displayLongDescription": "The display information provides details about the device's screen, including resolution and density.",
+
+    "hostShortName": "Host (Android)",
+    "hostLongName": "Host Information",
+    "hostShortDescription": "Get the host information",
+    "hostLongDescription": "The host information provides details about the host system on which the device is running.",
+
+    "isPhysicalDeviceShortName": "Physical Device (Android)",
+    "isPhysicalDeviceLongName": "Physical Device Checker",
+    "isPhysicalDeviceShortDescription": "Check if the device is a physical device",
+    "isPhysicalDeviceLongDescription": "This checker determines if the device is a physical device or an emulator.",
+
+    "productShortName": "Product (Android)",
+    "productLongName": "Product Information",
+    "productShortDescription": "Get the product information",
+    "productLongDescription": "The product information provides details about the product name and version of the device.",
+
+    "supported64BitAbisShortName": "64-bit ABIs (Android)",
+    "supported64BitAbisLongName": "Supported 64-bit ABIs",
+    "supported64BitAbisShortDescription": "Get the supported 64-bit ABIs",
+    "supported64BitAbisLongDescription": "The supported 64-bit ABIs list the 64-bit Application Binary Interfaces that the device supports.",
+
+    "tagsShortName": "Tags (Android)",
+    "tagsLongName": "Build Tags",
+    "tagsShortDescription": "Get the build tags",
+    "tagsLongDescription": "The build tags provide additional information about the build of the device's operating system.",
+
+    "versionCodenameShortName": "Codename (Android)",
+    "versionCodenameLongName": "Version Codename",
+    "versionCodenameShortDescription": "Get the version codename",
+    "versionCodenameLongDescription": "The version codename provides the codename of the current operating system version.",
+
+    "versionReleaseShortName": "Release Version (Android)",
+    "versionReleaseLongName": "Release Version Information",
+    "versionReleaseShortDescription": "Get the release version",
+    "versionReleaseLongDescription": "The release version provides the version number of the current operating system release.",
+
+    "brandShortName": "Brand (Android)",
+    "brandLongName": "Brand Information",
+    "brandShortDescription": "Get the brand information",
+    "brandLongDescription": "The brand information provides details about the brand or manufacturer of the device.",
+
+    "fingerprintShortName": "Fingerprint (Android)",
+    "fingerprintLongName": "Build Fingerprint",
+    "fingerprintShortDescription": "Get the build fingerprint",
+    "fingerprintLongDescription": "The build fingerprint provides a unique identifier for the build of the device's operating system.",
+
+    "idShortName": "ID (Android)",
+    "idLongName": "Build ID",
+    "idShortDescription": "Get the build ID",
+    "idLongDescription": "The build ID provides a unique identifier for the build of the device's operating system.",
+
+    "manufacturerShortName": "Manufacturer (Android)",
+    "manufacturerLongName": "Manufacturer Information",
+    "manufacturerShortDescription": "Get the manufacturer information",
+    "manufacturerLongDescription": "The manufacturer information provides details about the company that manufactured the device.",
+
+    "serialNumberShortName": "Serial Number (Android)",
+    "serialNumberLongName": "Device Serial Number",
+    "serialNumberShortDescription": "Get the device serial number",
+    "serialNumberLongDescription": "The device serial number provides a unique identifier for the device.",
+
+    "supportedAbisShortName": "Supported ABIs (Android)",
+    "supportedAbisLongName": "Supported ABIs Information",
+    "supportedAbisShortDescription": "Get the supported ABIs",
+    "supportedAbisLongDescription": "The supported ABIs list the Application Binary Interfaces that the device supports.",
+
+    "typeShortName": "Type (Android)",
+    "typeLongName": "Build Type",
+    "typeShortDescription": "Get the build type",
+    "typeLongDescription": "The build type provides information about the type of build, such as user or userdebug.",
+
+    "versionIncrementalShortName": "Incremental Version (Android)",
+    "versionIncrementalLongName": "Incremental Version Information",
+    "versionIncrementalShortDescription": "Get the incremental version",
+    "versionIncrementalLongDescription": "The incremental version provides the incremental version number of the current operating system build.",
+
+    "versionSdkIntShortName": "SDK Version (Android)",
+    "versionSdkIntLongName": "SDK Version Information",
+    "versionSdkIntShortDescription": "Get the SDK version",
+    "versionSdkIntLongDescription": "The SDK version provides the version number of the Software Development Kit (SDK) used by the operating system.",
+
+    "yes": "Yes",
+    "no": "No",
+
+    "identifierForVendorShortName": "Identifier for Vendor (iOS)",
+    "identifierForVendorLongName": "Identifier for Vendor",
+    "identifierForVendorShortDescription": "Get the identifier for vendor",
+    "identifierForVendorLongDescription": "The identifier for vendor provides a unique identifier for the device that is consistent across apps from the same vendor.",
+
+    "iosisPhysicalDeviceShortName": "Physical Device (iOS)",
+    "iosisPhysicalDeviceLongName": "Physical Device Checker",
+    "iosisPhysicalDeviceShortDescription": "Check if the device is a physical device",
+    "iosisPhysicalDeviceLongDescription": "This checker determines if the device is a physical device or an emulator.",
+
+    "iosmodelShortName": "Model (iOS)",
+    "iosmodelLongName": "Device Model",
+    "iosmodelShortDescription": "Get the device model",
+    "iosmodelLongDescription": "The device model provides the specific model name or number of the device.",
+
+    "nameShortName": "Name (iOS)",
+    "nameLongName": "Device Name",
+    "nameShortDescription": "Get the device name",
+    "nameLongDescription": "The device name provides the name assigned to the device by the user.",
+
+    "systemVersionShortName": "System Version (iOS)",
+    "systemVersionLongName": "System Version Information",
+    "systemVersionShortDescription": "Get the system version",
+    "systemVersionLongDescription": "The system version provides the version number of the operating system running on the device.",
+
+    "utsnameNodenameShortName": "Nodename (iOS)",
+    "utsnameNodenameLongName": "UTS Name Nodename",
+    "utsnameNodenameShortDescription": "Get the UTS name nodename",
+    "utsnameNodenameLongDescription": "The UTS name nodename provides the network name of the device.",
+
+    "utsnameSysnameShortName": "Sysname (iOS)",
+    "utsnameSysnameLongName": "UTS Name Sysname",
+    "utsnameSysnameShortDescription": "Get the UTS name sysname",
+    "utsnameSysnameLongDescription": "The UTS name sysname provides the name of the operating system.",
+
+    "isIosAppOnMacShortName": "iOS App on Mac (iOS)",
+    "isIosAppOnMacLongName": "iOS App on Mac Checker",
+    "isIosAppOnMacShortDescription": "Check if the app is running on a Mac",
+    "isIosAppOnMacLongDescription": "This checker determines if the iOS app is running on a Mac.",
+
+    "localizedModelShortName": "Localized Model (iOS)",
+    "localizedModelLongName": "Localized Device Model",
+    "localizedModelShortDescription": "Get the localized device model",
+    "localizedModelLongDescription": "The localized device model provides the model name of the device in the current locale.",
+
+    "modelNameShortName": "Model Name (iOS)",
+    "modelNameLongName": "Device Model Name",
+    "modelNameShortDescription": "Get the device model name",
+    "modelNameLongDescription": "The device model name provides the specific model name of the device.",
+
+    "systemNameShortName": "System Name (iOS)",
+    "systemNameLongName": "System Name Information",
+    "systemNameShortDescription": "Get the system name",
+    "systemNameLongDescription": "The system name provides the name of the operating system running on the device.",
+
+    "utsnameMachineShortName": "Machine (iOS)",
+    "utsnameMachineLongName": "UTS Name Machine",
+    "utsnameMachineShortDescription": "Get the UTS name machine",
+    "utsnameMachineLongDescription": "The UTS name machine provides the hardware identifier of the device.",
+
+    "utsnameReleaseShortName": "Release (iOS)",
+    "utsnameReleaseLongName": "UTS Name Release",
+    "utsnameReleaseShortDescription": "Get the UTS name release",
+    "utsnameReleaseLongDescription": "The UTS name release provides the release level of the operating system.",
+
+    "utsnameVersionShortName": "Version (iOS)",
+    "utsnameVersionLongName": "UTS Name Version",
+    "utsnameVersionShortDescription": "Get the UTS name version",
+    "utsnameVersionLongDescription": "The UTS name version provides the version level of the operating system.",
+
+    "linuxBuildIdShortName": "Build ID (GNU/Linux)",
+    "linuxBuildIdLongName": "GNU/Linux Build ID",
+    "linuxBuildIdShortDescription": "Get the build ID",
+    "linuxBuildIdLongDescription": "The build ID provides a unique identifier for the build of the GNU/Linux operating system.",
+
+    "linuxIdShortName": "ID (GNU/Linux)",
+    "linuxIdLongName": "GNU/Linux ID",
+    "linuxIdShortDescription": "Get the ID",
+    "linuxIdLongDescription": "The ID provides a unique identifier for the GNU/Linux operating system.",
+
+    "linuxIdLikeShortName": "ID Like (GNU/Linux)",
+    "linuxIdLikeLongName": "GNU/Linux ID Like",
+    "linuxIdLikeShortDescription": "Get the ID like",
+    "linuxIdLikeLongDescription": "The ID like provides a list of operating systems that are similar to the GNU/Linux operating system.",
+
+    "linuxMachineIdShortName": "Machine ID (GNU/Linux)",
+    "linuxMachineIdLongName": "GNU/Linux Machine ID",
+    "linuxMachineIdShortDescription": "Get the machine ID",
+    "linuxMachineIdLongDescription": "The machine ID provides a unique identifier for the machine running the GNU/Linux operating system.",
+
+    "linuxNameShortName": "Name (GNU/Linux)",
+    "linuxNameLongName": "GNU/Linux Name",
+    "linuxNameShortDescription": "Get the name",
+    "linuxNameLongDescription": "The name provides the name of the GNU/Linux operating system.",
+
+    "linuxPrettyNameShortName": "Pretty Name (GNU/Linux)",
+    "linuxPrettyNameLongName": "GNU/Linux Pretty Name",
+    "linuxPrettyNameShortDescription": "Get the pretty name",
+    "linuxPrettyNameLongDescription": "The pretty name provides a user-friendly name for the GNU/Linux operating system.",
+
+    "linuxVariantShortName": "Variant (GNU/Linux)",
+    "linuxVariantLongName": "GNU/Linux Variant",
+    "linuxVariantShortDescription": "Get the variant",
+    "linuxVariantLongDescription": "The variant provides the variant name of the GNU/Linux operating system.",
+
+    "linuxVariantIdShortName": "Variant ID (GNU/Linux)",
+    "linuxVariantIdLongName": "GNU/Linux Variant ID",
+    "linuxVariantIdShortDescription": "Get the variant ID",
+    "linuxVariantIdLongDescription": "The variant ID provides a unique identifier for the variant of the GNU/Linux operating system.",
+
+    "linuxVersionCodenameShortName": "Version Codename (GNU/Linux)",
+    "linuxVersionCodenameLongName": "GNU/Linux Version Codename",
+    "linuxVersionCodenameShortDescription": "Get the version codename",
+    "linuxVersionCodenameLongDescription": "The version codename provides the codename of the current version of the GNU/Linux operating system.",
+
+    "linuxVersionShortName": "Version (GNU/Linux)",
+    "linuxVersionLongName": "GNU/Linux Version",
+    "linuxVersionShortDescription": "Get the version",
+    "linuxVersionLongDescription": "The version provides the version number of the GNU/Linux operating system.",
+
+    "linuxVersionIdShortName": "Version ID (GNU/Linux)",
+    "linuxVersionIdLongName": "GNU/Linux Version ID",
+    "linuxVersionIdShortDescription": "Get the version ID",
+    "linuxVersionIdLongDescription": "The version ID provides a unique identifier for the version of the GNU/Linux operating system.",
+
+    "webAppCodeNameShortName": "App Code Name (Web)",
+    "webAppCodeNameLongName": "Web App Code Name",
+    "webAppCodeNameShortDescription": "Get the app code name",
+    "webAppCodeNameLongDescription": "The app code name provides the internal code name of the web application.",
+
+    "webAppNameShortName": "App Name (Web)",
+    "webAppNameLongName": "Web App Name",
+    "webAppNameShortDescription": "Get the app name",
+    "webAppNameLongDescription": "The app name provides the name of the web application.",
+
+    "webAppVersionShortName": "App Version (Web)",
+    "webAppVersionLongName": "Web App Version",
+    "webAppVersionShortDescription": "Get the app version",
+    "webAppVersionLongDescription": "The app version provides the version number of the web application.",
+
+    "webBrowserNameShortName": "Browser Name (Web)",
+    "webBrowserNameLongName": "Web Browser Name",
+    "webBrowserNameShortDescription": "Get the browser name",
+    "webBrowserNameLongDescription": "The browser name provides the name of the web browser being used.",
+
+    "webDeviceMemoryShortName": "Device Memory (Web)",
+    "webDeviceMemoryLongName": "Web Device Memory",
+    "webDeviceMemoryShortDescription": "Get the device memory",
+    "webDeviceMemoryLongDescription": "The device memory provides the amount of memory available on the device.",
+
+    "webHardwareConcurrencyShortName": "Hardware Concurrency (Web)",
+    "webHardwareConcurrencyLongName": "Web Hardware Concurrency",
+    "webHardwareConcurrencyShortDescription": "Get the hardware concurrency",
+    "webHardwareConcurrencyLongDescription": "The hardware concurrency provides the number of logical processors available on the device.",
+
+    "webLanguageShortName": "Language (Web)",
+    "webLanguageLongName": "Web Language",
+    "webLanguageShortDescription": "Get the language",
+    "webLanguageLongDescription": "The language provides the language setting of the web browser.",
+
+    "webLanguagesShortName": "Languages (Web)",
+    "webLanguagesLongName": "Web Languages",
+    "webLanguagesShortDescription": "Get the languages",
+    "webLanguagesLongDescription": "The languages provide a list of languages supported by the web browser.",
+
+    "webMaxTouchPointsShortName": "Max Touch Points (Web)",
+    "webMaxTouchPointsLongName": "Web Max Touch Points",
+    "webMaxTouchPointsShortDescription": "Get the max touch points",
+    "webMaxTouchPointsLongDescription": "The max touch points provide the maximum number of touch points supported by the device.",
+
+    "webPlatformShortName": "Platform (Web)",
+    "webPlatformLongName": "Web Platform",
+    "webPlatformShortDescription": "Get the platform",
+    "webPlatformLongDescription": "The platform provides the platform on which the web browser is running.",
+
+    "webProductShortName": "Product (Web)",
+    "webProductLongName": "Web Product",
+    "webProductShortDescription": "Get the product",
+    "webProductLongDescription": "The product provides the product name of the web browser.",
+
+    "webProductSubShortName": "Product Sub (Web)",
+    "webProductSubLongName": "Web Product Sub",
+    "webProductSubShortDescription": "Get the product sub",
+    "webProductSubLongDescription": "The product sub provides additional product information for the web browser.",
+
+    "webUserAgentShortName": "User Agent (Web)",
+    "webUserAgentLongName": "Web User Agent",
+    "webUserAgentShortDescription": "Get the user agent",
+    "webUserAgentLongDescription": "The user agent provides the user agent string of the web browser.",
+
+    "webVendorShortName": "Vendor (Web)",
+    "webVendorLongName": "Web Vendor",
+    "webVendorShortDescription": "Get the vendor",
+    "webVendorLongDescription": "The vendor provides the name of the vendor of the web browser.",
+
+    "webVendorSubShortName": "Vendor Sub (Web)",
+    "webVendorSubLongName": "Web Vendor Sub",
+    "webVendorSubShortDescription": "Get the vendor sub",
+    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser."
+}
