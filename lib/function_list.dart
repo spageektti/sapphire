@@ -108,23 +108,33 @@ import 'package:sapphire/functions/macos/macos_cpu_frequency.dart';
 import 'package:sapphire/functions/macos/macos_kernel_version.dart';
 import 'package:sapphire/functions/macos/macos_memory_size.dart';
 import 'package:sapphire/functions/macos/macos_model.dart';
-import 'package:sapphire/functions/macos/macos_model_name.dart';
 import 'package:sapphire/functions/macos/macos_os_release.dart';
 import 'package:sapphire/functions/macos/macos_system_guid.dart';
-import 'package:sapphire/functions/macos/macos_active_cpus.dart';
-import 'package:sapphire/functions/macos/macos_computer_name.dart';
-import 'package:sapphire/functions/macos/macos_host_name.dart';
-import 'package:sapphire/functions/macos/macos_major_version.dart';
-import 'package:sapphire/functions/macos/macos_minor_version.dart';
-import 'package:sapphire/functions/macos/macos_model_name.dart';
-import 'package:sapphire/functions/macos/macos_patch_version.dart';
-import 'package:sapphire/functions/macos/macos_arch.dart';
-import 'package:sapphire/functions/macos/macos_cpu_frequency.dart';
-import 'package:sapphire/functions/macos/macos_kernel_version.dart';
-import 'package:sapphire/functions/macos/macos_memory_size.dart';
-import 'package:sapphire/functions/macos/macos_model.dart';
-import 'package:sapphire/functions/macos/macos_os_release.dart';
-import 'package:sapphire/functions/macos/macos_system_guid.dart';
+import 'package:sapphire/functions/windows/windows_build_lab.dart';
+import 'package:sapphire/functions/windows/windows_device_id.dart';
+import 'package:sapphire/functions/windows/windows_major_version.dart';
+import 'package:sapphire/functions/windows/windows_product_name.dart';
+import 'package:sapphire/functions/windows/windows_service_pack_major.dart';
+import 'package:sapphire/functions/windows/windows_build_lab_ex.dart';
+import 'package:sapphire/functions/windows/windows_digital_product_id.dart';
+import 'package:sapphire/functions/windows/windows_minor_version.dart';
+import 'package:sapphire/functions/windows/windows_product_type.dart';
+import 'package:sapphire/functions/windows/windows_service_pack_minor.dart';
+import 'package:sapphire/functions/windows/windows_build_number.dart';
+import 'package:sapphire/functions/windows/windows_display_version.dart';
+import 'package:sapphire/functions/windows/windows_number_of_cores.dart';
+import 'package:sapphire/functions/windows/windows_registered_owner.dart';
+import 'package:sapphire/functions/windows/windows_suit_mask.dart';
+import 'package:sapphire/functions/windows/windows_computer_name.dart';
+import 'package:sapphire/functions/windows/windows_edition_id.dart';
+import 'package:sapphire/functions/windows/windows_platform_id.dart';
+import 'package:sapphire/functions/windows/windows_release_id.dart';
+import 'package:sapphire/functions/windows/windows_system_memory_in_megabytes.dart';
+import 'package:sapphire/functions/windows/windows_csd_version.dart';
+import 'package:sapphire/functions/windows/windows_install_date.dart';
+import 'package:sapphire/functions/windows/windows_product_id.dart';
+import 'package:sapphire/functions/windows/windows_reserved.dart';
+import 'package:sapphire/functions/windows/windows_user_name.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -828,5 +838,205 @@ List<FunctionItem> functionList = [
     icon: Icons.perm_identity,
     tags: ['macOS', 'system_guid'],
     index: 85,
+  ),
+  FunctionItem(
+    widget: const WindowsBuildLabWidget(),
+    name: 'windowsBuildLab',
+    author: 'spageektti',
+    icon: Icons.build,
+    tags: ['windows', 'build_lab'],
+    index: 86,
+  ),
+  FunctionItem(
+    widget: const WindowsDeviceIdWidget(),
+    name: 'windowsDeviceId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'device_id'],
+    index: 87,
+  ),
+  FunctionItem(
+    widget: const WindowsMajorVersionWidget(),
+    name: 'windowsMajorVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['windows', 'major_version'],
+    index: 88,
+  ),
+  FunctionItem(
+    widget: const WindowsProductNameWidget(),
+    name: 'windowsProductName',
+    author: 'spageektti',
+    icon: Icons.production_quantity_limits,
+    tags: ['windows', 'product_name'],
+    index: 89,
+  ),
+  FunctionItem(
+    widget: const WindowsServicePackMajorWidget(),
+    name: 'windowsServicePackMajor',
+    author: 'spageektti',
+    icon: Icons.update,
+    tags: ['windows', 'service_pack_major'],
+    index: 90,
+  ),
+  FunctionItem(
+    widget: const WindowsBuildLabExWidget(),
+    name: 'windowsBuildLabEx',
+    author: 'spageektti',
+    icon: Icons.build,
+    tags: ['windows', 'build_lab_ex'],
+    index: 91,
+  ),
+  FunctionItem(
+    widget: const WindowsDigitalProductIdWidget(),
+    name: 'windowsDigitalProductId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'digital_product_id'],
+    index: 92,
+  ),
+  FunctionItem(
+    widget: const WindowsMinorVersionWidget(),
+    name: 'windowsMinorVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['windows', 'minor_version'],
+    index: 93,
+  ),
+  FunctionItem(
+    widget: const WindowsProductTypeWidget(),
+    name: 'windowsProductType',
+    author: 'spageektti',
+    icon: Icons.category,
+    tags: ['windows', 'product_type'],
+    index: 94,
+  ),
+  FunctionItem(
+    widget: const WindowsServicePackMinorWidget(),
+    name: 'windowsServicePackMinor',
+    author: 'spageektti',
+    icon: Icons.update,
+    tags: ['windows', 'service_pack_minor'],
+    index: 95,
+  ),
+  FunctionItem(
+    widget: const WindowsBuildNumberWidget(),
+    name: 'windowsBuildNumber',
+    author: 'spageektti',
+    icon: Icons.build,
+    tags: ['windows', 'build_number'],
+    index: 96,
+  ),
+  FunctionItem(
+    widget: const WindowsDisplayVersionWidget(),
+    name: 'windowsDisplayVersion',
+    author: 'spageektti',
+    icon: Icons.display_settings,
+    tags: ['windows', 'display_version'],
+    index: 97,
+  ),
+  FunctionItem(
+    widget: const WindowsNumberOfCoresWidget(),
+    name: 'windowsNumberOfCores',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['windows', 'number_of_cores'],
+    index: 98,
+  ),
+  FunctionItem(
+    widget: const WindowsRegisteredOwnerWidget(),
+    name: 'windowsRegisteredOwner',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'registered_owner'],
+    index: 99,
+  ),
+  FunctionItem(
+    widget: const WindowsSuitMaskWidget(),
+    name: 'windowsSuitMask',
+    author: 'spageektti',
+    icon: Icons.category,
+    tags: ['windows', 'suit_mask'],
+    index: 100,
+  ),
+  FunctionItem(
+    widget: const WindowsComputerNameWidget(),
+    name: 'windowsComputerName',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['windows', 'computer_name'],
+    index: 101,
+  ),
+  FunctionItem(
+    widget: const WindowsEditionIdWidget(),
+    name: 'windowsEditionId',
+    author: 'spageektti',
+    icon: Icons.category,
+    tags: ['windows', 'edition_id'],
+    index: 102,
+  ),
+  FunctionItem(
+    widget: const WindowsPlatformIdWidget(),
+    name: 'windowsPlatformId',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['windows', 'platform_id'],
+    index: 103,
+  ),
+  FunctionItem(
+    widget: const WindowsReleaseIdWidget(),
+    name: 'windowsReleaseId',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['windows', 'release_id'],
+    index: 104,
+  ),
+  FunctionItem(
+    widget: const WindowsSystemMemoryWidget(),
+    name: 'windowsSystemMemoryInMegabytes',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['windows', 'system_memory'],
+    index: 105,
+  ),
+  FunctionItem(
+    widget: const WindowsCsdVersionWidget(),
+    name: 'windowsCsdVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['windows', 'csd_version'],
+    index: 106,
+  ),
+  FunctionItem(
+    widget: const WindowsInstallDateWidget(),
+    name: 'windowsInstallDate',
+    author: 'spageektti',
+    icon: Icons.date_range,
+    tags: ['windows', 'install_date'],
+    index: 107,
+  ),
+  FunctionItem(
+    widget: const WindowsProductIdWidget(),
+    name: 'windowsProductId',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'product_id'],
+    index: 108,
+  ),
+  FunctionItem(
+    widget: const WindowsReservedWidget(),
+    name: 'windowsReserved',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'reserved'],
+    index: 109,
+  ),
+  FunctionItem(
+    widget: const WindowsUserNameWidget(),
+    name: 'windowsUserName',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['windows', 'user_name'],
+    index: 110,
   ),
 ];
