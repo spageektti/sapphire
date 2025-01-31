@@ -65,7 +65,9 @@
     "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device. Your device may not provide this information.",
     "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device. Your device may not provide this information.",
     "unknownOrNotLinuxNotice": "We couldn't check that. Make sure you are using a Linux device. You distribution may not provide this information.",
-
+    "unknownOrNotMacNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
+    "unknownOrNotWindowsNotice": "We couldn't check that. Make sure you are using a Windows device. Your device may not provide this information.",
+    "unknownOrNotWebNotice": "We couldn't check that. Make sure you are using a web browser. Your browser may not provide this information.",
 
     "boardShortName": "Board (Android)",
     "boardLongName": "Board Information",
@@ -328,5 +330,80 @@
     "linuxVersionIdShortName": "Version ID (GNU/Linux)",
     "linuxVersionIdLongName": "GNU/Linux Version ID",
     "linuxVersionIdShortDescription": "Get the version ID",
-    "linuxVersionIdLongDescription": "The version ID provides a unique identifier for the version of the GNU/Linux operating system."
+    "linuxVersionIdLongDescription": "The version ID provides a unique identifier for the version of the GNU/Linux operating system.",
+
+    "webAppCodeNameShortName": "App Code Name (Web)",
+    "webAppCodeNameLongName": "Web App Code Name",
+    "webAppCodeNameShortDescription": "Get the app code name",
+    "webAppCodeNameLongDescription": "The app code name provides the internal code name of the web application.",
+
+    "webAppNameShortName": "App Name (Web)",
+    "webAppNameLongName": "Web App Name",
+    "webAppNameShortDescription": "Get the app name",
+    "webAppNameLongDescription": "The app name provides the name of the web application.",
+
+    "webAppVersionShortName": "App Version (Web)",
+    "webAppVersionLongName": "Web App Version",
+    "webAppVersionShortDescription": "Get the app version",
+    "webAppVersionLongDescription": "The app version provides the version number of the web application.",
+
+    "webBrowserNameShortName": "Browser Name (Web)",
+    "webBrowserNameLongName": "Web Browser Name",
+    "webBrowserNameShortDescription": "Get the browser name",
+    "webBrowserNameLongDescription": "The browser name provides the name of the web browser being used.",
+
+    "webDeviceMemoryShortName": "Device Memory (Web)",
+    "webDeviceMemoryLongName": "Web Device Memory",
+    "webDeviceMemoryShortDescription": "Get the device memory",
+    "webDeviceMemoryLongDescription": "The device memory provides the amount of memory available on the device.",
+
+    "webHardwareConcurrencyShortName": "Hardware Concurrency (Web)",
+    "webHardwareConcurrencyLongName": "Web Hardware Concurrency",
+    "webHardwareConcurrencyShortDescription": "Get the hardware concurrency",
+    "webHardwareConcurrencyLongDescription": "The hardware concurrency provides the number of logical processors available on the device.",
+
+    "webLanguageShortName": "Language (Web)",
+    "webLanguageLongName": "Web Language",
+    "webLanguageShortDescription": "Get the language",
+    "webLanguageLongDescription": "The language provides the language setting of the web browser.",
+
+    "webLanguagesShortName": "Languages (Web)",
+    "webLanguagesLongName": "Web Languages",
+    "webLanguagesShortDescription": "Get the languages",
+    "webLanguagesLongDescription": "The languages provide a list of languages supported by the web browser.",
+
+    "webMaxTouchPointsShortName": "Max Touch Points (Web)",
+    "webMaxTouchPointsLongName": "Web Max Touch Points",
+    "webMaxTouchPointsShortDescription": "Get the max touch points",
+    "webMaxTouchPointsLongDescription": "The max touch points provide the maximum number of touch points supported by the device.",
+
+    "webPlatformShortName": "Platform (Web)",
+    "webPlatformLongName": "Web Platform",
+    "webPlatformShortDescription": "Get the platform",
+    "webPlatformLongDescription": "The platform provides the platform on which the web browser is running.",
+
+    "webProductShortName": "Product (Web)",
+    "webProductLongName": "Web Product",
+    "webProductShortDescription": "Get the product",
+    "webProductLongDescription": "The product provides the product name of the web browser.",
+
+    "webProductSubShortName": "Product Sub (Web)",
+    "webProductSubLongName": "Web Product Sub",
+    "webProductSubShortDescription": "Get the product sub",
+    "webProductSubLongDescription": "The product sub provides additional product information for the web browser.",
+
+    "webUserAgentShortName": "User Agent (Web)",
+    "webUserAgentLongName": "Web User Agent",
+    "webUserAgentShortDescription": "Get the user agent",
+    "webUserAgentLongDescription": "The user agent provides the user agent string of the web browser.",
+
+    "webVendorShortName": "Vendor (Web)",
+    "webVendorLongName": "Web Vendor",
+    "webVendorShortDescription": "Get the vendor",
+    "webVendorLongDescription": "The vendor provides the name of the vendor of the web browser.",
+
+    "webVendorSubShortName": "Vendor Sub (Web)",
+    "webVendorSubLongName": "Web Vendor Sub",
+    "webVendorSubShortDescription": "Get the vendor sub",
+    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser."
 }

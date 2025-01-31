@@ -65,6 +65,9 @@
     "unknownOrNotAndroidNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z Androidem. Twoje urządzenie może nie podawać tych informacji.",
     "unknownOrNotIosNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z iOS. Twoje urządzenie może nie podawać tych informacji.",
     "unknownOrNotLinuxNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z systemem Linux. Twoja dystrybucja może nie podawać tych informacji.",
+    "unknownOrNotMacNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia Mac. Twoje urządzenie może nie podawać tych informacji.",
+    "unknownOrNotWindowsNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z systemem Windows. Twoje urządzenie może nie podawać tych informacji.",
+    "unknownOrNotWebNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz przeglądarki internetowej. Twoja przeglądarka może nie podawać tych informacji.",
 
     "boardShortName": "Płyta główna (Android)",
     "boardLongName": "Informacje o płycie głównej",
@@ -327,5 +330,80 @@
     "linuxVersionIdShortName": "ID wersji (GNU/Linux)",
     "linuxVersionIdLongName": "ID wersji GNU/Linux",
     "linuxVersionIdShortDescription": "Uzyskaj ID wersji",
-    "linuxVersionIdLongDescription": "ID wersji zapewnia unikalny identyfikator wersji systemu operacyjnego GNU/Linux."
+    "linuxVersionIdLongDescription": "ID wersji zapewnia unikalny identyfikator wersji systemu operacyjnego GNU/Linux.",
+
+    "webAppCodeNameShortName": "Nazwa kodowa aplikacji (Web)",
+    "webAppCodeNameLongName": "Nazwa kodowa aplikacji webowej",
+    "webAppCodeNameShortDescription": "Uzyskaj nazwę kodową aplikacji",
+    "webAppCodeNameLongDescription": "Nazwa kodowa aplikacji zapewnia wewnętrzną nazwę kodową aplikacji webowej.",
+
+    "webAppNameShortName": "Nazwa aplikacji (Web)",
+    "webAppNameLongName": "Nazwa aplikacji webowej",
+    "webAppNameShortDescription": "Uzyskaj nazwę aplikacji",
+    "webAppNameLongDescription": "Nazwa aplikacji zapewnia nazwę aplikacji webowej.",
+
+    "webAppVersionShortName": "Wersja aplikacji (Web)",
+    "webAppVersionLongName": "Wersja aplikacji webowej",
+    "webAppVersionShortDescription": "Uzyskaj wersję aplikacji",
+    "webAppVersionLongDescription": "Wersja aplikacji zapewnia numer wersji aplikacji webowej.",
+
+    "webBrowserNameShortName": "Nazwa przeglądarki (Web)",
+    "webBrowserNameLongName": "Nazwa przeglądarki webowej",
+    "webBrowserNameShortDescription": "Uzyskaj nazwę przeglądarki",
+    "webBrowserNameLongDescription": "Nazwa przeglądarki zapewnia nazwę używanej przeglądarki webowej.",
+
+    "webDeviceMemoryShortName": "Pamięć urządzenia (Web)",
+    "webDeviceMemoryLongName": "Pamięć urządzenia webowego",
+    "webDeviceMemoryShortDescription": "Uzyskaj pamięć urządzenia",
+    "webDeviceMemoryLongDescription": "Pamięć urządzenia zapewnia ilość dostępnej pamięci na urządzeniu.",
+
+    "webHardwareConcurrencyShortName": "Sprzętowa współbieżność (Web)",
+    "webHardwareConcurrencyLongName": "Sprzętowa współbieżność webowa",
+    "webHardwareConcurrencyShortDescription": "Uzyskaj sprzętową współbieżność",
+    "webHardwareConcurrencyLongDescription": "Sprzętowa współbieżność zapewnia liczbę logicznych procesorów dostępnych na urządzeniu.",
+
+    "webLanguageShortName": "Język (Web)",
+    "webLanguageLongName": "Język webowy",
+    "webLanguageShortDescription": "Uzyskaj język",
+    "webLanguageLongDescription": "Język zapewnia ustawienie języka przeglądarki webowej.",
+
+    "webLanguagesShortName": "Języki (Web)",
+    "webLanguagesLongName": "Języki webowe",
+    "webLanguagesShortDescription": "Uzyskaj języki",
+    "webLanguagesLongDescription": "Języki zapewniają listę języków obsługiwanych przez przeglądarkę webową.",
+
+    "webMaxTouchPointsShortName": "Maksymalna liczba punktów dotykowych (Web)",
+    "webMaxTouchPointsLongName": "Maksymalna liczba punktów dotykowych webowych",
+    "webMaxTouchPointsShortDescription": "Uzyskaj maksymalną liczbę punktów dotykowych",
+    "webMaxTouchPointsLongDescription": "Maksymalna liczba punktów dotykowych zapewnia maksymalną liczbę punktów dotykowych obsługiwanych przez urządzenie.",
+
+    "webPlatformShortName": "Platforma (Web)",
+    "webPlatformLongName": "Platforma webowa",
+    "webPlatformShortDescription": "Uzyskaj platformę",
+    "webPlatformLongDescription": "Platforma zapewnia platformę, na której działa przeglądarka webowa.",
+
+    "webProductShortName": "Produkt (Web)",
+    "webProductLongName": "Produkt webowy",
+    "webProductShortDescription": "Uzyskaj produkt",
+    "webProductLongDescription": "Produkt zapewnia nazwę produktu przeglądarki webowej.",
+
+    "webProductSubShortName": "Podprodukt (Web)",
+    "webProductSubLongName": "Podprodukt webowy",
+    "webProductSubShortDescription": "Uzyskaj podprodukt",
+    "webProductSubLongDescription": "Podprodukt zapewnia dodatkowe informacje o produkcie przeglądarki webowej.",
+
+    "webUserAgentShortName": "User Agent (Web)",
+    "webUserAgentLongName": "User Agent webowy",
+    "webUserAgentShortDescription": "Uzyskaj User Agent",
+    "webUserAgentLongDescription": "User Agent zapewnia ciąg User Agent przeglądarki webowej.",
+
+    "webVendorShortName": "Dostawca (Web)",
+    "webVendorLongName": "Dostawca webowy",
+    "webVendorShortDescription": "Uzyskaj dostawcę",
+    "webVendorLongDescription": "Dostawca zapewnia nazwę dostawcy przeglądarki webowej.",
+
+    "webVendorSubShortName": "Poddostawca (Web)",
+    "webVendorSubLongName": "Poddostawca webowy",
+    "webVendorSubShortDescription": "Uzyskaj poddostawcę",
+    "webVendorSubLongDescription": "Poddostawca zapewnia dodatkowe informacje o dostawcy przeglądarki webowej."
 }

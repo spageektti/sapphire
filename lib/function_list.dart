@@ -81,6 +81,21 @@ import 'package:sapphire/functions/linux/linux_variant_id.dart';
 import 'package:sapphire/functions/linux/linux_version_codename.dart';
 import 'package:sapphire/functions/linux/linux_version.dart';
 import 'package:sapphire/functions/linux/linux_version_id.dart';
+import 'package:sapphire/functions/web/web_app_code_name.dart';
+import 'package:sapphire/functions/web/web_app_name.dart';
+import 'package:sapphire/functions/web/web_app_version.dart';
+import 'package:sapphire/functions/web/web_browser_name.dart';
+import 'package:sapphire/functions/web/web_device_memory.dart';
+import 'package:sapphire/functions/web/web_hardware_concurrency.dart';
+import 'package:sapphire/functions/web/web_language.dart';
+import 'package:sapphire/functions/web/web_languages.dart';
+import 'package:sapphire/functions/web/web_max_touch_points.dart';
+import 'package:sapphire/functions/web/web_platform.dart';
+import 'package:sapphire/functions/web/web_product.dart';
+import 'package:sapphire/functions/web/web_product_sub.dart';
+import 'package:sapphire/functions/web/web_user_agent.dart';
+import 'package:sapphire/functions/web/web_vendor.dart';
+import 'package:sapphire/functions/web/web_vendor_sub.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -552,5 +567,125 @@ List<FunctionItem> functionList = [
     icon: Icons.perm_identity,
     tags: ['linux', 'version_id'],
     index: 56,
+  ),
+  FunctionItem(
+    widget: const WebAppCodeNameWidget(),
+    name: 'webAppCodeName',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['web', 'app_code_name'],
+    index: 57,
+  ),
+  FunctionItem(
+    widget: const WebAppNameWidget(),
+    name: 'webAppName',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['web', 'app_name'],
+    index: 58,
+  ),
+  FunctionItem(
+    widget: const WebAppVersionWidget(),
+    name: 'webAppVersion',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['web', 'app_version'],
+    index: 59,
+  ),
+  FunctionItem(
+    widget: const WebBrowserNameWidget(),
+    name: 'webBrowserName',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['web', 'browser_name'],
+    index: 60,
+  ),
+  FunctionItem(
+    widget: const WebDeviceMemoryWidget(),
+    name: 'webDeviceMemory',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['web', 'device_memory'],
+    index: 61,
+  ),
+  FunctionItem(
+    widget: const WebHardwareConcurrencyWidget(),
+    name: 'webHardwareConcurrency',
+    author: 'spageektti',
+    icon: Icons.hardware,
+    tags: ['web', 'hardware_concurrency'],
+    index: 62,
+  ),
+  FunctionItem(
+    widget: const WebLanguageWidget(),
+    name: 'webLanguage',
+    author: 'spageektti',
+    icon: Icons.language,
+    tags: ['web', 'language'],
+    index: 63,
+  ),
+  FunctionItem(
+    widget: const WebLanguagesWidget(),
+    name: 'webLanguages',
+    author: 'spageektti',
+    icon: Icons.language,
+    tags: ['web', 'languages'],
+    index: 64,
+  ),
+  FunctionItem(
+    widget: const WebMaxTouchPointsWidget(),
+    name: 'webMaxTouchPoints',
+    author: 'spageektti',
+    icon: Icons.touch_app,
+    tags: ['web', 'max_touch_points'],
+    index: 65,
+  ),
+  FunctionItem(
+    widget: const WebPlatformWidget(),
+    name: 'webPlatform',
+    author: 'spageektti',
+    icon: Icons.web,
+    tags: ['web', 'platform'],
+    index: 66,
+  ),
+  FunctionItem(
+    widget: const WebProductWidget(),
+    name: 'webProduct',
+    author: 'spageektti',
+    icon: Icons.production_quantity_limits,
+    tags: ['web', 'product'],
+    index: 67,
+  ),
+  FunctionItem(
+    widget: const WebProductSubWidget(),
+    name: 'webProductSub',
+    author: 'spageektti',
+    icon: Icons.subdirectory_arrow_right,
+    tags: ['web', 'product_sub'],
+    index: 68,
+  ),
+  FunctionItem(
+    widget: const WebUserAgentWidget(),
+    name: 'webUserAgent',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['web', 'user_agent'],
+    index: 69,
+  ),
+  FunctionItem(
+    widget: const WebVendorWidget(),
+    name: 'webVendor',
+    author: 'spageektti',
+    icon: Icons.business,
+    tags: ['web', 'vendor'],
+    index: 70,
+  ),
+  FunctionItem(
+    widget: const WebVendorSubWidget(),
+    name: 'webVendorSub',
+    author: 'spageektti',
+    icon: Icons.subdirectory_arrow_right,
+    tags: ['web', 'vendor_sub'],
+    index: 71,
   ),
 ];
