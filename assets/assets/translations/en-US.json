@@ -65,7 +65,7 @@
     "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device. Your device may not provide this information.",
     "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device. Your device may not provide this information.",
     "unknownOrNotLinuxNotice": "We couldn't check that. Make sure you are using a Linux device. You distribution may not provide this information.",
-    "unknownOrNotMacNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
+    "unknownOrNotMacOSNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
     "unknownOrNotWindowsNotice": "We couldn't check that. Make sure you are using a Windows device. Your device may not provide this information.",
     "unknownOrNotWebNotice": "We couldn't check that. Make sure you are using a web browser. Your browser may not provide this information.",
 
@@ -405,5 +405,200 @@
     "webVendorSubShortName": "Vendor Sub (Web)",
     "webVendorSubLongName": "Web Vendor Sub",
     "webVendorSubShortDescription": "Get the vendor sub",
-    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser."
+    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser.",
+
+    "macOSActiveCPUsShortName": "Active CPUs (MacOS)",
+    "macOSActiveCPUsLongName": "Active CPUs Information",
+    "macOSActiveCPUsShortDescription": "Get the number of active CPUs",
+    "macOSActiveCPUsLongDescription": "The active CPUs information provides the number of active CPUs on the macOS device.",
+
+    "macOSComputerNameShortName": "Computer Name (MacOS)",
+    "macOSComputerNameLongName": "Computer Name Information",
+    "macOSComputerNameShortDescription": "Get the computer name",
+    "macOSComputerNameLongDescription": "The computer name provides the name assigned to the macOS device by the user.",
+
+    "macOSHostNameShortName": "Host Name (MacOS)",
+    "macOSHostNameLongName": "Host Name Information",
+    "macOSHostNameShortDescription": "Get the host name",
+    "macOSHostNameLongDescription": "The host name provides the network name of the macOS device.",
+
+    "macOSMajorVersionShortName": "Major Version (MacOS)",
+    "macOSMajorVersionLongName": "Major Version Information",
+    "macOSMajorVersionShortDescription": "Get the major version",
+    "macOSMajorVersionLongDescription": "The major version provides the major version number of the macOS operating system.",
+
+    "macOSMinorVersionShortName": "Minor Version (MacOS)",
+    "macOSMinorVersionLongName": "Minor Version Information",
+    "macOSMinorVersionShortDescription": "Get the minor version",
+    "macOSMinorVersionLongDescription": "The minor version provides the minor version number of the macOS operating system.",
+
+    "macOSModelNameShortName": "Model Name (MacOS)",
+    "macOSModelNameLongName": "Model Name Information",
+    "macOSModelNameShortDescription": "Get the model name",
+    "macOSModelNameLongDescription": "The model name provides the specific model name of the macOS device.",
+
+    "macOSPatchVersionShortName": "Patch Version (MacOS)",
+    "macOSPatchVersionLongName": "Patch Version Information",
+    "macOSPatchVersionShortDescription": "Get the patch version",
+    "macOSPatchVersionLongDescription": "The patch version provides the patch version number of the macOS operating system.",
+
+    "macOSArchShortName": "Architecture (MacOS)",
+    "macOSArchLongName": "Architecture Information",
+    "macOSArchShortDescription": "Get the architecture",
+    "macOSArchLongDescription": "The architecture provides the architecture type of the macOS device.",
+
+    "macOSCpuFrequencyShortName": "CPU Frequency (MacOS)",
+    "macOSCpuFrequencyLongName": "CPU Frequency Information",
+    "macOSCpuFrequencyShortDescription": "Get the CPU frequency",
+    "macOSCpuFrequencyLongDescription": "The CPU frequency provides the frequency of the CPU on the macOS device.",
+
+    "macOSKernelVersionShortName": "Kernel Version (MacOS)",
+    "macOSKernelVersionLongName": "Kernel Version Information",
+    "macOSKernelVersionShortDescription": "Get the kernel version",
+    "macOSKernelVersionLongDescription": "The kernel version provides the version number of the kernel running on the macOS device.",
+
+    "macOSMemorySizeShortName": "Memory Size (MacOS)",
+    "macOSMemorySizeLongName": "Memory Size Information",
+    "macOSMemorySizeShortDescription": "Get the memory size",
+    "macOSMemorySizeLongDescription": "The memory size provides the total amount of memory available on the macOS device.",
+
+    "macOSModelShortName": "Model (MacOS)",
+    "macOSModelLongName": "Model Information",
+    "macOSModelShortDescription": "Get the model",
+    "macOSModelLongDescription": "The model provides the specific model identifier of the macOS device.",
+
+    "macOSOsReleaseShortName": "OS Release (MacOS)",
+    "macOSOsReleaseLongName": "OS Release Information",
+    "macOSOsReleaseShortDescription": "Get the OS release",
+    "macOSOsReleaseLongDescription": "The OS release provides the release version of the macOS operating system.",
+
+    "macOSSystemGuidShortName": "System GUID (MacOS)",
+    "macOSSystemGuidLongName": "System GUID Information",
+    "macOSSystemGuidShortDescription": "Get the system GUID",
+    "macOSSystemGuidLongDescription": "The system GUID provides the globally unique identifier for the macOS device.",
+    
+    "windowsBuildLabShortName": "Build Lab (Windows)",
+    "windowsBuildLabLongName": "Windows Build Lab",
+    "windowsBuildLabShortDescription": "Get the build lab",
+    "windowsBuildLabLongDescription": "The build lab provides the build lab string of the Windows operating system.",
+
+    "windowsDeviceIdShortName": "Device ID (Windows)",
+    "windowsDeviceIdLongName": "Windows Device ID",
+    "windowsDeviceIdShortDescription": "Get the device ID",
+    "windowsDeviceIdLongDescription": "The device ID provides a unique identifier for the Windows device.",
+
+    "windowsMajorVersionShortName": "Major Version (Windows)",
+    "windowsMajorVersionLongName": "Windows Major Version",
+    "windowsMajorVersionShortDescription": "Get the major version",
+    "windowsMajorVersionLongDescription": "The major version provides the major version number of the Windows operating system.",
+
+    "windowsProductNameShortName": "Product Name (Windows)",
+    "windowsProductNameLongName": "Windows Product Name",
+    "windowsProductNameShortDescription": "Get the product name",
+    "windowsProductNameLongDescription": "The product name provides the name of the Windows operating system.",
+
+    "windowsServicePackMajorShortName": "Service Pack Major (Windows)",
+    "windowsServicePackMajorLongName": "Windows Service Pack Major",
+    "windowsServicePackMajorShortDescription": "Get the service pack major version",
+    "windowsServicePackMajorLongDescription": "The service pack major version provides the major version number of the service pack installed on the Windows operating system.",
+
+    "windowsBuildLabExShortName": "Build Lab Ex (Windows)",
+    "windowsBuildLabExLongName": "Windows Build Lab Ex",
+    "windowsBuildLabExShortDescription": "Get the build lab ex",
+    "windowsBuildLabExLongDescription": "The build lab ex provides the extended build lab string of the Windows operating system.",
+
+    "windowsDigitalProductIdShortName": "Digital Product ID (Windows)",
+    "windowsDigitalProductIdLongName": "Windows Digital Product ID",
+    "windowsDigitalProductIdShortDescription": "Get the digital product ID",
+    "windowsDigitalProductIdLongDescription": "The digital product ID provides the digital product identifier for the Windows operating system.",
+
+    "windowsMinorVersionShortName": "Minor Version (Windows)",
+    "windowsMinorVersionLongName": "Windows Minor Version",
+    "windowsMinorVersionShortDescription": "Get the minor version",
+    "windowsMinorVersionLongDescription": "The minor version provides the minor version number of the Windows operating system.",
+
+    "windowsProductTypeShortName": "Product Type (Windows)",
+    "windowsProductTypeLongName": "Windows Product Type",
+    "windowsProductTypeShortDescription": "Get the product type",
+    "windowsProductTypeLongDescription": "The product type provides the type of the Windows operating system.",
+
+    "windowsServicePackMinorShortName": "Service Pack Minor (Windows)",
+    "windowsServicePackMinorLongName": "Windows Service Pack Minor",
+    "windowsServicePackMinorShortDescription": "Get the service pack minor version",
+    "windowsServicePackMinorLongDescription": "The service pack minor version provides the minor version number of the service pack installed on the Windows operating system.",
+
+    "windowsBuildNumberShortName": "Build Number (Windows)",
+    "windowsBuildNumberLongName": "Windows Build Number",
+    "windowsBuildNumberShortDescription": "Get the build number",
+    "windowsBuildNumberLongDescription": "The build number provides the build number of the Windows operating system.",
+
+    "windowsDisplayVersionShortName": "Display Version (Windows)",
+    "windowsDisplayVersionLongName": "Windows Display Version",
+    "windowsDisplayVersionShortDescription": "Get the display version",
+    "windowsDisplayVersionLongDescription": "The display version provides the display version of the Windows operating system.",
+
+    "windowsNumberOfCoresShortName": "Number of Cores (Windows)",
+    "windowsNumberOfCoresLongName": "Windows Number of Cores",
+    "windowsNumberOfCoresShortDescription": "Get the number of cores",
+    "windowsNumberOfCoresLongDescription": "The number of cores provides the number of CPU cores available on the Windows device.",
+
+    "windowsRegisteredOwnerShortName": "Registered Owner (Windows)",
+    "windowsRegisteredOwnerLongName": "Windows Registered Owner",
+    "windowsRegisteredOwnerShortDescription": "Get the registered owner",
+    "windowsRegisteredOwnerLongDescription": "The registered owner provides the name of the registered owner of the Windows operating system.",
+
+    "windowsSuitMaskShortName": "Suit Mask (Windows)",
+    "windowsSuitMaskLongName": "Windows Suit Mask",
+    "windowsSuitMaskShortDescription": "Get the suit mask",
+    "windowsSuitMaskLongDescription": "The suit mask provides the suit mask of the Windows operating system.",
+
+    "windowsComputerNameShortName": "Computer Name (Windows)",
+    "windowsComputerNameLongName": "Windows Computer Name",
+    "windowsComputerNameShortDescription": "Get the computer name",
+    "windowsComputerNameLongDescription": "The computer name provides the name assigned to the Windows device by the user.",
+
+    "windowsEditionIdShortName": "Edition ID (Windows)",
+    "windowsEditionIdLongName": "Windows Edition ID",
+    "windowsEditionIdShortDescription": "Get the edition ID",
+    "windowsEditionIdLongDescription": "The edition ID provides the edition identifier of the Windows operating system.",
+
+    "windowsPlatformIdShortName": "Platform ID (Windows)",
+    "windowsPlatformIdLongName": "Windows Platform ID",
+    "windowsPlatformIdShortDescription": "Get the platform ID",
+    "windowsPlatformIdLongDescription": "The platform ID provides the platform identifier of the Windows operating system.",
+
+    "windowsReleaseIdShortName": "Release ID (Windows)",
+    "windowsReleaseIdLongName": "Windows Release ID",
+    "windowsReleaseIdShortDescription": "Get the release ID",
+    "windowsReleaseIdLongDescription": "The release ID provides the release identifier of the Windows operating system.",
+
+    "windowsSystemMemoryInMegabytesShortName": "System Memory (Windows)",
+    "windowsSystemMemoryInMegabytesLongName": "Windows System Memory",
+    "windowsSystemMemoryInMegabytesShortDescription": "Get the system memory",
+    "windowsSystemMemoryInMegabytesLongDescription": "The system memory provides the total amount of memory available on the Windows device in megabytes.",
+
+    "windowsCsdVersionShortName": "CSD Version (Windows)",
+    "windowsCsdVersionLongName": "Windows CSD Version",
+    "windowsCsdVersionShortDescription": "Get the CSD version",
+    "windowsCsdVersionLongDescription": "The CSD version provides the Customer Support Diagnostics version of the Windows operating system.",
+
+    "windowsInstallDateShortName": "Install Date (Windows)",
+    "windowsInstallDateLongName": "Windows Install Date",
+    "windowsInstallDateShortDescription": "Get the install date",
+    "windowsInstallDateLongDescription": "The install date provides the date when the Windows operating system was installed.",
+
+    "windowsProductIdShortName": "Product ID (Windows)",
+    "windowsProductIdLongName": "Windows Product ID",
+    "windowsProductIdShortDescription": "Get the product ID",
+    "windowsProductIdLongDescription": "The product ID provides the product identifier for the Windows operating system.",
+
+    "windowsReservedShortName": "Reserved (Windows)",
+    "windowsReservedLongName": "Windows Reserved",
+    "windowsReservedShortDescription": "Get the reserved information",
+    "windowsReservedLongDescription": "The reserved information provides reserved data for the Windows operating system.",
+
+    "windowsUserNameShortName": "User Name (Windows)",
+    "windowsUserNameLongName": "Windows User Name",
+    "windowsUserNameShortDescription": "Get the user name",
+    "windowsUserNameLongDescription": "The user name provides the name of the user currently logged into the Windows operating system."
 }

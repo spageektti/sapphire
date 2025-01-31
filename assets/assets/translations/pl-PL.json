@@ -65,6 +65,9 @@
     "unknownOrNotAndroidNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z Androidem. Twoje urządzenie może nie podawać tych informacji.",
     "unknownOrNotIosNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z iOS. Twoje urządzenie może nie podawać tych informacji.",
     "unknownOrNotLinuxNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z systemem Linux. Twoja dystrybucja może nie podawać tych informacji.",
+    "unknownOrNotMacOSNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia Mac. Twoje urządzenie może nie podawać tych informacji.",
+    "unknownOrNotWindowsNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz urządzenia z systemem Windows. Twoje urządzenie może nie podawać tych informacji.",
+    "unknownOrNotWebNotice": "Nie mogliśmy tego sprawdzić. Upewnij się, że używasz przeglądarki internetowej. Twoja przeglądarka może nie podawać tych informacji.",
 
     "boardShortName": "Płyta główna (Android)",
     "boardLongName": "Informacje o płycie głównej",
@@ -402,5 +405,200 @@
     "webVendorSubShortName": "Poddostawca (Web)",
     "webVendorSubLongName": "Poddostawca webowy",
     "webVendorSubShortDescription": "Uzyskaj poddostawcę",
-    "webVendorSubLongDescription": "Poddostawca zapewnia dodatkowe informacje o dostawcy przeglądarki webowej."
+    "webVendorSubLongDescription": "Poddostawca zapewnia dodatkowe informacje o dostawcy przeglądarki webowej.",
+
+    "macOSActiveCPUsShortName": "Aktywne CPU (MacOS)",
+    "macOSActiveCPUsLongName": "Informacje o aktywnych CPU",
+    "macOSActiveCPUsShortDescription": "Uzyskaj liczbę aktywnych CPU",
+    "macOSActiveCPUsLongDescription": "Informacje o aktywnych CPU podają liczbę aktywnych CPU na urządzeniu z macOS.",
+
+    "macOSComputerNameShortName": "Nazwa komputera (MacOS)",
+    "macOSComputerNameLongName": "Informacje o nazwie komputera",
+    "macOSComputerNameShortDescription": "Uzyskaj nazwę komputera",
+    "macOSComputerNameLongDescription": "Nazwa komputera podaje nazwę przypisaną do urządzenia z macOS przez użytkownika.",
+
+    "macOSHostNameShortName": "Nazwa hosta (MacOS)",
+    "macOSHostNameLongName": "Informacje o nazwie hosta",
+    "macOSHostNameShortDescription": "Uzyskaj nazwę hosta",
+    "macOSHostNameLongDescription": "Nazwa hosta podaje nazwę sieciową urządzenia z macOS.",
+
+    "macOSMajorVersionShortName": "Główna wersja (MacOS)",
+    "macOSMajorVersionLongName": "Informacje o głównej wersji",
+    "macOSMajorVersionShortDescription": "Uzyskaj główną wersję",
+    "macOSMajorVersionLongDescription": "Główna wersja podaje numer głównej wersji systemu operacyjnego macOS.",
+
+    "macOSMinorVersionShortName": "Pomniejsza wersja (MacOS)",
+    "macOSMinorVersionLongName": "Informacje o pomniejszej wersji",
+    "macOSMinorVersionShortDescription": "Uzyskaj pomniejszą wersję",
+    "macOSMinorVersionLongDescription": "Pomniejsza wersja podaje numer pomniejszej wersji systemu operacyjnego macOS.",
+
+    "macOSModelNameShortName": "Nazwa modelu (MacOS)",
+    "macOSModelNameLongName": "Informacje o nazwie modelu",
+    "macOSModelNameShortDescription": "Uzyskaj nazwę modelu",
+    "macOSModelNameLongDescription": "Nazwa modelu podaje konkretną nazwę modelu urządzenia z macOS.",
+
+    "macOSPatchVersionShortName": "Wersja poprawki (MacOS)",
+    "macOSPatchVersionLongName": "Informacje o wersji poprawki",
+    "macOSPatchVersionShortDescription": "Uzyskaj wersję poprawki",
+    "macOSPatchVersionLongDescription": "Wersja poprawki podaje numer wersji poprawki systemu operacyjnego macOS.",
+
+    "macOSArchShortName": "Architektura (MacOS)",
+    "macOSArchLongName": "Informacje o architekturze",
+    "macOSArchShortDescription": "Uzyskaj architekturę",
+    "macOSArchLongDescription": "Architektura podaje typ architektury urządzenia z macOS.",
+
+    "macOSCpuFrequencyShortName": "Częstotliwość CPU (MacOS)",
+    "macOSCpuFrequencyLongName": "Informacje o częstotliwości CPU",
+    "macOSCpuFrequencyShortDescription": "Uzyskaj częstotliwość CPU",
+    "macOSCpuFrequencyLongDescription": "Częstotliwość CPU podaje częstotliwość CPU na urządzeniu z macOS.",
+
+    "macOSKernelVersionShortName": "Wersja jądra (MacOS)",
+    "macOSKernelVersionLongName": "Informacje o wersji jądra",
+    "macOSKernelVersionShortDescription": "Uzyskaj wersję jądra",
+    "macOSKernelVersionLongDescription": "Wersja jądra podaje numer wersji jądra działającego na urządzeniu z macOS.",
+
+    "macOSMemorySizeShortName": "Rozmiar pamięci (MacOS)",
+    "macOSMemorySizeLongName": "Informacje o rozmiarze pamięci",
+    "macOSMemorySizeShortDescription": "Uzyskaj rozmiar pamięci",
+    "macOSMemorySizeLongDescription": "Rozmiar pamięci podaje całkowitą ilość dostępnej pamięci na urządzeniu z macOS.",
+
+    "macOSModelShortName": "Model (MacOS)",
+    "macOSModelLongName": "Informacje o modelu",
+    "macOSModelShortDescription": "Uzyskaj model",
+    "macOSModelLongDescription": "Model podaje konkretny identyfikator modelu urządzenia z macOS.",
+
+    "macOSOsReleaseShortName": "Wydanie OS (MacOS)",
+    "macOSOsReleaseLongName": "Informacje o wydaniu OS",
+    "macOSOsReleaseShortDescription": "Uzyskaj wydanie OS",
+    "macOSOsReleaseLongDescription": "Wydanie OS podaje wersję wydania systemu operacyjnego macOS.",
+
+    "macOSSystemGuidShortName": "System GUID (MacOS)",
+    "macOSSystemGuidLongName": "Informacje o systemie GUID",
+    "macOSSystemGuidShortDescription": "Uzyskaj system GUID",
+    "macOSSystemGuidLongDescription": "System GUID podaje globalnie unikalny identyfikator dla urządzenia z macOS.",
+
+    "windowsBuildLabShortName": "Build Lab (Windows)",
+    "windowsBuildLabLongName": "Windows Build Lab",
+    "windowsBuildLabShortDescription": "Uzyskaj Build Lab",
+    "windowsBuildLabLongDescription": "Build Lab zapewnia ciąg Build Lab systemu operacyjnego Windows.",
+
+    "windowsDeviceIdShortName": "ID urządzenia (Windows)",
+    "windowsDeviceIdLongName": "ID urządzenia Windows",
+    "windowsDeviceIdShortDescription": "Uzyskaj ID urządzenia",
+    "windowsDeviceIdLongDescription": "ID urządzenia zapewnia unikalny identyfikator urządzenia z systemem Windows.",
+
+    "windowsMajorVersionShortName": "Główna wersja (Windows)",
+    "windowsMajorVersionLongName": "Główna wersja Windows",
+    "windowsMajorVersionShortDescription": "Uzyskaj główną wersję",
+    "windowsMajorVersionLongDescription": "Główna wersja zapewnia numer głównej wersji systemu operacyjnego Windows.",
+
+    "windowsProductNameShortName": "Nazwa produktu (Windows)",
+    "windowsProductNameLongName": "Nazwa produktu Windows",
+    "windowsProductNameShortDescription": "Uzyskaj nazwę produktu",
+    "windowsProductNameLongDescription": "Nazwa produktu zapewnia nazwę systemu operacyjnego Windows.",
+
+    "windowsServicePackMajorShortName": "Główna wersja Service Pack (Windows)",
+    "windowsServicePackMajorLongName": "Główna wersja Service Pack Windows",
+    "windowsServicePackMajorShortDescription": "Uzyskaj główną wersję Service Pack",
+    "windowsServicePackMajorLongDescription": "Główna wersja Service Pack zapewnia numer głównej wersji zainstalowanego Service Pack w systemie operacyjnym Windows.",
+
+    "windowsBuildLabExShortName": "Build Lab Ex (Windows)",
+    "windowsBuildLabExLongName": "Windows Build Lab Ex",
+    "windowsBuildLabExShortDescription": "Uzyskaj Build Lab Ex",
+    "windowsBuildLabExLongDescription": "Build Lab Ex zapewnia rozszerzony ciąg Build Lab systemu operacyjnego Windows.",
+
+    "windowsDigitalProductIdShortName": "Cyfrowy ID produktu (Windows)",
+    "windowsDigitalProductIdLongName": "Cyfrowy ID produktu Windows",
+    "windowsDigitalProductIdShortDescription": "Uzyskaj cyfrowy ID produktu",
+    "windowsDigitalProductIdLongDescription": "Cyfrowy ID produktu zapewnia cyfrowy identyfikator produktu systemu operacyjnego Windows.",
+
+    "windowsMinorVersionShortName": "Pomniejsza wersja (Windows)",
+    "windowsMinorVersionLongName": "Pomniejsza wersja Windows",
+    "windowsMinorVersionShortDescription": "Uzyskaj pomniejszą wersję",
+    "windowsMinorVersionLongDescription": "Pomniejsza wersja zapewnia numer pomniejszej wersji systemu operacyjnego Windows.",
+
+    "windowsProductTypeShortName": "Typ produktu (Windows)",
+    "windowsProductTypeLongName": "Typ produktu Windows",
+    "windowsProductTypeShortDescription": "Uzyskaj typ produktu",
+    "windowsProductTypeLongDescription": "Typ produktu zapewnia typ systemu operacyjnego Windows.",
+
+    "windowsServicePackMinorShortName": "Pomniejsza wersja Service Pack (Windows)",
+    "windowsServicePackMinorLongName": "Pomniejsza wersja Service Pack Windows",
+    "windowsServicePackMinorShortDescription": "Uzyskaj pomniejszą wersję Service Pack",
+    "windowsServicePackMinorLongDescription": "Pomniejsza wersja Service Pack zapewnia numer pomniejszej wersji zainstalowanego Service Pack w systemie operacyjnym Windows.",
+
+    "windowsBuildNumberShortName": "Numer kompilacji (Windows)",
+    "windowsBuildNumberLongName": "Numer kompilacji Windows",
+    "windowsBuildNumberShortDescription": "Uzyskaj numer kompilacji",
+    "windowsBuildNumberLongDescription": "Numer kompilacji zapewnia numer kompilacji systemu operacyjnego Windows.",
+
+    "windowsDisplayVersionShortName": "Wersja wyświetlania (Windows)",
+    "windowsDisplayVersionLongName": "Wersja wyświetlania Windows",
+    "windowsDisplayVersionShortDescription": "Uzyskaj wersję wyświetlania",
+    "windowsDisplayVersionLongDescription": "Wersja wyświetlania zapewnia wersję wyświetlania systemu operacyjnego Windows.",
+
+    "windowsNumberOfCoresShortName": "Liczba rdzeni (Windows)",
+    "windowsNumberOfCoresLongName": "Liczba rdzeni Windows",
+    "windowsNumberOfCoresShortDescription": "Uzyskaj liczbę rdzeni",
+    "windowsNumberOfCoresLongDescription": "Liczba rdzeni zapewnia liczbę rdzeni CPU dostępnych na urządzeniu z systemem Windows.",
+
+    "windowsRegisteredOwnerShortName": "Zarejestrowany właściciel (Windows)",
+    "windowsRegisteredOwnerLongName": "Zarejestrowany właściciel Windows",
+    "windowsRegisteredOwnerShortDescription": "Uzyskaj zarejestrowanego właściciela",
+    "windowsRegisteredOwnerLongDescription": "Zarejestrowany właściciel zapewnia nazwę zarejestrowanego właściciela systemu operacyjnego Windows.",
+
+    "windowsSuitMaskShortName": "Maska garnituru (Windows)",
+    "windowsSuitMaskLongName": "Maska garnituru Windows",
+    "windowsSuitMaskShortDescription": "Uzyskaj maskę garnituru",
+    "windowsSuitMaskLongDescription": "Maska garnituru zapewnia maskę garnituru systemu operacyjnego Windows.",
+
+    "windowsComputerNameShortName": "Nazwa komputera (Windows)",
+    "windowsComputerNameLongName": "Nazwa komputera Windows",
+    "windowsComputerNameShortDescription": "Uzyskaj nazwę komputera",
+    "windowsComputerNameLongDescription": "Nazwa komputera zapewnia nazwę przypisaną do urządzenia z systemem Windows przez użytkownika.",
+
+    "windowsEditionIdShortName": "ID edycji (Windows)",
+    "windowsEditionIdLongName": "ID edycji Windows",
+    "windowsEditionIdShortDescription": "Uzyskaj ID edycji",
+    "windowsEditionIdLongDescription": "ID edycji zapewnia identyfikator edycji systemu operacyjnego Windows.",
+
+    "windowsPlatformIdShortName": "ID platformy (Windows)",
+    "windowsPlatformIdLongName": "ID platformy Windows",
+    "windowsPlatformIdShortDescription": "Uzyskaj ID platformy",
+    "windowsPlatformIdLongDescription": "ID platformy zapewnia identyfikator platformy systemu operacyjnego Windows.",
+
+    "windowsReleaseIdShortName": "ID wydania (Windows)",
+    "windowsReleaseIdLongName": "ID wydania Windows",
+    "windowsReleaseIdShortDescription": "Uzyskaj ID wydania",
+    "windowsReleaseIdLongDescription": "ID wydania zapewnia identyfikator wydania systemu operacyjnego Windows.",
+
+    "windowsSystemMemoryInMegabytesShortName": "Pamięć systemowa (Windows)",
+    "windowsSystemMemoryInMegabytesLongName": "Pamięć systemowa Windows",
+    "windowsSystemMemoryInMegabytesShortDescription": "Uzyskaj pamięć systemową",
+    "windowsSystemMemoryInMegabytesLongDescription": "Pamięć systemowa zapewnia całkowitą ilość pamięci dostępnej na urządzeniu z systemem Windows w megabajtach.",
+
+    "windowsCsdVersionShortName": "Wersja CSD (Windows)",
+    "windowsCsdVersionLongName": "Wersja CSD Windows",
+    "windowsCsdVersionShortDescription": "Uzyskaj wersję CSD",
+    "windowsCsdVersionLongDescription": "Wersja CSD zapewnia wersję Customer Support Diagnostics systemu operacyjnego Windows.",
+
+    "windowsInstallDateShortName": "Data instalacji (Windows)",
+    "windowsInstallDateLongName": "Data instalacji Windows",
+    "windowsInstallDateShortDescription": "Uzyskaj datę instalacji",
+    "windowsInstallDateLongDescription": "Data instalacji zapewnia datę, kiedy system operacyjny Windows został zainstalowany.",
+
+    "windowsProductIdShortName": "ID produktu (Windows)",
+    "windowsProductIdLongName": "ID produktu Windows",
+    "windowsProductIdShortDescription": "Uzyskaj ID produktu",
+    "windowsProductIdLongDescription": "ID produktu zapewnia identyfikator produktu systemu operacyjnego Windows.",
+
+    "windowsReservedShortName": "Zarezerwowane (Windows)",
+    "windowsReservedLongName": "Zarezerwowane Windows",
+    "windowsReservedShortDescription": "Uzyskaj zarezerwowane informacje",
+    "windowsReservedLongDescription": "Zarezerwowane informacje zapewniają zarezerwowane dane dla systemu operacyjnego Windows.",
+
+    "windowsUserNameShortName": "Nazwa użytkownika (Windows)",
+    "windowsUserNameLongName": "Nazwa użytkownika Windows",
+    "windowsUserNameShortDescription": "Uzyskaj nazwę użytkownika",
+    "windowsUserNameLongDescription": "Nazwa użytkownika zapewnia nazwę użytkownika aktualnie zalogowanego do systemu operacyjnego Windows."
 }
