@@ -65,7 +65,7 @@
     "unknownOrNotAndroidNotice": "We couldn't check that. Make sure you are using an Android device. Your device may not provide this information.",
     "unknownOrNotIosNotice": "We couldn't check that. Make sure you are using an iOS device. Your device may not provide this information.",
     "unknownOrNotLinuxNotice": "We couldn't check that. Make sure you are using a Linux device. You distribution may not provide this information.",
-    "unknownOrNotMacNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
+    "unknownOrNotMacOSNotice": "We couldn't check that. Make sure you are using a Mac device. Your device may not provide this information.",
     "unknownOrNotWindowsNotice": "We couldn't check that. Make sure you are using a Windows device. Your device may not provide this information.",
     "unknownOrNotWebNotice": "We couldn't check that. Make sure you are using a web browser. Your browser may not provide this information.",
 
@@ -405,5 +405,75 @@
     "webVendorSubShortName": "Vendor Sub (Web)",
     "webVendorSubLongName": "Web Vendor Sub",
     "webVendorSubShortDescription": "Get the vendor sub",
-    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser."
+    "webVendorSubLongDescription": "The vendor sub provides additional vendor information for the web browser.",
+
+    "macOSActiveCPUsShortName": "Active CPUs (MacOS)",
+    "macOSActiveCPUsLongName": "Active CPUs Information",
+    "macOSActiveCPUsShortDescription": "Get the number of active CPUs",
+    "macOSActiveCPUsLongDescription": "The active CPUs information provides the number of active CPUs on the macOS device.",
+
+    "macOSComputerNameShortName": "Computer Name (MacOS)",
+    "macOSComputerNameLongName": "Computer Name Information",
+    "macOSComputerNameShortDescription": "Get the computer name",
+    "macOSComputerNameLongDescription": "The computer name provides the name assigned to the macOS device by the user.",
+
+    "macOSHostNameShortName": "Host Name (MacOS)",
+    "macOSHostNameLongName": "Host Name Information",
+    "macOSHostNameShortDescription": "Get the host name",
+    "macOSHostNameLongDescription": "The host name provides the network name of the macOS device.",
+
+    "macOSMajorVersionShortName": "Major Version (MacOS)",
+    "macOSMajorVersionLongName": "Major Version Information",
+    "macOSMajorVersionShortDescription": "Get the major version",
+    "macOSMajorVersionLongDescription": "The major version provides the major version number of the macOS operating system.",
+
+    "macOSMinorVersionShortName": "Minor Version (MacOS)",
+    "macOSMinorVersionLongName": "Minor Version Information",
+    "macOSMinorVersionShortDescription": "Get the minor version",
+    "macOSMinorVersionLongDescription": "The minor version provides the minor version number of the macOS operating system.",
+
+    "macOSModelNameShortName": "Model Name (MacOS)",
+    "macOSModelNameLongName": "Model Name Information",
+    "macOSModelNameShortDescription": "Get the model name",
+    "macOSModelNameLongDescription": "The model name provides the specific model name of the macOS device.",
+
+    "macOSPatchVersionShortName": "Patch Version (MacOS)",
+    "macOSPatchVersionLongName": "Patch Version Information",
+    "macOSPatchVersionShortDescription": "Get the patch version",
+    "macOSPatchVersionLongDescription": "The patch version provides the patch version number of the macOS operating system.",
+
+    "macOSArchShortName": "Architecture (MacOS)",
+    "macOSArchLongName": "Architecture Information",
+    "macOSArchShortDescription": "Get the architecture",
+    "macOSArchLongDescription": "The architecture provides the architecture type of the macOS device.",
+
+    "macOSCpuFrequencyShortName": "CPU Frequency (MacOS)",
+    "macOSCpuFrequencyLongName": "CPU Frequency Information",
+    "macOSCpuFrequencyShortDescription": "Get the CPU frequency",
+    "macOSCpuFrequencyLongDescription": "The CPU frequency provides the frequency of the CPU on the macOS device.",
+
+    "macOSKernelVersionShortName": "Kernel Version (MacOS)",
+    "macOSKernelVersionLongName": "Kernel Version Information",
+    "macOSKernelVersionShortDescription": "Get the kernel version",
+    "macOSKernelVersionLongDescription": "The kernel version provides the version number of the kernel running on the macOS device.",
+
+    "macOSMemorySizeShortName": "Memory Size (MacOS)",
+    "macOSMemorySizeLongName": "Memory Size Information",
+    "macOSMemorySizeShortDescription": "Get the memory size",
+    "macOSMemorySizeLongDescription": "The memory size provides the total amount of memory available on the macOS device.",
+
+    "macOSModelShortName": "Model (MacOS)",
+    "macOSModelLongName": "Model Information",
+    "macOSModelShortDescription": "Get the model",
+    "macOSModelLongDescription": "The model provides the specific model identifier of the macOS device.",
+
+    "macOSOsReleaseShortName": "OS Release (MacOS)",
+    "macOSOsReleaseLongName": "OS Release Information",
+    "macOSOsReleaseShortDescription": "Get the OS release",
+    "macOSOsReleaseLongDescription": "The OS release provides the release version of the macOS operating system.",
+
+    "macOSSystemGuidShortName": "System GUID (MacOS)",
+    "macOSSystemGuidLongName": "System GUID Information",
+    "macOSSystemGuidShortDescription": "Get the system GUID",
+    "macOSSystemGuidLongDescription": "The system GUID provides the globally unique identifier for the macOS device."
 }

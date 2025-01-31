@@ -96,6 +96,35 @@ import 'package:sapphire/functions/web/web_product_sub.dart';
 import 'package:sapphire/functions/web/web_user_agent.dart';
 import 'package:sapphire/functions/web/web_vendor.dart';
 import 'package:sapphire/functions/web/web_vendor_sub.dart';
+import 'package:sapphire/functions/macos/macos_active_cpus.dart';
+import 'package:sapphire/functions/macos/macos_computer_name.dart';
+import 'package:sapphire/functions/macos/macos_host_name.dart';
+import 'package:sapphire/functions/macos/macos_major_version.dart';
+import 'package:sapphire/functions/macos/macos_minor_version.dart';
+import 'package:sapphire/functions/macos/macos_model_name.dart';
+import 'package:sapphire/functions/macos/macos_patch_version.dart';
+import 'package:sapphire/functions/macos/macos_arch.dart';
+import 'package:sapphire/functions/macos/macos_cpu_frequency.dart';
+import 'package:sapphire/functions/macos/macos_kernel_version.dart';
+import 'package:sapphire/functions/macos/macos_memory_size.dart';
+import 'package:sapphire/functions/macos/macos_model.dart';
+import 'package:sapphire/functions/macos/macos_model_name.dart';
+import 'package:sapphire/functions/macos/macos_os_release.dart';
+import 'package:sapphire/functions/macos/macos_system_guid.dart';
+import 'package:sapphire/functions/macos/macos_active_cpus.dart';
+import 'package:sapphire/functions/macos/macos_computer_name.dart';
+import 'package:sapphire/functions/macos/macos_host_name.dart';
+import 'package:sapphire/functions/macos/macos_major_version.dart';
+import 'package:sapphire/functions/macos/macos_minor_version.dart';
+import 'package:sapphire/functions/macos/macos_model_name.dart';
+import 'package:sapphire/functions/macos/macos_patch_version.dart';
+import 'package:sapphire/functions/macos/macos_arch.dart';
+import 'package:sapphire/functions/macos/macos_cpu_frequency.dart';
+import 'package:sapphire/functions/macos/macos_kernel_version.dart';
+import 'package:sapphire/functions/macos/macos_memory_size.dart';
+import 'package:sapphire/functions/macos/macos_model.dart';
+import 'package:sapphire/functions/macos/macos_os_release.dart';
+import 'package:sapphire/functions/macos/macos_system_guid.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -687,5 +716,117 @@ List<FunctionItem> functionList = [
     icon: Icons.subdirectory_arrow_right,
     tags: ['web', 'vendor_sub'],
     index: 71,
+  ),
+  FunctionItem(
+    widget: const MacOSActiveCPUsWidget(),
+    name: 'macOSActiveCpus',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['macOS', 'active_cpus'],
+    index: 72,
+  ),
+  FunctionItem(
+    widget: const MacOSComputerNameWidget(),
+    name: 'macOSComputerName',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['macOS', 'computer_name'],
+    index: 73,
+  ),
+  FunctionItem(
+    widget: const MacOSHostNameWidget(),
+    name: 'macOSHostName',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['macOS', 'host_name'],
+    index: 74,
+  ),
+  FunctionItem(
+    widget: const MacOSMajorVersionWidget(),
+    name: 'macOSMajorVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['macOS', 'major_version'],
+    index: 75,
+  ),
+  FunctionItem(
+    widget: const MacOSMinorVersionWidget(),
+    name: 'macOSMinorVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['macOS', 'minor_version'],
+    index: 76,
+  ),
+  FunctionItem(
+    widget: const MacOSModelNameWidget(),
+    name: 'macOSModelName',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['macOS', 'model_name'],
+    index: 77,
+  ),
+  FunctionItem(
+    widget: const MacOSPatchVersionWidget(),
+    name: 'macOSPatchVersion',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['macOS', 'patch_version'],
+    index: 78,
+  ),
+  FunctionItem(
+    widget: const MacOSArchWidget(),
+    name: 'macOSArch',
+    author: 'spageektti',
+    icon: Icons.architecture,
+    tags: ['macOS', 'arch'],
+    index: 79,
+  ),
+  FunctionItem(
+    widget: const MacOSCpuFrequencyWidget(),
+    name: 'macOSCpuFrequency',
+    author: 'spageektti',
+    icon: Icons.speed,
+    tags: ['macOS', 'cpu_frequency'],
+    index: 80,
+  ),
+  FunctionItem(
+    widget: const MacOSKernelVersionWidget(),
+    name: 'macOSKernelVersion',
+    author: 'spageektti',
+    icon: Icons.system_security_update,
+    tags: ['macOS', 'kernel_version'],
+    index: 81,
+  ),
+  FunctionItem(
+    widget: const MacOSMemorySizeWidget(),
+    name: 'macOSMemorySize',
+    author: 'spageektti',
+    icon: Icons.memory,
+    tags: ['macOS', 'memory_size'],
+    index: 82,
+  ),
+  FunctionItem(
+    widget: const MacOSModelWidget(),
+    name: 'macOSModel',
+    author: 'spageektti',
+    icon: Icons.computer,
+    tags: ['macOS', 'model'],
+    index: 83,
+  ),
+  FunctionItem(
+    widget: const MacOSReleaseWidget(),
+    name: 'macOSOsRelease',
+    author: 'spageektti',
+    icon: Icons.system_update,
+    tags: ['macOS', 'os_release'],
+    index: 84,
+  ),
+  FunctionItem(
+    widget: const MacOSSystemGuidWidget(),
+    name: 'macOSSystemGuid',
+    author: 'spageektti',
+    icon: Icons.perm_identity,
+    tags: ['macOS', 'system_guid'],
+    index: 85,
   ),
 ];
