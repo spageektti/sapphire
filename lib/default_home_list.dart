@@ -132,6 +132,6 @@ List<String> defaultHomeListNames = [
   'iOS',
   'GNU/Linux',
   'Web',
+  'MacOS',
   'Windows',
-  'macOS',
 ];
