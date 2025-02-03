@@ -11,6 +11,9 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **[WATCH VIDEO](https://www.youtube.com/watch?v=CxzWOJS6zDo)**
 - **[TRY THE APP IN THE BROWSER](https://sapphire.spageektti.cc)**
 
+> [!WARNING]  
+> The app is currently in active development, and we cannot guarantee the stability of all releases. The `v1.0.0` version is scheduled for release in June 2025.
+
 ## Features
 - **Cross-Platform Compatibility:** Works seamlessly on Android, iOS, Windows, Linux, Mac, and in your browser.
 - **Extensive Feature Set:** Over 110 unique features, with new additions every day.
