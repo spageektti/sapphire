@@ -25,6 +25,7 @@
 */
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/pages/backups_page.dart';
 import 'package:sapphire/pages/language_select_page.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -67,7 +68,8 @@ class _SettingsPageState extends State<SettingsPage> {
             leading: const Icon(Icons.backup_outlined),
             title: Text(context.tr("settingsPageBackupsLabel")),
             onTap: () {
-              // Handle backup
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const BackupsPage()));
             },
           ),
           ListTile(
