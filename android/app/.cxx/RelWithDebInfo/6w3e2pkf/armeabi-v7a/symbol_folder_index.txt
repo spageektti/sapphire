@@ -1,0 +1,1 @@
+/home/spageektti/Dokumenty/GitHub/spageektti/sapphire/build/app/intermediates/cxx/RelWithDebInfo/6w3e2pkf/obj/armeabi-v7a

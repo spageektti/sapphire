@@ -1,0 +1,2 @@
+/home/spageektti/Dokumenty/GitHub/spageektti/sapphire/android/app/.cxx/RelWithDebInfo/6w3e2pkf/x86_64/CMakeFiles/edit_cache.dir
+/home/spageektti/Dokumenty/GitHub/spageektti/sapphire/android/app/.cxx/RelWithDebInfo/6w3e2pkf/x86_64/CMakeFiles/rebuild_cache.dir

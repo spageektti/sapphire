@@ -1,10 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <contact@spageektti.cc>
+ * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 /*
-* Copyright (C) 2024 Wiktor Perskawiec <contact@spageektti.cc>
+* Copyright (C) 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
 
 ? This program is free software: you can redistribute it and/or modify
 ? it under the terms of the GNU General Public License as published by
