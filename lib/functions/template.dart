@@ -1,11 +1,11 @@
 /*
- * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <contact@spageektti.cc>
+ * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
  * SPDX-FileCopyrightText: Year Author <email>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 /*
-* Copyright (C) 2024 Wiktor Perskawiec <contact@spageektti.cc>
+* Copyright (C) 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
 * Copyright (C) Year Author <email>
 
 ? This program is free software: you can redistribute it and/or modify
@@ -28,6 +28,8 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
+import 'package:sapphire/widgets/settings_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 // ? This is a template for creating new functions.
 // ? replace all instances of `Template` and `template` with the name of the function.
@@ -42,12 +44,47 @@ class TemplateWidget extends StatefulWidget {
 }
 
 class _TemplateWidgetState extends State<TemplateWidget> {
+  List<String> _settings = ['value1', 'value2'];
+
+  Future<void> _loadSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'PAGENAMESettings';
+    final values = prefs.getStringList(key);
+    setState(() {
+      if (values != null && values.isNotEmpty) {
+        _settings = values;
+      }
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(context.tr('templateLongName')),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsWidget(
+                        settings: ['maxDigits', 'minDigits'],
+                        defaultValues: ['value1', 'value2'],
+                        pageName: 'PAGENAME',
+                      ),
+                    ),
+                  )
+                  .then((_) => _loadSettings());
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
