@@ -1042,7 +1042,7 @@ List<FunctionItem> functionList = [
   ),
   FunctionItem(
     widget: const RandomNumberWidget(),
-    name: 'randomNumber',
+    name: 'random',
     author: 'spageektti',
     icon: Icons.casino_rounded,
     tags: ['math', 'random', 'number', 'probability', 'statistics'],

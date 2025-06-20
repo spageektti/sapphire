@@ -135,7 +135,7 @@ class _RandomNumberWidgetState extends State<RandomNumberWidget> {
           children: [
             TextField(
               controller: _minController,
-              decoration: const InputDecoration(labelText: 'Min'),
+              decoration: InputDecoration(labelText: context.tr('min')),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
@@ -143,7 +143,7 @@ class _RandomNumberWidgetState extends State<RandomNumberWidget> {
             ),
             TextField(
               controller: _maxController,
-              decoration: const InputDecoration(labelText: 'Max'),
+              decoration: InputDecoration(labelText: context.tr('max')),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
@@ -151,7 +151,7 @@ class _RandomNumberWidgetState extends State<RandomNumberWidget> {
             ),
             TextField(
               controller: _seedController,
-              decoration: const InputDecoration(labelText: 'Seed (optional)'),
+              decoration: InputDecoration(labelText: context.tr('seed')),
               keyboardType: TextInputType.number,
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
@@ -160,12 +160,13 @@ class _RandomNumberWidgetState extends State<RandomNumberWidget> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: _generateRandomNumber,
-              child: const Text('Generate'),
+              child: Text(context.tr('generateButtonLabel')),
             ),
             const SizedBox(height: 24),
             if (_randomNumber != null)
               Text(
-                'Random Number: $_randomNumber',
+                context.tr("randomResultLabel",
+                    namedArgs: {"result": "$_randomNumber"}),
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
