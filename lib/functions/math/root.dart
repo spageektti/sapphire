@@ -29,6 +29,8 @@ import 'package:decimal/decimal.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
+import 'package:sapphire/widgets/settings_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class RootWidget extends StatefulWidget {
   const RootWidget({super.key});
@@ -38,6 +40,25 @@ class RootWidget extends StatefulWidget {
 }
 
 class _RootWidgetState extends State<RootWidget> {
+  List<String> _settings = ['18'];
+
+  Future<void> _loadSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'rootSettings';
+    final values = prefs.getStringList(key);
+    setState(() {
+      if (values != null && values.isNotEmpty) {
+        _settings = values;
+      }
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
   String root(BigInt a, BigInt b) {
     if (b == BigInt.zero) {
       return '';
@@ -92,6 +113,22 @@ class _RootWidgetState extends State<RootWidget> {
         title: Text(context.tr('rootLongName')),
         actions: [
           IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsWidget(
+                        settings: ['maxDigits'],
+                        defaultValues: ['18'],
+                        pageName: 'root',
+                      ),
+                    ),
+                  )
+                  .then((_) => _loadSettings());
+            },
+          ),
+          IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
               showModalBottomSheet(
@@ -124,6 +161,7 @@ class _RootWidgetState extends State<RootWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   labelText: context.tr('rootFirstButtonLabel'),
                 ),
@@ -146,6 +184,7 @@ class _RootWidgetState extends State<RootWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   labelText: context.tr('rootSecondButtonLabel'),
                 ),
