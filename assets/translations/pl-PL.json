@@ -600,5 +600,11 @@
     "windowsUserNameShortName": "Nazwa użytkownika (Windows)",
     "windowsUserNameLongName": "Nazwa użytkownika Windows",
     "windowsUserNameShortDescription": "Uzyskaj nazwę użytkownika",
-    "windowsUserNameLongDescription": "Nazwa użytkownika zapewnia nazwę użytkownika aktualnie zalogowanego do systemu operacyjnego Windows."
+    "windowsUserNameLongDescription": "Nazwa użytkownika zapewnia nazwę użytkownika aktualnie zalogowanego do systemu operacyjnego Windows.",
+
+    "settingsOfFunction": "Ustawienia funkcji",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "editSetting": "Edytuj ustawienie",
+    "maxDigits": "Maksymalna liczba cyfr"
 }

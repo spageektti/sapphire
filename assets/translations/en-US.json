@@ -600,5 +600,13 @@
     "windowsUserNameShortName": "User Name (Windows)",
     "windowsUserNameLongName": "Windows User Name",
     "windowsUserNameShortDescription": "Get the user name",
-    "windowsUserNameLongDescription": "The user name provides the name of the user currently logged into the Windows operating system."
+    "windowsUserNameLongDescription": "The user name provides the name of the user currently logged into the Windows operating system.",
+
+    "settingsOfFunction": "Settings of Function",
+    "save": "Save",
+    "cancel": "Cancel",
+    "editSetting": "Edit Setting",
+    "maxDigits": "Maximum number of digits",
+
+    "randomErrorMessage": "Please enter valid min and max values."
 }
