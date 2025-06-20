@@ -1,10 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <contact@spageektti.cc>
+ * SPDX-FileCopyrightText: 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 /*
-* Copyright (C) 2024 Wiktor Perskawiec <contact@spageektti.cc>
+* Copyright (C) 2024 Wiktor Perskawiec <wiktor@perskawiec.cc>
 
 ? This program is free software: you can redistribute it and/or modify
 ? it under the terms of the GNU General Public License as published by
@@ -27,6 +27,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/widgets/settings_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class GcdWidget extends StatefulWidget {
   const GcdWidget({super.key});
@@ -36,6 +38,25 @@ class GcdWidget extends StatefulWidget {
 }
 
 class _GcdWidgetState extends State<GcdWidget> {
+  List<String> _settings = ['18'];
+
+  Future<void> _loadSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'gcdSettings';
+    final values = prefs.getStringList(key);
+    setState(() {
+      if (values != null && values.isNotEmpty) {
+        _settings = values;
+      }
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
   BigInt gcd(BigInt a, BigInt b) {
     if (b == BigInt.zero) {
       return a;
@@ -54,6 +75,22 @@ class _GcdWidgetState extends State<GcdWidget> {
       appBar: AppBar(
         title: Text(context.tr('gcdLongName')),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsWidget(
+                        settings: ['maxDigits'],
+                        defaultValues: ['18'],
+                        pageName: 'gcd',
+                      ),
+                    ),
+                  )
+                  .then((_) => _loadSettings());
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
@@ -101,7 +138,7 @@ class _GcdWidgetState extends State<GcdWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
-                maxLength: 18,
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
                   labelText: context.tr("gcdSecondButtonLabel"),
