@@ -606,5 +606,16 @@
     "save": "Zapisz",
     "cancel": "Anuluj",
     "editSetting": "Edytuj ustawienie",
-    "maxDigits": "Maksymalna liczba cyfr"
+    "maxDigits": "Maksymalna liczba cyfr",
+
+    "randomLongName": "Generator liczb losowych",
+    "randomLongDescription": "Wygeneruj losową liczbę pomiędzy określonymi wartościami minimalną i maksymalną. Opcjonalnie ustaw ziarno dla powtarzalnych wyników.",
+    "randomShortName": "Liczba losowa",
+    "randomShortDescription": "Wygeneruj liczbę losową",
+    "min": "Minimum",
+    "max": "Maksimum",
+    "seed": "Ziarno (opcjonalnie)",
+    "generateButtonLabel": "Generuj",
+    "randomResultLabel": "Wynik: {result}",
+    "randomErrorMessage": "Wprowadź poprawne wartości minimalną i maksymalną."
 }

@@ -608,5 +608,14 @@
     "editSetting": "Edit Setting",
     "maxDigits": "Maximum number of digits",
 
-    "randomErrorMessage": "Please enter valid min and max values."
+    "randomLongName": "Random Number Generator",
+    "randomLongDescription": "Generate a random number between the specified minimum and maximum values. Optionally, set a seed for reproducible results.",
+    "randomShortName": "Random Number",
+    "randomShortDescription": "Generate a random number",
+    "min": "Minimum",
+    "max": "Maximum",
+    "seed": "Seed (optional)",
+    "generateButtonLabel": "Generate",
+    "randomResultLabel": "Result: {result}",
+    "randomErrorMessage": "Please enter valid minimum and maximum values."
 }
