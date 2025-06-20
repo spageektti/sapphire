@@ -73,13 +73,15 @@ class _SettingsWidgetState extends State<SettingsWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text(context.tr("settingsOfFunction") +
+            ' ' +
+            context.tr('${widget.pageName}LongName')),
       ),
       body: ListView.builder(
         itemCount: widget.settings.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(widget.settings[index]),
+            title: Text(context.tr(widget.settings[index])),
             subtitle: Text('Default: ${widget.defaultValues[index]}'),
             trailing: _loaded
                 ? Text(_currentValues[index], style: TextStyle(fontSize: 18))
@@ -91,17 +93,17 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                   final controller =
                       TextEditingController(text: _currentValues[index]);
                   return AlertDialog(
-                    title: Text('Change Setting'),
+                    title: Text(context.tr('editSetting')),
                     content: TextField(
                       controller: controller,
                       decoration: InputDecoration(
-                        labelText: widget.settings[index],
+                        labelText: context.tr(widget.settings[index]),
                       ),
                     ),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(context).pop(),
-                        child: Text('Cancel'),
+                        child: Text(context.tr('cancel')),
                       ),
                       TextButton(
                         onPressed: () {
@@ -111,8 +113,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                           _saveSettings();
                           Navigator.of(context).pop();
                         },
-                        child: Text('Confirm'),
-                      ),
+                        child: Text(
+                          context.tr('save'),
+                        ),
+                      )
                     ],
                   );
                 },
