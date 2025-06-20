@@ -28,6 +28,8 @@ import 'package:flutter/services.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
+import 'package:sapphire/widgets/settings_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class PowerWidget extends StatefulWidget {
   const PowerWidget({super.key});
@@ -37,6 +39,25 @@ class PowerWidget extends StatefulWidget {
 }
 
 class _PowerWidgetState extends State<PowerWidget> {
+  List<String> _settings = ['18'];
+
+  Future<void> _loadSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'powerSettings';
+    final values = prefs.getStringList(key);
+    setState(() {
+      if (values != null && values.isNotEmpty) {
+        _settings = values;
+      }
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
   BigInt power(BigInt a, BigInt b) {
     if (a == BigInt.zero && b == BigInt.zero) {
       return BigInt.zero;
@@ -64,6 +85,22 @@ class _PowerWidgetState extends State<PowerWidget> {
       appBar: AppBar(
         title: Text(context.tr('powerLongName')),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsWidget(
+                        settings: ['maxDigits'],
+                        defaultValues: ['18'],
+                        pageName: 'power',
+                      ),
+                    ),
+                  )
+                  .then((_) => _loadSettings());
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
@@ -99,6 +136,7 @@ class _PowerWidgetState extends State<PowerWidget> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
                 child: TextField(
+                  maxLength: int.parse(_settings[0]),
                   decoration: InputDecoration(
                     labelText: context.tr('powerFirstButtonLabel'),
                   ),
@@ -119,6 +157,7 @@ class _PowerWidgetState extends State<PowerWidget> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
                 child: TextField(
+                  maxLength: int.parse(_settings[0]),
                   decoration: InputDecoration(
                     labelText: context.tr('powerSecondButtonLabel'),
                   ),
