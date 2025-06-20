@@ -119,6 +119,7 @@ class _GcdWidgetState extends State<GcdWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
                   labelText: context.tr("gcdFirstButtonLabel"),
