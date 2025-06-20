@@ -44,6 +44,7 @@ class TemplateWidget extends StatefulWidget {
 }
 
 class _TemplateWidgetState extends State<TemplateWidget> {
+  // ignore: unused_field
   List<String> _settings = ['value1', 'value2'];
 
   Future<void> _loadSettings() async {
