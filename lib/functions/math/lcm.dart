@@ -27,6 +27,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/widgets/settings_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LcmWidget extends StatefulWidget {
   const LcmWidget({super.key});
@@ -36,6 +38,25 @@ class LcmWidget extends StatefulWidget {
 }
 
 class _LcmWidgetState extends State<LcmWidget> {
+  List<String> _settings = ['18'];
+
+  Future<void> _loadSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'lcmSettings';
+    final values = prefs.getStringList(key);
+    setState(() {
+      if (values != null && values.isNotEmpty) {
+        _settings = values;
+      }
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
   BigInt gcd(BigInt a, BigInt b) {
     if (b == BigInt.zero) {
       return a;
@@ -58,6 +79,22 @@ class _LcmWidgetState extends State<LcmWidget> {
       appBar: AppBar(
         title: Text(context.tr('lcmLongName')),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(
+                    MaterialPageRoute(
+                      builder: (context) => const SettingsWidget(
+                        settings: ['maxDigits'],
+                        defaultValues: ['18'],
+                        pageName: 'lcm',
+                      ),
+                    ),
+                  )
+                  .then((_) => _loadSettings());
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {
@@ -86,6 +123,7 @@ class _LcmWidgetState extends State<LcmWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
                   labelText: context.tr("lcmFirstButtonLabel"),
@@ -105,6 +143,7 @@ class _LcmWidgetState extends State<LcmWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
+                maxLength: int.parse(_settings[0]),
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
                   labelText: context.tr("lcmSecondButtonLabel"),
