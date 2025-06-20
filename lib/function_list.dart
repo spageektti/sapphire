@@ -28,6 +28,7 @@ import 'package:sapphire/functions/android/version_security_path.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
+import 'package:sapphire/functions/math/random.dart';
 import 'package:sapphire/functions/math/root.dart' as math_root;
 import 'package:sapphire/functions/android/board.dart';
 import 'package:sapphire/functions/android/device.dart';
@@ -1038,5 +1039,13 @@ List<FunctionItem> functionList = [
     icon: Icons.perm_identity,
     tags: ['windows', 'user_name'],
     index: 110,
+  ),
+  FunctionItem(
+    widget: const RandomNumberWidget(),
+    name: 'randomNumber',
+    author: 'spageektti',
+    icon: Icons.casino_rounded,
+    tags: ['math', 'random', 'number', 'probability', 'statistics'],
+    index: 111,
   ),
 ];
