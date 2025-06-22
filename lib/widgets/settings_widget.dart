@@ -82,7 +82,7 @@ class _SettingsWidgetState extends State<SettingsWidget> {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(context.tr(widget.settings[index])),
-            subtitle: Text('Default: ${widget.defaultValues[index]}'),
+            subtitle: Text(widget.defaultValues[index]),
             trailing: _loaded
                 ? Text(_currentValues[index], style: TextStyle(fontSize: 18))
                 : const CircularProgressIndicator(),
