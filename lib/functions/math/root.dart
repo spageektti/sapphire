@@ -40,7 +40,7 @@ class RootWidget extends StatefulWidget {
 }
 
 class _RootWidgetState extends State<RootWidget> {
-  List<String> _settings = ['18'];
+  List<String> _settings = ['18', '1', '0.0000000000000001'];
 
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
@@ -67,7 +67,7 @@ class _RootWidgetState extends State<RootWidget> {
     Decimal low = Decimal.zero;
     Decimal high = Decimal.fromBigInt(a);
     Decimal mid;
-    Decimal epsilon = Decimal.parse('0.0000000000000001');
+    Decimal epsilon = Decimal.parse(_settings[2]);
 
     while ((high - low).abs() > epsilon) {
       mid = ((low + high) / Decimal.fromInt(2)).toDecimal();
@@ -81,7 +81,9 @@ class _RootWidgetState extends State<RootWidget> {
     }
 
     Decimal result = ((low + high) / Decimal.fromInt(2)).toDecimal();
-    String resultString = result.toStringAsFixed(11);
+    int precision =
+        _settings[2].contains('.') ? _settings[2].split('.')[1].length : 0;
+    String resultString = result.toStringAsFixed(precision);
     resultString = resultString.replaceAll(RegExp(r'0+$'), '');
     if (resultString.endsWith('.')) {
       resultString = '= ${resultString.substring(0, resultString.length - 1)}';
@@ -119,8 +121,8 @@ class _RootWidgetState extends State<RootWidget> {
                   .push(
                     MaterialPageRoute(
                       builder: (context) => const SettingsWidget(
-                        settings: ['maxDigits'],
-                        defaultValues: ['18'],
+                        settings: ['maxDigits', 'maxRootIndex', 'precision'],
+                        defaultValues: ['18', '1', '0.0000000000000001'],
                         pageName: 'root',
                       ),
                     ),
@@ -155,6 +157,8 @@ class _RootWidgetState extends State<RootWidget> {
                       mathStyle: MathStyle.display,
                       textStyle: const TextStyle(fontSize: 24)),
                   Text(root(_a, _b), style: const TextStyle(fontSize: 24)),
+                  Text('± ${_settings[2]}',
+                      style: const TextStyle(fontSize: 18)),
                 ],
               ),
             ),
@@ -168,8 +172,6 @@ class _RootWidgetState extends State<RootWidget> {
                 keyboardType: TextInputType.number,
                 inputFormatters: <TextInputFormatter>[
                   FilteringTextInputFormatter.digitsOnly,
-                  LengthLimitingTextInputFormatter(
-                      26) // TODO: Add ability to change this in the settings
                 ],
                 onChanged: (value) {
                   setState(() {
@@ -184,25 +186,19 @@ class _RootWidgetState extends State<RootWidget> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
               child: TextField(
-                maxLength: int.parse(_settings[0]),
+                maxLength: int.parse(_settings[1]),
                 decoration: InputDecoration(
                   labelText: context.tr('rootSecondButtonLabel'),
                 ),
                 keyboardType: TextInputType.number,
                 inputFormatters: <TextInputFormatter>[
                   FilteringTextInputFormatter.digitsOnly,
-                  LengthLimitingTextInputFormatter(
-                      2), // TODO: Add ability to change this in the settings
                 ],
                 onChanged: (value) {
                   setState(() {
                     _b = BigInt.tryParse(value) ?? BigInt.zero;
                     if (_b == BigInt.zero) {
                       _b = BigInt.one;
-                    }
-                    if (_b > BigInt.from(20)) {
-                      _b = BigInt.from(
-                          20); // TODO: Add ability to change this in the settings
                     }
                   });
                 },

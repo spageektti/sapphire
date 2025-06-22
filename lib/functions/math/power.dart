@@ -39,7 +39,7 @@ class PowerWidget extends StatefulWidget {
 }
 
 class _PowerWidgetState extends State<PowerWidget> {
-  List<String> _settings = ['18'];
+  List<String> _settings = ['18', '3'];
 
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
@@ -92,8 +92,8 @@ class _PowerWidgetState extends State<PowerWidget> {
                   .push(
                     MaterialPageRoute(
                       builder: (context) => const SettingsWidget(
-                        settings: ['maxDigits'],
-                        defaultValues: ['18'],
+                        settings: ['maxDigitsBase', 'maxDigitsExponent'],
+                        defaultValues: ['18', '3'],
                         pageName: 'power',
                       ),
                     ),
@@ -143,8 +143,6 @@ class _PowerWidgetState extends State<PowerWidget> {
                   keyboardType: TextInputType.number,
                   inputFormatters: <TextInputFormatter>[
                     FilteringTextInputFormatter.digitsOnly,
-                    LengthLimitingTextInputFormatter(
-                        30), // TODO: Add ability to change this in the settings
                   ],
                   onChanged: (value) {
                     setState(() {
@@ -157,15 +155,13 @@ class _PowerWidgetState extends State<PowerWidget> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 64, vertical: 16),
                 child: TextField(
-                  maxLength: int.parse(_settings[0]),
+                  maxLength: int.parse(_settings[1]),
                   decoration: InputDecoration(
                     labelText: context.tr('powerSecondButtonLabel'),
                   ),
                   keyboardType: TextInputType.number,
                   inputFormatters: <TextInputFormatter>[
                     FilteringTextInputFormatter.digitsOnly,
-                    LengthLimitingTextInputFormatter(
-                        3), // TODO: Add ability to change this in the settings
                   ],
                   onChanged: (value) {
                     setState(() {
