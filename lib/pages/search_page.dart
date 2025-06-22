@@ -78,6 +78,23 @@ class _SearchPageState extends State<SearchPage> {
 
   Future<void> addFunction(int categoryIndex, int itemIndex) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
+    // make sure the item isn't already added to this category to prevent bugs in edit mode
+    if (defaultHomeList[categoryIndex].contains(itemIndex)) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(context.tr("alreadyAddedTitle")),
+          content: Text(context.tr("alreadyAddedMessage")),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(context.tr("ok")),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
     defaultHomeList[categoryIndex].add(itemIndex);
     await prefs.setString('homePageList', jsonEncode(defaultHomeList));
     await prefs.setString(
