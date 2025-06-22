@@ -127,8 +127,6 @@ class _BackupsPageState extends State<BackupsPage> {
     }
   }
 
-  Future<void> _onlineBackup() async {}
-
   Future<void> _resetSettings() async {
     final prefs = await SharedPreferences.getInstance();
     final keys = prefs.getKeys();
@@ -164,15 +162,6 @@ class _BackupsPageState extends State<BackupsPage> {
             subtitle: Text(context.tr("importLocalBackupDesc")),
             onTap: () {
               _importLocalBackup();
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.cloud_upload),
-            title: Text(context.tr("onlineBackup")),
-            subtitle: Text(context.tr("onlineBackupDesc")),
-            onTap: () {
-              _onlineBackup();
             },
           ),
           const Divider(),
