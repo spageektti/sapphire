@@ -73,9 +73,8 @@ class _SettingsWidgetState extends State<SettingsWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(context.tr("settingsOfFunction") +
-            ' ' +
-            context.tr('${widget.pageName}LongName')),
+        title: Text(
+            '${context.tr("settingsOfFunction")} ${context.tr('${widget.pageName}LongName')}'),
       ),
       body: ListView.builder(
         itemCount: widget.settings.length,
@@ -84,7 +83,8 @@ class _SettingsWidgetState extends State<SettingsWidget> {
             title: Text(context.tr(widget.settings[index])),
             subtitle: Text(widget.defaultValues[index]),
             trailing: _loaded
-                ? Text(_currentValues[index], style: TextStyle(fontSize: 18))
+                ? Text(_currentValues[index],
+                    style: const TextStyle(fontSize: 18))
                 : const CircularProgressIndicator(),
             onTap: () {
               showDialog(
