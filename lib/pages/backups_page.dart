@@ -28,6 +28,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:sapphire/theme_notifier.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:file_picker/file_picker.dart';
 
@@ -115,7 +116,7 @@ class _BackupsPageState extends State<BackupsPage> {
           await prefs.setString(entry.key, value.toString());
         }
       }
-
+      themeNotifier.refreshTheme();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(context.tr("backupImported"))),
       );
@@ -133,6 +134,7 @@ class _BackupsPageState extends State<BackupsPage> {
     for (var key in keys) {
       await prefs.remove(key);
     }
+    themeNotifier.refreshTheme();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(context.tr("settingsReset"))),
     );

@@ -27,6 +27,7 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/pages/backups_page.dart';
 import 'package:sapphire/pages/language_select_page.dart';
+import 'package:sapphire/theme_notifier.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -61,7 +62,7 @@ class _SettingsPageState extends State<SettingsPage> {
             leading: const Icon(Icons.brightness_6),
             title: Text(context.tr("settingsPageThemeLabel")),
             onTap: () {
-              // Handle theme change
+              themeNotifier.toggleTheme();
             },
           ),
           ListTile(

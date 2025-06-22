@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:sapphire/widgets/navigation_widget.dart';
+import 'package:sapphire/theme_notifier.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,23 +46,29 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Sapphire',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: Brightness.dark,
-        inputDecorationTheme: const InputDecorationTheme(
-            labelStyle: TextStyle(color: Colors.blue),
-            focusedBorder: OutlineInputBorder(
-              borderSide:
-                  BorderSide(style: BorderStyle.solid, color: Colors.blue),
-            )),
-      ),
-      debugShowCheckedModeBanner: false,
-      localizationsDelegates: context.localizationDelegates,
-      supportedLocales: context.supportedLocales,
-      locale: context.locale,
-      home: const MainScreen(),
+    return AnimatedBuilder(
+      animation: themeNotifier,
+      builder: (context, _) {
+        return MaterialApp(
+          title: 'Sapphire',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            inputDecorationTheme: const InputDecorationTheme(
+                labelStyle: TextStyle(color: Colors.blue),
+                focusedBorder: OutlineInputBorder(
+                  borderSide:
+                      BorderSide(style: BorderStyle.solid, color: Colors.blue),
+                )),
+          ),
+          darkTheme: ThemeData.dark(),
+          themeMode: themeNotifier.themeMode,
+          debugShowCheckedModeBanner: false,
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          home: const MainScreen(),
+        );
+      },
     );
   }
 }
