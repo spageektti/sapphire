@@ -25,6 +25,7 @@
 */
 import 'package:flutter/material.dart';
 import 'package:sapphire/functions/android/version_security_path.dart';
+import 'package:sapphire/functions/astronomy/apod.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
@@ -1047,5 +1048,23 @@ List<FunctionItem> functionList = [
     icon: Icons.casino_rounded,
     tags: ['math', 'random', 'number', 'probability', 'statistics'],
     index: 111,
+  ),
+  FunctionItem(
+    widget: const ApodWidget(),
+    name: 'apod',
+    author: 'spageektti',
+    icon: Icons.image,
+    tags: [
+      'apod',
+      'nasa',
+      'astronomy',
+      'picture',
+      'day',
+      'space',
+      'science',
+      'photo',
+      'image'
+    ],
+    index: 112,
   ),
 ];
