@@ -58,25 +58,17 @@ class _BackupsPageState extends State<BackupsPage> {
       return;
     }
 
+    final bytes = utf8.encode(result);
     final output = await FilePicker.platform.saveFile(
       dialogTitle: context.tr("saveBackupFile"),
       fileName: "sapphire-backup.json",
-      type: FileType.custom,
-      allowedExtensions: ['json'],
+      bytes: bytes,
     );
 
     if (output != null) {
-      final file = File(output);
-      try {
-        await file.writeAsString(result);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(context.tr("backupCreated"))),
-        );
-      } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(context.tr("backupFailed"))),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(context.tr("backupCreated"))),
+      );
     }
   }
 
