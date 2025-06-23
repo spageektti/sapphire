@@ -26,6 +26,7 @@
 import 'package:flutter/material.dart';
 import 'package:sapphire/functions/android/version_security_path.dart';
 import 'package:sapphire/functions/astronomy/apod.dart';
+import 'package:sapphire/functions/astronomy/epic.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
@@ -1066,5 +1067,23 @@ List<FunctionItem> functionList = [
       'image'
     ],
     index: 112,
+  ),
+  FunctionItem(
+    widget: const EpicWidget(),
+    name: 'epic',
+    author: 'spageektti',
+    icon: Icons.image,
+    tags: [
+      'epic',
+      'nasa',
+      'earth',
+      'picture',
+      'day',
+      'space',
+      'science',
+      'photo',
+      'image'
+    ],
+    index: 113,
   ),
 ];
