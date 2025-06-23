@@ -33,7 +33,6 @@ import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:file_picker/file_picker.dart';
-import 'dart:io';
 
 class ApodWidget extends StatefulWidget {
   const ApodWidget({super.key});
