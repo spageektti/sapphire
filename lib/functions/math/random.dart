@@ -32,7 +32,7 @@ import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
 import 'package:flutter/services.dart';
 
 class RandomNumberWidget extends StatefulWidget {
-  const RandomNumberWidget({Key? key}) : super(key: key);
+  const RandomNumberWidget({super.key});
 
   @override
   State<RandomNumberWidget> createState() => _RandomNumberWidgetState();
