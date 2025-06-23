@@ -33,7 +33,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:file_picker/file_picker.dart';
 
 class BackupsPage extends StatefulWidget {
-  const BackupsPage({Key? key}) : super(key: key);
+  const BackupsPage({super.key});
 
   @override
   State<BackupsPage> createState() => _BackupsPageState();
