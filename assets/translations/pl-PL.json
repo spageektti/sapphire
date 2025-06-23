@@ -634,6 +634,7 @@
     "backupsPageDesc": "Zarządzaj swoimi lokalnymi kopiami zapasowymi lub zresetuj ustawienia.",
     "ThemeMode.dark": "Ciemny",
     "ThemeMode.light": "Jasny",
+    "ThemeMode.system": "Domyślny systemu",
     "settingsReset": "Ustawienia zostały zresetowane do wartości domyślnych.",
 
     "apodShortName": "APOD",

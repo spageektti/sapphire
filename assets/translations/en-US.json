@@ -634,6 +634,7 @@
     "backupsPageDesc": "Manage your local backups or reset settings.",
     "ThemeMode.dark": "Dark",
     "ThemeMode.light": "Light",
+    "ThemeMode.system": "System Default",
     "settingsReset": "Settings have been reset to default values.",
     
     "apodShortName": "APOD",
