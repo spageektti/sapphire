@@ -33,11 +33,10 @@ class SettingsWidget extends StatefulWidget {
   final String pageName;
 
   const SettingsWidget(
-      {Key? key,
+      {super.key,
       required this.settings,
       required this.defaultValues,
-      required this.pageName})
-      : super(key: key);
+      required this.pageName});
 
   @override
   _SettingsWidgetState createState() => _SettingsWidgetState();
