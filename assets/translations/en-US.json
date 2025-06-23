@@ -633,5 +633,23 @@
     "backupsPageTitle": "Backups",
     "backupsPageDesc": "Manage your local backups or reset settings.",
     "ThemeMode.dark": "Dark",
-    "ThemeMode.light": "Light"
+    "ThemeMode.light": "Light",
+    "settingsReset": "Settings have been reset to default values.",
+    
+    "apodShortName": "APOD",
+    "apodLongName": "Astronomy Picture of the Day",
+    "apodShortDescription": "View NASA's Astronomy Picture of the Day",
+    "apodLongDescription": "Displays NASA's Astronomy Picture of the Day (APOD) with title, description, and media. You can select a date and view the corresponding image or video.",
+    "apodFailedToLoad": "Failed to load APOD",
+    "apodVideoNotice": "This APOD is a video. Tap below to open it in your browser.",
+    "openVideo": "Open Video",
+    "date": "Date",
+    "selectDate": "Select Date",
+    "error": "Error",
+    "apodDownloadSuccess": "APOD downloaded successfully.",
+    "apodDownloadFailed": "Failed to download APOD.",
+    "apodapi_key": "APOD API Key",
+    "apodapi_keyDesc": "You can obtain a free API key from the NASA API portal.",
+    "show_description": "Show Description? (true/false)",
+    "show_descriptionDesc": "Set to 'true' to display the explanation of the APOD or 'false' to don't."
 }
