@@ -651,5 +651,22 @@
     "apodapi_key": "Klucz API APOD",
     "apodapi_keyDesc": "Możesz uzyskać darmowy klucz API na portalu NASA API.",
     "show_description": "Wyświetlić opis? (true/false)",
-    "show_descriptionDesc": "Ustaw na 'true', aby wyświetlić wyjaśnienie APOD lub 'false', aby nie wyświetlać."
+    "show_descriptionDesc": "Ustaw na 'true', aby wyświetlić wyjaśnienie APOD lub 'false', aby nie wyświetlać.",
+
+    "epicShortName": "EPIC",
+    "epicLongName": "Polichromatyczna Kamera Obrazująca Ziemię",
+    "epicShortDescription": "Zobacz zdjęcia Ziemi z kamery EPIC NASA",
+    "epicLongDescription": "Wyświetla zdjęcia Ziemi wykonane przez Polichromatyczną Kamerę Obrazującą Ziemię (EPIC) NASA na satelicie DSCOVR. Możesz wybrać datę i kolekcję, aby zobaczyć dostępne zdjęcia, ich metadane oraz pobrać je.",
+    "epicFailedToLoad": "Nie udało się załadować zdjęć EPIC",
+    "epicNoImages": "Brak zdjęć EPIC dla tej daty i kolekcji. Sprawdź wcześniejsze daty lub zmień kolekcję.",
+    "epicDownloadSuccess": "Zdjęcie zostało pobrane pomyślnie: {file}",
+    "epicDownloadFailed": "Nie udało się pobrać zdjęcia",
+    "epicDownloadDialogTitle": "Zapisz zdjęcie EPIC",
+    "epicImageDate": "Data zdjęcia",
+    "epicCentroid": "Współrzędne centroidu",
+    "epicDSCOVR": "Pozycja DSCOVR",
+    "epicLunar": "Pozycja Księżyca",
+    "epicSun": "Pozycja Słońca",
+    "epicAttitude": "Kwaterniony orientacji",
+    "openInBrowser": "Otwórz w przeglądarce"
 }

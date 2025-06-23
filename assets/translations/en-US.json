@@ -651,5 +651,22 @@
     "apodapi_key": "APOD API Key",
     "apodapi_keyDesc": "You can obtain a free API key from the NASA API portal.",
     "show_description": "Show Description? (true/false)",
-    "show_descriptionDesc": "Set to 'true' to display the explanation of the APOD or 'false' to don't."
+    "show_descriptionDesc": "Set to 'true' to display the explanation of the APOD or 'false' to don't.",
+
+    "epicShortName": "EPIC",
+    "epicLongName": "Earth Polychromatic Imaging Camera",
+    "epicShortDescription": "View NASA EPIC images of Earth",
+    "epicLongDescription": "Displays images of Earth taken by NASA's Earth Polychromatic Imaging Camera (EPIC) on the DSCOVR satellite. You can select a date and collection to view available images, see their metadata, and download them.",
+    "epicFailedToLoad": "Failed to load EPIC images",
+    "epicNoImages": "No EPIC images available for this date and collection. Check earlier dates or change collection.",
+    "epicDownloadSuccess": "Image downloaded successfully: {file}",
+    "epicDownloadFailed": "Failed to download image",
+    "epicDownloadDialogTitle": "Save EPIC Image",
+    "epicImageDate": "Image Date",
+    "epicCentroid": "Centroid Coordinates",
+    "epicDSCOVR": "DSCOVR Position",
+    "epicLunar": "Lunar Position",
+    "epicSun": "Sun Position",
+    "epicAttitude": "Attitude Quaternions",
+    "openInBrowser": "Open in Browser"
 }
