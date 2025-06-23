@@ -617,5 +617,21 @@
     "seed": "Seed (optional)",
     "generateButtonLabel": "Generate",
     "randomResultLabel": "Result: {result}",
-    "randomErrorMessage": "Please enter valid minimum and maximum values."
+    "randomErrorMessage": "Please enter valid minimum and maximum values.",
+
+    "createLocalBackup": "Create Local Backup",
+    "createLocalBackupDesc": "Create a local backup of the current settings and data.",
+    "backupCreated": "Backup created successfully.",
+    "backupImportFailed": "Failed to create backup.",
+    "backupImported": "Backup imported successfully.",
+    "importLocalBackup": "Import Local Backup",
+    "importLocalBackupDesc": "Import settings and data from a local backup file.",
+    "resetSettings": "Reset Settings",
+    "resetSettingsDesc": "Reset all settings to their default values. This action cannot be undone.",
+    "noFileSelected": "No file selected.",
+    "fileNotFound": "File not found.",
+    "backupsPageTitle": "Backups",
+    "backupsPageDesc": "Manage your local backups or reset settings.",
+    "ThemeMode.dark": "Dark",
+    "ThemeMode.light": "Light"
 }
