@@ -303,7 +303,7 @@ class _HomePageState extends State<HomePage> {
           });
         },
         backgroundColor: Colors.blue[800],
-        child: const Icon(Icons.edit),
+        child: Icon(_editMode ? Icons.save : Icons.edit),
       ),
     );
   }
