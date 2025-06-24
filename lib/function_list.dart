@@ -27,9 +27,15 @@ import 'package:flutter/material.dart';
 import 'package:sapphire/functions/android/version_security_path.dart';
 import 'package:sapphire/functions/astronomy/apod.dart';
 import 'package:sapphire/functions/astronomy/epic.dart';
+import 'package:sapphire/functions/calendar/datetime_difference.dart';
+import 'package:sapphire/functions/calendar/timezone.dart';
+import 'package:sapphire/functions/math/divisors.dart';
+import 'package:sapphire/functions/math/fibonacci.dart';
 import 'package:sapphire/functions/math/gcd.dart';
 import 'package:sapphire/functions/math/lcm.dart';
 import 'package:sapphire/functions/math/power.dart';
+import 'package:sapphire/functions/math/is_prime.dart';
+import 'package:sapphire/functions/math/prime_factorization.dart';
 import 'package:sapphire/functions/math/random.dart';
 import 'package:sapphire/functions/math/root.dart' as math_root;
 import 'package:sapphire/functions/android/board.dart';
@@ -1085,5 +1091,73 @@ List<FunctionItem> functionList = [
       'image'
     ],
     index: 113,
+  ),
+  FunctionItem(
+    widget: IsPrimeWidget(),
+    name: 'isPrime',
+    author: 'spageektti',
+    icon: Icons.check_circle,
+    tags: ['math', 'is_prime', 'prime', 'number', 'probability', 'statistics'],
+    index: 114,
+  ),
+  FunctionItem(
+    widget: PrimeFactorizationWidget(),
+    name: 'primeFactorization',
+    author: 'spageektti',
+    icon: Icons.calculate,
+    tags: [
+      'math',
+      'factorization',
+      'prime',
+      'number',
+      'probability',
+      'statistics'
+    ],
+    index: 115,
+  ),
+  FunctionItem(
+    widget: DivisorsWidget(),
+    name: 'divisors',
+    author: 'spageektti',
+    icon: Icons.calculate,
+    tags: [
+      'math',
+      'divisors',
+      'factors',
+      'number',
+      'probability',
+      'statistics'
+    ],
+    index: 116,
+  ),
+  FunctionItem(
+      widget: FibonacciWidget(),
+      name: 'fibonacci',
+      author: 'spageektti',
+      icon: Icons.functions,
+      tags: [
+        'math',
+        'fibonacci',
+        'sequence',
+        'number',
+        'probability',
+        'statistics'
+      ],
+      index: 117),
+  FunctionItem(
+    widget: TimezoneWidget(),
+    name: 'timezone',
+    author: 'spageektti',
+    icon: Icons.access_time,
+    tags: ['timezone', 'time', 'date', 'location', 'geography', 'world'],
+    index: 118,
+  ),
+  FunctionItem(
+    widget: DatetimeDifferenceWidget(),
+    name: 'datetimeDifference',
+    author: 'spageektti',
+    icon: Icons.date_range,
+    tags: ['datetime', 'difference', 'time', 'date', 'duration', 'interval'],
+    index: 119,
   ),
 ];
