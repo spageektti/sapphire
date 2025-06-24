@@ -27,6 +27,7 @@ import 'package:flutter/material.dart';
 import 'package:sapphire/functions/android/version_security_path.dart';
 import 'package:sapphire/functions/astronomy/apod.dart';
 import 'package:sapphire/functions/astronomy/epic.dart';
+import 'package:sapphire/functions/calendar/birthday.dart';
 import 'package:sapphire/functions/calendar/datetime_difference.dart';
 import 'package:sapphire/functions/calendar/timezone.dart';
 import 'package:sapphire/functions/math/divisors.dart';
@@ -90,6 +91,7 @@ import 'package:sapphire/functions/linux/linux_variant_id.dart';
 import 'package:sapphire/functions/linux/linux_version_codename.dart';
 import 'package:sapphire/functions/linux/linux_version.dart';
 import 'package:sapphire/functions/linux/linux_version_id.dart';
+import 'package:sapphire/functions/units/temperature_unit_converter.dart';
 import 'package:sapphire/functions/web/web_app_code_name.dart';
 import 'package:sapphire/functions/web/web_app_name.dart';
 import 'package:sapphire/functions/web/web_app_version.dart';
@@ -144,6 +146,30 @@ import 'package:sapphire/functions/windows/windows_install_date.dart';
 import 'package:sapphire/functions/windows/windows_product_id.dart';
 import 'package:sapphire/functions/windows/windows_reserved.dart';
 import 'package:sapphire/functions/windows/windows_user_name.dart';
+import 'package:sapphire/functions/units/angle_unit_converter.dart';
+import 'package:sapphire/functions/units/length_unit_converter.dart';
+import 'package:sapphire/functions/units/mass_unit_converter.dart';
+import 'package:sapphire/functions/units/time_unit_converter.dart';
+import 'package:sapphire/functions/units/volume_unit_converter.dart';
+import 'package:sapphire/functions/units/area_unit_converter.dart';
+import 'package:sapphire/functions/units/digital_storage_unit_converter.dart';
+import 'package:sapphire/functions/units/speed_unit_converter.dart';
+import 'package:sapphire/functions/units/pressure_unit_converter.dart';
+import 'package:sapphire/functions/units/energy_unit_converter.dart';
+import 'package:sapphire/functions/units/substance_unit_converter.dart';
+import 'package:sapphire/functions/math/area_of_circle.dart';
+import 'package:sapphire/functions/math/area_of_parallelogram.dart';
+import 'package:sapphire/functions/math/area_of_rectangle.dart';
+import 'package:sapphire/functions/math/area_of_rhombus.dart';
+import 'package:sapphire/functions/math/area_of_square.dart';
+import 'package:sapphire/functions/math/area_of_trapezoid.dart';
+import 'package:sapphire/functions/math/area_of_triangle.dart';
+import 'package:sapphire/functions/math/circumference_of_circle.dart';
+import 'package:sapphire/functions/math/perimeter_of_parallelogram.dart';
+import 'package:sapphire/functions/math/perimeter_of_rectangle.dart';
+import 'package:sapphire/functions/math/perimeter_of_rhombus.dart';
+import 'package:sapphire/functions/math/perimeter_of_square.dart';
+import 'package:sapphire/functions/math/perimeter_of_triangle.dart';
 
 class FunctionItem {
   final Widget widget;
@@ -1159,5 +1185,262 @@ List<FunctionItem> functionList = [
     icon: Icons.date_range,
     tags: ['datetime', 'difference', 'time', 'date', 'duration', 'interval'],
     index: 119,
+  ),
+  FunctionItem(
+    widget: TemperatureUnitConvertWidget(),
+    name: 'temperatureUnitConvert',
+    author: 'spageektti',
+    icon: Icons.thermostat,
+    tags: ['temperature', 'unit', 'convert', 'celsius', 'fahrenheit', 'kelvin'],
+    index: 120,
+  ),
+  FunctionItem(
+    widget: LengthUnitConvertWidget(),
+    name: 'lengthUnitConvert',
+    author: 'spageektti',
+    icon: Icons.straighten,
+    tags: ['length', 'unit', 'convert', 'meter', 'kilometer', 'inch', 'mile'],
+    index: 121,
+  ),
+  FunctionItem(
+    widget: MassUnitConvertWidget(),
+    name: 'massUnitConvert',
+    author: 'spageektti',
+    icon: Icons.monitor_weight,
+    tags: ['mass', 'unit', 'convert', 'gram', 'kilogram', 'pound', 'ounce'],
+    index: 122,
+  ),
+  FunctionItem(
+    widget: TimeUnitConvertWidget(),
+    name: 'timeUnitConvert',
+    author: 'spageektti',
+    icon: Icons.access_time,
+    tags: ['time', 'unit', 'convert', 'second', 'minute', 'hour', 'day'],
+    index: 123,
+  ),
+  FunctionItem(
+    widget: AreaUnitConvertWidget(),
+    name: 'areaUnitConvert',
+    author: 'spageektti',
+    icon: Icons.crop_square,
+    tags: [
+      'area',
+      'unit',
+      'convert',
+      'square meter',
+      'acre',
+      'hectare',
+      'mile'
+    ],
+    index: 124,
+  ),
+  FunctionItem(
+    widget: VolumeUnitConvertWidget(),
+    name: 'volumeUnitConvert',
+    author: 'spageektti',
+    icon: Icons.local_drink,
+    tags: [
+      'volume',
+      'unit',
+      'convert',
+      'liter',
+      'gallon',
+      'cubic meter',
+      'pint'
+    ],
+    index: 125,
+  ),
+  FunctionItem(
+    widget: PressureUnitConvertWidget(),
+    name: 'pressureUnitConvert',
+    author: 'spageektti',
+    icon: Icons.speed,
+    tags: ['pressure', 'unit', 'convert', 'pascal', 'bar', 'psi', 'atmosphere'],
+    index: 126,
+  ),
+  FunctionItem(
+    widget: EnergyUnitConvertWidget(),
+    name: 'energyUnitConvert',
+    author: 'spageektti',
+    icon: Icons.bolt,
+    tags: ['energy', 'unit', 'convert', 'joule', 'calorie', 'watt hour', 'btu'],
+    index: 127,
+  ),
+  FunctionItem(
+    widget: SpeedUnitConvertWidget(),
+    name: 'speedUnitConvert',
+    author: 'spageektti',
+    icon: Icons.directions_run,
+    tags: [
+      'speed',
+      'unit',
+      'convert',
+      'meter per second',
+      'kilometer per hour',
+      'mile per hour',
+      'knot'
+    ],
+    index: 128,
+  ),
+  FunctionItem(
+    widget: DigitalStorageUnitConvertWidget(),
+    name: 'digitalStorageUnitConvert',
+    author: 'spageektti',
+    icon: Icons.sd_storage,
+    tags: [
+      'digital',
+      'storage',
+      'unit',
+      'convert',
+      'byte',
+      'bit',
+      'kilobyte',
+      'megabyte'
+    ],
+    index: 129,
+  ),
+  FunctionItem(
+    widget: SubstanceUnitConvertWidget(),
+    name: 'substanceUnitConvert',
+    author: 'spageektti',
+    icon: Icons.science,
+    tags: [
+      'substance',
+      'unit',
+      'convert',
+      'mole',
+      'millimole',
+      'kilomole',
+      'pound-mole'
+    ],
+    index: 130,
+  ),
+  FunctionItem(
+    widget: AngleUnitConvertWidget(),
+    name: 'angleUnitConvert',
+    author: 'spageektti',
+    icon: Icons.rotate_90_degrees_ccw,
+    tags: ['angle', 'unit', 'convert', 'degree', 'radian', 'gradian', 'turn'],
+    index: 131,
+  ),
+  FunctionItem(
+    widget: AreaOfTriangleWidget(),
+    name: 'areaOfTriangle',
+    author: 'spageektti',
+    icon: Icons.change_history,
+    tags: ['area', 'triangle', 'geometry', 'math'],
+    index: 132,
+  ),
+  FunctionItem(
+    widget: AreaOfSquareWidget(),
+    name: 'areaOfSquare',
+    author: 'spageektti',
+    icon: Icons.crop_square,
+    tags: ['area', 'square', 'geometry', 'math'],
+    index: 133,
+  ),
+  FunctionItem(
+    widget: AreaOfRectangleWidget(),
+    name: 'areaOfRectangle',
+    author: 'spageektti',
+    icon: Icons.rectangle_outlined,
+    tags: ['area', 'rectangle', 'geometry', 'math'],
+    index: 134,
+  ),
+  FunctionItem(
+    widget: AreaOfParallelogramWidget(),
+    name: 'areaOfParallelogram',
+    author: 'spageektti',
+    icon: Icons.dashboard_customize,
+    tags: ['area', 'parallelogram', 'geometry', 'math'],
+    index: 135,
+  ),
+  FunctionItem(
+    widget: AreaOfTrapezoidWidget(),
+    name: 'areaOfTrapezoid',
+    author: 'spageektti',
+    icon: Icons.filter_none,
+    tags: ['area', 'trapezoid', 'geometry', 'math'],
+    index: 136,
+  ),
+  FunctionItem(
+    widget: AreaOfRhombusWidget(),
+    name: 'areaOfRhombus',
+    author: 'spageektti',
+    icon: Icons.diamond,
+    tags: ['area', 'rhombus', 'geometry', 'math'],
+    index: 137,
+  ),
+  FunctionItem(
+    widget: AreaOfCircleWidget(),
+    name: 'areaOfCircle',
+    author: 'spageektti',
+    icon: Icons.circle,
+    tags: ['area', 'circle', 'geometry', 'math'],
+    index: 138,
+  ),
+  FunctionItem(
+    widget: PerimeterOfSquareWidget(),
+    name: 'perimeterOfSquare',
+    author: 'spageektti',
+    icon: Icons.crop_square,
+    tags: ['perimeter', 'square', 'geometry', 'math'],
+    index: 139,
+  ),
+  FunctionItem(
+    widget: PerimeterOfRectangleWidget(),
+    name: 'perimeterOfRectangle',
+    author: 'spageektti',
+    icon: Icons.rectangle_outlined,
+    tags: ['perimeter', 'rectangle', 'geometry', 'math'],
+    index: 140,
+  ),
+  FunctionItem(
+    widget: PerimeterOfParallelogramWidget(),
+    name: 'perimeterOfParallelogram',
+    author: 'spageektti',
+    icon: Icons.dashboard_customize,
+    tags: ['perimeter', 'parallelogram', 'geometry', 'math'],
+    index: 141,
+  ),
+  FunctionItem(
+    widget: PerimeterOfRhombusWidget(),
+    name: 'perimeterOfRhombus',
+    author: 'spageektti',
+    icon: Icons.diamond,
+    tags: ['perimeter', 'rhombus', 'geometry', 'math'],
+    index: 142,
+  ),
+  FunctionItem(
+    widget: PerimeterOfTriangleWidget(),
+    name: 'perimeterOfTriangle',
+    author: 'spageektti',
+    icon: Icons.change_history,
+    tags: ['perimeter', 'triangle', 'geometry', 'math'],
+    index: 143,
+  ),
+  FunctionItem(
+    widget: CircumferenceOfCircleWidget(),
+    name: 'circumferenceOfCircle',
+    author: 'spageektti',
+    icon: Icons.circle,
+    tags: ['circumference', 'circle', 'geometry', 'math'],
+    index: 144,
+  ),
+  FunctionItem(
+    widget: BirthdayCalculatorWidget(),
+    name: 'birthday',
+    author: 'spageektti',
+    icon: Icons.cake,
+    tags: [
+      'birthday',
+      'calculator',
+      'age',
+      'date',
+      'time',
+      'anniversary',
+      'celebration'
+    ],
+    index: 145,
   ),
 ];
