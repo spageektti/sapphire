@@ -223,7 +223,36 @@ class _ApodWidgetState extends State<ApodWidget> {
                   child: Column(
                     children: [
                       if (_apodData!['media_type'] == 'image')
-                        Image.network(_apodData!['url']),
+                        Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Image.network(
+                              _apodData!['url'],
+                              loadingBuilder:
+                                  (context, child, loadingProgress) {
+                                if (loadingProgress == null) return child;
+                                return SizedBox(
+                                  height: 300,
+                                  child: Center(
+                                    child: CircularProgressIndicator(
+                                      value:
+                                          loadingProgress.expectedTotalBytes !=
+                                                  null
+                                              ? loadingProgress
+                                                      .cumulativeBytesLoaded /
+                                                  (loadingProgress
+                                                          .expectedTotalBytes ??
+                                                      1)
+                                              : null,
+                                    ),
+                                  ),
+                                );
+                              },
+                              errorBuilder: (context, error, stackTrace) =>
+                                  Icon(Icons.broken_image, size: 100),
+                            ),
+                          ],
+                        ),
                       if (_apodData!['media_type'] == 'video')
                         Column(
                           children: [
