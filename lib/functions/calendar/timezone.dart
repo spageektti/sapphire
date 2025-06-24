@@ -263,7 +263,7 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
                   onChanged: (value) {
                     setState(() {
                       _fromTz = value ?? _fromTz;
-                      // Recreate _inputTzDateTime in new fromTz if needed
+
                       if (_inputTzDateTime != null) {
                         final fromLocation = tz.getLocation(_fromTz);
                         _inputTzDateTime = tz.TZDateTime(

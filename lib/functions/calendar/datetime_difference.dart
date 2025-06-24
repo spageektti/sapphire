@@ -64,13 +64,6 @@ class _DatetimeDifferenceWidgetState extends State<DatetimeDifferenceWidget> {
     final diff = _secondDateTime!.difference(_firstDateTime!);
     final absDiff = diff.isNegative ? -diff : diff;
 
-    // Calculate months and years (approximate, as months can have different lengths)
-    int years = _secondDateTime!.year - _firstDateTime!.year;
-    int months = _secondDateTime!.month - _firstDateTime!.month + years * 12;
-    if (_secondDateTime!.day < _firstDateTime!.day) {
-      months -= 1;
-    }
-
     int days = absDiff.inDays;
     int hours = absDiff.inHours;
     int minutes = absDiff.inMinutes;
