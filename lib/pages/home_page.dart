@@ -53,7 +53,12 @@ class _HomePageState extends State<HomePage> {
     if (homePageListNamesString == null ||
         homePageListNamesString.isEmpty ||
         homePageListNamesString == '[]') {
-      homePageListNamesString = jsonEncode(defaultHomeListNames);
+      List<String> defaultHomeListNamesLocalized = [];
+      for (var name in defaultHomeListNames) {
+        name = context.tr(name);
+        defaultHomeListNamesLocalized.add(name);
+      }
+      homePageListNamesString = jsonEncode(defaultHomeListNamesLocalized);
       await prefs.setString('homePageListNames', homePageListNamesString);
     }
 
