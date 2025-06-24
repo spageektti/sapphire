@@ -27,9 +27,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:intl/intl.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sapphire/widgets/settings_widget.dart';
 import 'package:sapphire/widgets/info_modal_bottom_sheet.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -52,7 +49,6 @@ class _EpicWidgetState extends State<EpicWidget> {
   List<dynamic>? _epicData;
   bool _loading = false;
   String? _error;
-  bool _showDescription = true;
 
   Future<void> _download(int index) async {
     if (_epicData == null || _epicData!.isEmpty) return;
@@ -247,13 +243,11 @@ class _EpicWidgetState extends State<EpicWidget> {
                                     const Icon(Icons.broken_image),
                               ),
                               title: Text(item['caption'] ?? imageName),
-                              subtitle: _showDescription
-                                  ? Text(
-                                      '${context.tr('epicImageDate')}: ${item['date']}\n${context.tr('epicCentroid')}: ${item['centroid_coordinates']?['lat']}, ${item['centroid_coordinates']?['lon']}',
-                                      maxLines: 3,
-                                      overflow: TextOverflow.ellipsis,
-                                    )
-                                  : null,
+                              subtitle: Text(
+                                '${context.tr('epicImageDate')}: ${item['date']}\n${context.tr('epicCentroid')}: ${item['centroid_coordinates']?['lat']}, ${item['centroid_coordinates']?['lon']}',
+                                maxLines: 3,
+                                overflow: TextOverflow.ellipsis,
+                              ),
                               trailing: IconButton(
                                 icon: const Icon(Icons.download_rounded),
                                 onPressed: () => _download(index),
@@ -297,8 +291,9 @@ class _EpicWidgetState extends State<EpicWidget> {
                                                 fit: BoxFit.contain,
                                                 loadingBuilder: (context, child,
                                                     loadingProgress) {
-                                                  if (loadingProgress == null)
+                                                  if (loadingProgress == null) {
                                                     return child;
+                                                  }
                                                   return SizedBox(
                                                     width: 400,
                                                     height: 400,
