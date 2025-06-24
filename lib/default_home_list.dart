@@ -41,6 +41,10 @@ List<List<int>> defaultHomeList = [
     113,
   ],
   [
+    118,
+    119,
+  ],
+  [
     4,
     5,
     6,
@@ -164,6 +168,7 @@ List<List<int>> defaultHomeList = [
 List<String> defaultHomeListNames = [
   'Math',
   'Astronomy',
+  'Calendar',
   'Android',
   'iOS',
   'GNU/Linux',
