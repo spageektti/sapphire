@@ -669,5 +669,92 @@
     "epicLunar": "Lunar Position",
     "epicSun": "Sun Position",
     "epicAttitude": "Attitude Quaternions",
-    "openInBrowser": "Open in Browser"
+    "openInBrowser": "Open in Browser",
+
+    "isPrimePromptLabel": "Enter a number to check if it is prime.",
+    "isPrimeTrueLabel": "{number} is a prime number.",
+    "isPrimeFalseLabel": "{number} is not a prime number.",
+    "isPrimeInputLabel": "Number",
+    "isPrimeLongName": "Prime Checker",
+    "isPrimeLongDescription": "Check if a given number is a prime number.",
+    "isPrimeShortName": "Prime Checker",
+    "isPrimeShortDescription": "Check if a number is prime",
+
+    "primeFactorizationPromptLabel": "Enter a number to factorize.",
+    "primeFactorizationNoneLabel": "{number} has no prime factors.",
+    "primeFactorizationInputLabel": "Number",
+    "primeFactorizationLongName": "Prime Factorization",
+    "primeFactorizationLongDescription": "Find the prime factors of a given number.",
+    "primeFactorizationShortName": "Prime Factorization",
+    "primeFactorizationShortDescription": "Find the prime factors of a number",
+
+    "divisorsPromptLabel": "Enter a number to find its divisors.",
+    "divisorsNoneLabel": "{number} has no divisors.",
+    "divisorsInputLabel": "Number",
+    "divisorsLongName": "Divisors",
+    "divisorsLongDescription": "Find all divisors of a given number.",
+    "divisorsShortName": "Divisors",
+    "divisorsShortDescription": "Find the divisors of a number",
+
+    "showInPowerForm": "Show in Power Form (true/false)",
+    "showInPowerFormDesc": "Set to 'true' to display the result in power form (e.g., 2^3) or 'false' to display as a list (e.g., 2, 2, 2).",
+
+    "day": {
+        "zero": "{} days",
+        "one": "{} day",
+        "two": "{} days",
+        "few": "{} days",
+        "many": "{} days",
+        "other": "{} days"
+    },
+    "hour": {
+        "zero": "{} hours",
+        "one": "{} hour",
+        "two": "{} hours",
+        "few": "{} hours",
+        "many": "{} hours",
+        "other": "{} hours"
+    },
+    "minute": {
+        "zero": "{} minutes",
+        "one": "{} minute",
+        "two": "{} minutes",
+        "few": "{} minutes",
+        "many": "{} minutes",
+        "other": "{} minutes"
+    },
+
+    "fibonacciPromptLabel": "Enter how many Fibonacci numbers to generate and the starting index.",
+    "fibonacciLongName": "Fibonacci Sequence",
+    "fibonacciShortName": "Fibonacci",
+    "fibonacciLongDescription": "Generate a list of Fibonacci numbers from a chosen starting point.",
+    "fibonacciShortDescription": "Fibonacci number generator.",
+    "fibonacciCountInputLabel": "Number of Fibonacci numbers",
+    "fibonacciStartInputLabel": "Starting index",
+
+    "timezonePromptLabel": "Select date, time, and timezones to convert.",
+    "timezoneLongName": "Timezone Converter",
+    "timezoneShortName": "Timezone",
+    "timezoneLongDescription": "Convert date and time between different timezones.",
+    "timezoneShortDescription": "Convert between timezones.",
+    "timezoneDateInputLabel": "Date",
+    "timezoneTimeInputLabel": "Time",
+    "timezoneFromInputLabel": "From timezone",
+    "timezoneToInputLabel": "To timezone",
+    "defaultFromTimezone": "Default 'From' timezone",
+    "defaultToTimezone": "Default 'To' timezone",
+
+    "datetimeDifferencePromptLabel": "Select two dates and times to calculate the difference.",
+    "datetimeDifferenceLongName": "Datetime Difference",
+    "datetimeDifferenceShortName": "Date Diff",
+    "datetimeDifferenceLongDescription": "Calculate the difference between two dates and times.",
+    "datetimeDifferenceShortDescription": "Find difference between dates.",
+    "datetimeDifferenceFirstDateLabel": "First date",
+    "datetimeDifferenceFirstTimeLabel": "First time",
+    "datetimeDifferenceSecondDateLabel": "Second date",
+    "datetimeDifferenceSecondTimeLabel": "Second time",
+
+    "count": "Count",
+    "start": "Start",
+    "end": "End"
 }

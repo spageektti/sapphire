@@ -669,5 +669,92 @@
     "epicLunar": "Pozycja Księżyca",
     "epicSun": "Pozycja Słońca",
     "epicAttitude": "Kwaterniony orientacji",
-    "openInBrowser": "Otwórz w przeglądarce"
+    "openInBrowser": "Otwórz w przeglądarce",
+
+    "isPrimePromptLabel": "Wprowadź liczbę, aby sprawdzić, czy jest liczbą pierwszą.",
+    "isPrimeTrueLabel": "{number} jest liczbą pierwszą.",
+    "isPrimeFalseLabel": "{number} nie jest liczbą pierwszą.",
+    "isPrimeInputLabel": "Liczba",
+    "isPrimeLongName": "Sprawdzanie liczby pierwszej",
+    "isPrimeLongDescription": "Sprawdź, czy podana liczba jest liczbą pierwszą.",
+    "isPrimeShortName": "Liczba pierwsza",
+    "isPrimeShortDescription": "Sprawdź, czy liczba jest pierwsza",
+
+    "primeFactorizationPromptLabel": "Wprowadź liczbę do rozkładu na czynniki pierwsze.",
+    "primeFactorizationNoneLabel": "{number} nie ma czynników pierwszych.",
+    "primeFactorizationInputLabel": "Liczba",
+    "primeFactorizationLongName": "Rozkład na czynniki pierwsze",
+    "primeFactorizationLongDescription": "Znajdź czynniki pierwsze podanej liczby.",
+    "primeFactorizationShortName": "Czynniki pierwsze",
+    "primeFactorizationShortDescription": "Znajdź czynniki pierwsze liczby",
+
+    "divisorsPromptLabel": "Wprowadź liczbę, aby znaleźć jej dzielniki.",
+    "divisorsNoneLabel": "{number} nie ma dzielników.",
+    "divisorsInputLabel": "Liczba",
+    "divisorsLongName": "Dzielniki",
+    "divisorsLongDescription": "Znajdź wszystkie dzielniki podanej liczby.",
+    "divisorsShortName": "Dzielniki",
+    "divisorsShortDescription": "Znajdź dzielniki liczby",
+
+    "showInPowerForm": "Wyświetl w postaci potęgowej (true/false)",
+    "showInPowerFormDesc": "Ustaw na 'true', aby wyświetlić wynik w postaci potęgowej (np. 2^3), lub 'false', aby wyświetlić jako listę (np. 2, 2, 2).",
+
+    "day": {
+        "zero": "{} dni",
+        "one": "{} dzień",
+        "two": "{} dni",
+        "few": "{} dni",
+        "many": "{} dni",
+        "other": "{} dni"
+    },
+    "hour": {
+        "zero": "{} godzin",
+        "one": "{} godzina",
+        "two": "{} godziny",
+        "few": "{} godzin",
+        "many": "{} godzin",
+        "other": "{} godzin"
+    },
+    "minute": {
+        "zero": "{} minut",
+        "one": "{} minuta",
+        "two": "{} minuty",
+        "few": "{} minuty",
+        "many": "{} minut",
+        "other": "{} minut"
+    },
+
+    "fibonacciPromptLabel": "Wprowadź, ile liczb Fibonacciego wygenerować i od którego indeksu zacząć.",
+    "fibonacciLongName": "Ciąg Fibonacciego",
+    "fibonacciShortName": "Fibonacci",
+    "fibonacciLongDescription": "Wygeneruj listę liczb Fibonacciego od wybranego punktu początkowego.",
+    "fibonacciShortDescription": "Generator liczb Fibonacciego.",
+    "fibonacciCountInputLabel": "Liczba liczb Fibonacciego",
+    "fibonacciStartInputLabel": "Indeks początkowy",
+
+    "timezonePromptLabel": "Wybierz datę, godzinę i strefy czasowe do konwersji.",
+    "timezoneLongName": "Konwerter stref czasowych",
+    "timezoneShortName": "Strefa czasowa",
+    "timezoneLongDescription": "Konwertuj datę i godzinę między różnymi strefami czasowymi.",
+    "timezoneShortDescription": "Konwertuj między strefami czasowymi.",
+    "timezoneDateInputLabel": "Data",
+    "timezoneTimeInputLabel": "Godzina",
+    "timezoneFromInputLabel": "Z strefy czasowej",
+    "timezoneToInputLabel": "Do strefy czasowej",
+    "defaultFromTimezone": "Domyślna strefa czasowa 'Z'",
+    "defaultToTimezone": "Domyślna strefa czasowa 'Do'",
+
+    "datetimeDifferencePromptLabel": "Wybierz dwie daty i godziny, aby obliczyć różnicę.",
+    "datetimeDifferenceLongName": "Różnica dat i godzin",
+    "datetimeDifferenceShortName": "Różnica dat",
+    "datetimeDifferenceLongDescription": "Oblicz różnicę między dwiema datami i godzinami.",
+    "datetimeDifferenceShortDescription": "Znajdź różnicę między datami.",
+    "datetimeDifferenceFirstDateLabel": "Pierwsza data",
+    "datetimeDifferenceFirstTimeLabel": "Pierwsza godzina",
+    "datetimeDifferenceSecondDateLabel": "Druga data",
+    "datetimeDifferenceSecondTimeLabel": "Druga godzina",
+
+    "count": "Ilość",
+    "start": "Początek",
+    "end": "Koniec"
 }
