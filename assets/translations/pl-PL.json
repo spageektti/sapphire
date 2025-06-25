@@ -1109,5 +1109,8 @@
     "birthdaySelectPrompt": "Wybierz swoją datę urodzenia.",
     "birthdayResult": "Masz {years} lat.\nPozostało {days} dni do Twoich {nextAge}. urodzin.",
     "birthdayBirthDateLabel": "Data urodzenia",
-    "birthdayToday": "Dzisiaj są twoje {years}. urodziny! Wszystkiego najlepszego życzy twórca aplikacji!"
+    "birthdayToday": "Dzisiaj są twoje {years}. urodziny! Wszystkiego najlepszego życzy twórca aplikacji!",
+
+    "alreadyAddedTitle": "Już dodano",
+    "alreadyAddedMessage": "Ta funkcja została już dodana do tej kategorii. Wybierz inną kategorię lub funkcję."
 }

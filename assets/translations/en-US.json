@@ -1109,5 +1109,8 @@
     "birthdaySelectPrompt": "Please select your birth date.",
     "birthdayResult": "You are {years} years old.\nThere are {days} days remaining to your {nextAge}. birthday.",
     "birthdayBirthDateLabel": "Birth date",
-    "birthdayToday": "Your {years}. birthday is today! Happy Birthday from the app developer!"
+    "birthdayToday": "Your {years}. birthday is today! Happy Birthday from the app developer!",
+
+    "alreadyAddedTitle": "Already Added",
+    "alreadyAddedMessage": "This function is already added to this category. Please choose a different category or function."
 }
