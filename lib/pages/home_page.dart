@@ -53,12 +53,12 @@ class _HomePageState extends State<HomePage> {
     if (homePageListNamesString == null ||
         homePageListNamesString.isEmpty ||
         homePageListNamesString == '[]') {
-      List<String> defaultHomeListNamesLocalized = [];
+      /*List<String> defaultHomeListNamesLocalized = [];
       for (var name in defaultHomeListNames) {
         name = context.tr(name);
         defaultHomeListNamesLocalized.add(name);
-      }
-      homePageListNamesString = jsonEncode(defaultHomeListNamesLocalized);
+      }*/
+      homePageListNamesString = jsonEncode(defaultHomeListNames); // Localized);
       await prefs.setString('homePageListNames', homePageListNamesString);
     }
 
@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(defaultHomeListNames[index],
+                      Text(context.tr(defaultHomeListNames[index]),
                           style: const TextStyle(fontSize: 20)),
                       if (_editMode)
                         IconButton(
