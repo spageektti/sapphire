@@ -30,6 +30,7 @@ import 'package:sapphire/functions/astronomy/epic.dart';
 import 'package:sapphire/functions/calendar/birthday.dart';
 import 'package:sapphire/functions/calendar/datetime_difference.dart';
 import 'package:sapphire/functions/calendar/timezone.dart';
+import 'package:sapphire/functions/cybersecurity/random_password_generator.dart';
 import 'package:sapphire/functions/math/divisors.dart';
 import 'package:sapphire/functions/math/fibonacci.dart';
 import 'package:sapphire/functions/math/gcd.dart';
@@ -1442,5 +1443,21 @@ List<FunctionItem> functionList = [
       'celebration'
     ],
     index: 145,
+  ),
+  FunctionItem(
+    widget: RandomPasswordGeneratorWidget(),
+    name: 'randomPassword',
+    author: 'spageektti',
+    icon: Icons.lock,
+    tags: [
+      'password',
+      'generator',
+      'random',
+      'security',
+      'encryption',
+      'authentication',
+      'privacy'
+    ],
+    index: 146,
   ),
 ];

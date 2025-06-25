@@ -24,7 +24,8 @@
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 
-List<List<int>> defaultHomeList = [[],
+List<List<int>> defaultHomeList = [
+  [],
   [
     0,
     1,
@@ -71,6 +72,9 @@ List<List<int>> defaultHomeList = [[],
     129,
     130,
     131,
+  ],
+  [
+    146,
   ],
   [
     4,
@@ -199,6 +203,7 @@ List<String> defaultHomeListNames = [
   'Astronomy',
   'Calendar',
   'Units',
+  'Cybersecurity',
   'Android',
   'iOS',
   'GNU/Linux',
