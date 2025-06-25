@@ -1112,5 +1112,18 @@
     "birthdayToday": "Dzisiaj są twoje {years}. urodziny! Wszystkiego najlepszego życzy twórca aplikacji!",
 
     "alreadyAddedTitle": "Już dodano",
-    "alreadyAddedMessage": "Ta funkcja została już dodana do tej kategorii. Wybierz inną kategorię lub funkcję."
+    "alreadyAddedMessage": "Ta funkcja została już dodana do tej kategorii. Wybierz inną kategorię lub funkcję.",
+
+    "randomPasswordShortName": "Hasło",
+    "randomPasswordLongName": "Generator haseł",
+    "randomPasswordShortDescription": "Wygeneruj bezpieczne losowe hasło",
+    "randomPasswordLongDescription": "Wygeneruj losowe hasło z możliwością wyboru długości i zestawu znaków (wielkie litery, małe litery, cyfry, symbole).",
+    "length": "Długość",
+    "useUpper": "Wielkie litery",
+    "useLower": "Małe litery",
+    "useDigits": "Cyfry",
+    "useSymbols": "Symbole",
+    "randomPasswordResultLabel": "Hasło: {result}",
+    "randomPasswordErrorMessage": "Wprowadź poprawne opcje i długość.",
+    "copiedToClipboard": "Skopiowano do schowka"
 }

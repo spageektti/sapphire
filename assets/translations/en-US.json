@@ -1112,5 +1112,18 @@
     "birthdayToday": "Your {years}. birthday is today! Happy Birthday from the app developer!",
 
     "alreadyAddedTitle": "Already Added",
-    "alreadyAddedMessage": "This function is already added to this category. Please choose a different category or function."
+    "alreadyAddedMessage": "This function is already added to this category. Please choose a different category or function.",
+
+     "randomPasswordShortName": "Password",
+    "randomPasswordLongName": "Password Generator",
+    "randomPasswordShortDescription": "Generate a secure random password",
+    "randomPasswordLongDescription": "Generate a random password with customizable length and character sets (uppercase, lowercase, digits, symbols).",
+    "length": "Length",
+    "useUpper": "Uppercase",
+    "useLower": "Lowercase",
+    "useDigits": "Digits",
+    "useSymbols": "Symbols",
+    "randomPasswordResultLabel": "Password: {result}",
+    "randomPasswordErrorMessage": "Please enter valid options and length.",
+    "copiedToClipboard": "Copied to clipboard"
 }
