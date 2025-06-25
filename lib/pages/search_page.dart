@@ -176,7 +176,8 @@ class _SearchPageState extends State<SearchPage> {
                                         .asMap()
                                         .entries
                                         .map((entry) => ListTile(
-                                              title: Text(entry.value),
+                                              title:
+                                                  Text(context.tr(entry.value)),
                                               onTap: () {
                                                 addFunction(
                                                     entry.key,
