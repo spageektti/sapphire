@@ -30,6 +30,9 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 To clone the Sapphire repository and run the Flutter app, follow these steps:
 
 1. **Install Flutter:** If you haven't already, install Flutter on your machine. You can find installation instructions at the [Flutter official website](https://flutter.dev/docs/get-started/install).
+> [!WARNING]  
+> Please use version `1.27.0`. The latest version doesn't work because of used libraries.
+
 
 2. **Clone the Repository:**
    Open your terminal or command prompt and run the following command:
