@@ -11,8 +11,11 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **[WATCH VIDEO](https://www.youtube.com/watch?v=CxzWOJS6zDo)**
 - **[TRY THE APP IN THE BROWSER](https://sapphire.spageektti.cc)**
 
+> [!IMPORTANT]  
+> The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests.
+
 > [!WARNING]  
-> The app is currently in active development, and we cannot guarantee the stability of all releases. The `v1.0.0` version is scheduled for release in late June 2025.
+> Note that the browser version was tested only on Windows and Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
 
 ## Features
 - **Cross-Platform Compatibility:** Works seamlessly on Android, iOS, Windows, Linux, Mac, and in your browser.
