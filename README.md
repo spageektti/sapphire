@@ -8,8 +8,9 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 
 ## Quick Links
 - **[DOWNLOAD](https://github.com/spageektti/sapphire/releases)**
-- **[WATCH VIDEO](https://www.youtube.com/watch?v=CxzWOJS6zDo)**
+- **[WATCH VIDEO (OLDER APP VERSION)](https://www.youtube.com/watch?v=CxzWOJS6zDo)**
 - **[TRY THE APP IN THE BROWSER](https://sapphire.spageektti.cc)**
+- **SCROLL DOWN FOR USER AND DEVELOPER GUIDES**
 
 > [!IMPORTANT]  
 > The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests.
