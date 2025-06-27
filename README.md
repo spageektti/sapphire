@@ -23,9 +23,11 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **Personalized Home Screen:** Customize your home screen to suit your preferences.
 - **Language & Theme Options:** Change your language and theme to enhance usability.
 - **Lightweight:** All of this functionality is packed into an app that is under 50MB.
-- **Open Source:** Use, study, share, and improve the app as it is fully open-source.
+- **Open Source:** Use, study, share, and improve the app as it is fully open-source. Check the developer guide below to get easy step-by-step guide on how to contribute to the project.
 
-## Cloning the Repository
+## User Guide
+
+## Developer Guide
 
 To clone the Sapphire repository and run the Flutter app, follow these steps:
 
@@ -61,8 +63,6 @@ To clone the Sapphire repository and run the Flutter app, follow these steps:
    ```bash
    flutter run
    ```
-
-   Make sure you have an emulator running or a device connected to your computer.
 
 ## Interested?
 Try Sapphire for yourself and discover the endless possibilities it offers!
