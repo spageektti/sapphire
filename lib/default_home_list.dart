@@ -20,7 +20,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 /* 
-! To contribute, please read the CONTRIBUTING.md file in the root of the project.
+! To contribute, please read the README.md file in the root of the project.
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 
@@ -75,6 +75,12 @@ List<List<int>> defaultHomeList = [
   ],
   [
     146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
   ],
   [
     4,

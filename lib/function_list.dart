@@ -20,7 +20,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 /* 
-! To contribute, please read the CONTRIBUTING.md file in the root of the project.
+! To contribute, please read the README.md file in the root of the project.
 ? It contains important information about the project structure, code style, suggested VSCode extensions, and more.
 */
 import 'package:flutter/material.dart';
@@ -31,6 +31,12 @@ import 'package:sapphire/functions/calendar/birthday.dart';
 import 'package:sapphire/functions/calendar/datetime_difference.dart';
 import 'package:sapphire/functions/calendar/timezone.dart';
 import 'package:sapphire/functions/cybersecurity/random_password_generator.dart';
+import 'package:sapphire/functions/cybersecurity/sha256.dart';
+import 'package:sapphire/functions/cybersecurity/sha1.dart';
+import 'package:sapphire/functions/cybersecurity/sha224.dart';
+import 'package:sapphire/functions/cybersecurity/sha384.dart';
+import 'package:sapphire/functions/cybersecurity/sha512.dart';
+import 'package:sapphire/functions/cybersecurity/md5.dart';
 import 'package:sapphire/functions/math/divisors.dart';
 import 'package:sapphire/functions/math/fibonacci.dart';
 import 'package:sapphire/functions/math/gcd.dart';
@@ -1460,4 +1466,105 @@ List<FunctionItem> functionList = [
     ],
     index: 146,
   ),
+  FunctionItem(
+    widget: Sha256ChecksumGeneratorWidget(),
+    name: 'sha256ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'sha256',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 147,
+  ),
+  FunctionItem(
+    widget: Sha1ChecksumGeneratorWidget(),
+    name: 'sha1ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'sha1',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 148,
+  ),
+
+FunctionItem(
+    widget: Sha224ChecksumGeneratorWidget(),
+    name: 'sha224ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'sha224',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 149,
+  ),
+
+FunctionItem(
+    widget: Sha384ChecksumGeneratorWidget(),
+    name: 'sha384ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'sha384',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 150,
+  ),
+
+FunctionItem(
+    widget: Sha512ChecksumGeneratorWidget(),
+    name: 'sha512ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'sha512',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 151,
+  ),
+
+FunctionItem(
+    widget: Md5ChecksumGeneratorWidget(),
+    name: 'md5ChecksumGenerator',
+    author: 'spageektti',
+    icon: Icons.check_circle_outline,
+    tags: [
+      'checksum',
+      'md5',
+      'hash',
+      'encryption',
+      'security',
+      'data_integrity',
+      'cryptography'
+    ],
+    index: 152,
+  ),
+
 ];

@@ -1125,5 +1125,47 @@
     "useSymbols": "Symbols",
     "randomPasswordResultLabel": "Password: {result}",
     "randomPasswordErrorMessage": "Please enter valid options and length.",
-    "copiedToClipboard": "Copied to clipboard"
+    "copiedToClipboard": "Copied to clipboard",
+    "Cybersecurity": "Cybersecurity",
+
+    "sha256ChecksumGeneratorShortName": "SHA-256 Checksum",
+    "sha256ChecksumGeneratorLongName": "SHA-256 Checksum Generator",
+    "sha256ChecksumGeneratorShortDescription": "Generate SHA-256 checksum for a file",
+    "sha256ChecksumGeneratorLongDescription": "Generate a SHA-256 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "sha256ChecksumLabel": "SHA-256 Checksum: {checksum}",
+
+    "checksumErrorMessage": "Error generating checksum.",
+    "pickFileButtonLabel": "Pick a File",
+    "selectedFileLabel": "Selected File: {filePath}",
+
+    "sha1ChecksumGeneratorShortName": "SHA-1 Checksum",
+    "sha1ChecksumGeneratorLongName": "SHA-1 Checksum Generator",
+    "sha1ChecksumGeneratorShortDescription": "Generate SHA-1 checksum for a file",
+    "sha1ChecksumGeneratorLongDescription": "Generate a SHA-1 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "sha1ChecksumLabel": "SHA-1 Checksum: {checksum}",
+
+    "sha224ChecksumGeneratorShortName": "SHA-224 Checksum",
+    "sha224ChecksumGeneratorLongName": "SHA-224 Checksum Generator",
+    "sha224ChecksumGeneratorShortDescription": "Generate SHA-224 checksum for a file",
+    "sha224ChecksumGeneratorLongDescription": "Generate a SHA-224 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "sha224ChecksumLabel": "SHA-224 Checksum: {checksum}",
+
+    "sha384ChecksumGeneratorShortName": "SHA-384 Checksum",
+    "sha384ChecksumGeneratorLongName": "SHA-384 Checksum Generator",
+    "sha384ChecksumGeneratorShortDescription": "Generate SHA-384 checksum for a file",
+    "sha384ChecksumGeneratorLongDescription": "Generate a SHA-384 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "sha384ChecksumLabel": "SHA-384 Checksum: {checksum}",
+
+    "sha512ChecksumGeneratorShortName": "SHA-512 Checksum",
+    "sha512ChecksumGeneratorLongName": "SHA-512 Checksum Generator",
+    "sha512ChecksumGeneratorShortDescription": "Generate SHA-512 checksum for a file",
+    "sha512ChecksumGeneratorLongDescription": "Generate a SHA-512 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "sha512ChecksumLabel": "SHA-512 Checksum: {checksum}",
+
+    "md5ChecksumGeneratorShortName": "MD5 Checksum",
+    "md5ChecksumGeneratorLongName": "MD5 Checksum Generator",
+    "md5ChecksumGeneratorShortDescription": "Generate MD5 checksum for a file",
+    "md5ChecksumGeneratorLongDescription": "Generate an MD5 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
+    "md5ChecksumLabel": "MD5 Checksum: {checksum}"
+
 }
