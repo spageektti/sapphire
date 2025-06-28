@@ -16,10 +16,10 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 > The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests. After all I am still only 15yo...
 
 > [!WARNING]  
-> Note that the browser version was tested only on Windows and Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
+> Note that the browser version was tested only on Windows and GNU/Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
 
 ## Features
-- **Cross-Platform Compatibility:** Works seamlessly on Android, Windows, Linux, and in your browser. Mac and iOS binaries planned.
+- **Cross-Platform Compatibility:** Works seamlessly on Android, Windows, GNU/Linux, and in your browser. Mac and iOS binaries planned.
 - **Extensive Feature Set:** Over 160 unique features, with new additions weekly.
 - **Calculators & Device Information:** Use our calculators and get detailed information about your device or browser.
 - **Customizable Experience:** Each feature comes with its own settings and descriptions, allowing you to tailor your experience.
@@ -39,13 +39,13 @@ Welcome to the Sapphire User Guide! Follow the instructions below to install and
 ## Installation
 
 ### Web Version
-If you are using **Windows** or **Linux** with **Chrome** or **Firefox**, you can access the web version at [sapphire.spageektti.cc](http://sapphire.spageektti.cc). Please note:
+If you are using **Windows** or **GNU/Linux** with **Chrome** or **Firefox**, you can access the web version at [sapphire.spageektti.cc](http://sapphire.spageektti.cc). Please note:
 - Limited functionality compared to the app.
 - Offline access requires saving the website.
 - Some features may not work due to browser limitations.
 
 ### Full Applications
-We offer fully-featured applications for **Linux** and **Android**. Other platforms will be supported in the future, but testing devices are currently unavailable. To install the app, navigate to the [releases page](https://github.com/spageektti/sapphire/releases) and select the appropriate file.
+We offer fully-featured applications for **GNU/Linux** and **Android**. Other platforms will be supported in the future, but testing devices are currently unavailable. To install the app, navigate to the [releases page](https://github.com/spageektti/sapphire/releases) and select the appropriate file.
 
 ---
 
@@ -69,10 +69,10 @@ We offer fully-featured applications for **Linux** and **Android**. Other platfo
 
 ---
 
-## Installation Guide for Linux (`linux-x64.tar`)
+## Installation Guide for GNU/Linux (`linux-x64.tar`)
 
 1. **Download the Tarball:**
-   - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `linux-x64.tar` file to your Linux machine.
+   - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `linux-x64.tar` file to your GNU/Linux machine.
 
 2. **Extract the Tarball:**
    - Open a terminal window.
@@ -147,7 +147,7 @@ For a visual guide, watch the tutorial on [YouTube](https://youtu.be/fN9LQB6kzEA
 
 ---
 
-Now you are ready to use Sapphire on both Android and Linux! Enjoy your experience!
+Now you are ready to use Sapphire on both Android and GNU/Linux! Enjoy your experience!
 
 
 ## Developer Guide
