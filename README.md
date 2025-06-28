@@ -20,14 +20,17 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 
 ## Features
 - **Cross-Platform Compatibility:** Works seamlessly on Android, iOS, Windows, Linux, Mac, and in your browser.
-- **Extensive Feature Set:** Over 110 unique features, with new additions every day.
+- **Extensive Feature Set:** Over 160 unique features, with new additions weekly.
 - **Calculators & Device Information:** Use our calculators and get detailed information about your device or browser.
 - **Customizable Experience:** Each feature comes with its own settings and descriptions, allowing you to tailor your experience.
 - **Search Functionality:** Easily search for features to find exactly what you need.
 - **Personalized Home Screen:** Customize your home screen to suit your preferences.
 - **Language & Theme Options:** Change your language and theme to enhance usability.
 - **Lightweight:** All of this functionality is packed into an app that is under 50MB.
-- **Open Source:** Use, study, share, and improve the app as it is fully open-source. Check the developer guide below to get easy step-by-step guide on how to contribute to the project.
+- **Open Source:** Use, study, share, and improve the app as it is fully free (as in freedom) and open source software. Check the developer guide below to get easy step-by-step guide on how to contribute to the project.
+- **Offline Support** Access essential features and tools without an internet connection. Users can utilize calculators, view device information, and customize settings even when offline, ensuring a seamless experience regardless of connectivity.
+- **Independence from External APIs:** The app operates independently of any company or third-party APIs, ensuring that all processing is done locally on your device. This guarantees enhanced privacy and performance, with the exception of two NASA-related features, which require internet access for data retrieval.
+- **Practical Relevance:** Designed with real-world applications in mind. Whether you need quick calculations, device insights, or customizable tools, every feature is crafted to provide practical solutions that fit seamlessly into your everyday life.
 
 # User Guide for Sapphire
 
