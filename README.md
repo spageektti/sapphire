@@ -29,28 +29,44 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **Lightweight:** All of this functionality is packed into an app that is under 50MB.
 - **Open Source:** Use, study, share, and improve the app as it is fully open-source. Check the developer guide below to get easy step-by-step guide on how to contribute to the project.
 
-## User Guide
-The first thing you have to do is installation of the app. If you are using Windows or Linux with Chrome or Firefox you can use the web version at [sapphire.spageektti.cc](http://sapphire.spageektti.cc). Note that it has limited functionality, it doesn't work offline unless you save the website and some features aren't working because of browser limitations. We have fully-featured applications for Linux and Android. Other platforms will be supported, but I don't have devices to test them yet. If you want to install our app navigate to the [releases page](https://github.com/spageektti/sapphire/releases) and select the right file.
+# User Guide for Sapphire
 
-### Installation Guide for `app-release.apk` (Android)
+Welcome to the Sapphire User Guide! Follow the instructions below to install and use the app effectively.
+
+## Installation
+
+### Web Version
+If you are using **Windows** or **Linux** with **Chrome** or **Firefox**, you can access the web version at [sapphire.spageektti.cc](http://sapphire.spageektti.cc). Please note:
+- Limited functionality compared to the app.
+- Offline access requires saving the website.
+- Some features may not work due to browser limitations.
+
+### Full Applications
+We offer fully-featured applications for **Linux** and **Android**. Other platforms will be supported in the future, but testing devices are currently unavailable. To install the app, navigate to the [releases page](https://github.com/spageektti/sapphire/releases) and select the appropriate file.
+
+---
+
+## Installation Guide for Android (`app-release.apk`)
 
 1. **Download the APK:**
    - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `app-release.apk` file to your Android device.
 
 2. **Enable Unknown Sources:**
-   - Go to your device's **Settings**.
-   - Navigate to **Security** (or **Apps & notifications** on some devices).
+   - Open your device's **Settings**.
+   - Go to **Security** (or **Apps & notifications** on some devices).
    - Enable **Install unknown apps** for the browser or file manager you will use to install the APK.
 
 3. **Install the APK:**
-   - Locate the downloaded `app-release.apk` file using a file manager.
-   - Tap on the APK file to start the installation process.
+   - Use a file manager to locate the downloaded `app-release.apk` file.
+   - Tap on the APK file to initiate the installation process.
    - Follow the on-screen instructions to complete the installation.
 
 4. **Launch Sapphire:**
-   - Once installed, you can find Sapphire in your app drawer. Tap to open and start using it.
+   - After installation, find Sapphire in your app drawer. Tap to open and start using it.
 
-### Installation Guide for `linux-x64.tar` (Linux)
+---
+
+## Installation Guide for Linux (`linux-x64.tar`)
 
 1. **Download the Tarball:**
    - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `linux-x64.tar` file to your Linux machine.
@@ -83,7 +99,7 @@ The first thing you have to do is installation of the app. If you are using Wind
      ```
 
 5. **Create a Desktop Entry (Optional):**
-   - If you want to create a desktop entry for easier access, you can create a `.desktop` file in `~/.local/share/applications/` with the following content:
+   - For easier access, create a `.desktop` file in `~/.local/share/applications/` with the following content:
      ```ini
      [Desktop Entry]
      Name=Sapphire
@@ -93,10 +109,42 @@ The first thing you have to do is installation of the app. If you are using Wind
      Categories=Utility;
      ```
 
-Now you are ready to use Sapphire on both Android and Linux!
+---
 
-### Usage
+## Usage
 
+Please start by watching [this video](https://www.youtube.com/watch?v=CxzWOJS6zDo).
+
+When you launch the app, you will see the home screen. By default, all available functions are grouped into categories. To launch a function, simply click on it. They are designed to be user-friendly, so detailed explanations are not necessary.
+
+### App Bar
+On the App Bar (top of the screen), there are two buttons:
+- **Information Button (i):** Pressing this button provides basic information about the function, including its name, description, and author. Currently, I am the author of all functions, but as the app is FOSS (Free and Open Source Software), others can add their own features or demos of their apps to Sapphire.
+- **Settings Button:** Press this button to customize the function. 
+
+### Example Customization
+For instance, you can change the maximum number of digits accepted by the GCD function. If the animation below does not display, please click [this link](https://github.com/user-attachments/assets/25c5c70d-25db-484f-a467-2bead113ab6e).
+
+<img src="https://github.com/user-attachments/assets/25c5c70d-25db-484f-a467-2bead113ab6e" alt="animation showing basic usage of the app" width="300">
+
+### Customizing the Home Screen
+You can also customize your home screen:
+1. Click the pencil icon in the bottom right corner.
+2. Change the order of functions, delete functions, or remove entire categories.
+3. To add a new category, scroll to the bottom of the home screen.
+4. To add a feature to the home screen, switch to the search page and click the **+** next to a feature, or click on the feature name to test it first.
+
+### Access Settings
+Access the settings page to:
+- Change the language and theme.
+- Export and import backups.
+- Reset everything to default.
+
+For a visual guide, watch the tutorial on [YouTube](https://youtu.be/fN9LQB6kzEA).
+
+---
+
+Now you are ready to use Sapphire on both Android and Linux! Enjoy your experience!
 
 
 ## Developer Guide
