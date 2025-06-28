@@ -32,6 +32,9 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **Independence from External APIs:** The app operates independently of any company or third-party APIs, ensuring that all processing is done locally on your device. This guarantees enhanced privacy and performance, with the exception of two NASA-related features, which require internet access for data retrieval.
 - **Practical Relevance:** Designed with real-world applications in mind. Whether you need quick calculations, device insights, or customizable tools, every feature is crafted to provide practical solutions that fit seamlessly into your everyday life.
 
+## Interested?
+Try Sapphire for yourself and discover the endless possibilities it offers!
+
 # User Guide for Sapphire
 
 Welcome to the Sapphire User Guide! Follow the instructions below to install and use the app effectively.
@@ -152,6 +155,7 @@ Now you are ready to use Sapphire on both Android and GNU/Linux! Enjoy your expe
 
 ## Developer Guide
 
+### Setup
 To clone the Sapphire repository and run the Flutter app, follow these steps:
 
 1. **Install Flutter:** If you haven't already, install Flutter on your machine. You can find installation instructions at the [Flutter official website](https://flutter.dev/docs/get-started/install).
@@ -187,5 +191,37 @@ To clone the Sapphire repository and run the Flutter app, follow these steps:
    flutter run
    ```
 
-## Interested?
-Try Sapphire for yourself and discover the endless possibilities it offers!
+### Adding a New Feature
+
+New features are more than welcome! To ensure a smooth integration, please follow the steps below:
+
+1. **Use the Template**  
+   There is a ready-to-use template for a new function. Copy the file located at:
+   ```
+   lib/functions/template.dart
+   ```
+   Place it in one of the subfolders of `lib/functions`. For example:
+   - If your function is related to math, place it in:
+     ```
+     lib/functions/math
+     ```
+   - If it is Android-specific, use:
+     ```
+     lib/functions/android
+     ```
+   You can also create new subdirectories as needed.
+
+2. **Add Translation Strings**  
+   After coding your feature, add all the translation strings to:
+   ```
+   assets/translations/en-US.json
+   ```
+   You can check other pages for examples of how to implement this.
+
+3. **Update Function List**  
+   Fill in the `FunctionItem` in the `lib/function_list.dart` file. Note that the name should match the one you used in the translation strings.
+
+4. **Submit Your Changes**  
+   Now you can add your function to `default_home_list.dart` and submit a Pull Request (PR)!
+
+If you encounter any issues with these steps, feel free to contact me or open an issue!
