@@ -30,6 +30,74 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **Open Source:** Use, study, share, and improve the app as it is fully open-source. Check the developer guide below to get easy step-by-step guide on how to contribute to the project.
 
 ## User Guide
+The first thing you have to do is installation of the app. If you are using Windows or Linux with Chrome or Firefox you can use the web version at [sapphire.spageektti.cc](http://sapphire.spageektti.cc). Note that it has limited functionality, it doesn't work offline unless you save the website and some features aren't working because of browser limitations. We have fully-featured applications for Linux and Android. Other platforms will be supported, but I don't have devices to test them yet. If you want to install our app navigate to the [releases page](https://github.com/spageektti/sapphire/releases) and select the right file.
+
+### Installation Guide for `app-release.apk` (Android)
+
+1. **Download the APK:**
+   - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `app-release.apk` file to your Android device.
+
+2. **Enable Unknown Sources:**
+   - Go to your device's **Settings**.
+   - Navigate to **Security** (or **Apps & notifications** on some devices).
+   - Enable **Install unknown apps** for the browser or file manager you will use to install the APK.
+
+3. **Install the APK:**
+   - Locate the downloaded `app-release.apk` file using a file manager.
+   - Tap on the APK file to start the installation process.
+   - Follow the on-screen instructions to complete the installation.
+
+4. **Launch Sapphire:**
+   - Once installed, you can find Sapphire in your app drawer. Tap to open and start using it.
+
+### Installation Guide for `linux-x64.tar` (Linux)
+
+1. **Download the Tarball:**
+   - Visit the [releases page](https://github.com/spageektti/sapphire/releases) and download the `linux-x64.tar` file to your Linux machine.
+
+2. **Extract the Tarball:**
+   - Open a terminal window.
+   - Navigate to the directory where the `linux-x64.tar` file is located. For example:
+     ```bash
+     cd ~/Downloads
+     ```
+   - Extract the tarball using the following command:
+     ```bash
+     tar -xvf linux-x64.tar
+     ```
+
+3. **Navigate to the Extracted Directory:**
+   - Change into the directory created by the extraction:
+     ```bash
+     cd linux-x64
+     ```
+
+4. **Run Sapphire:**
+   - Make the application executable (if necessary):
+     ```bash
+     chmod +x sapphire
+     ```
+   - Start the application by running:
+     ```bash
+     ./sapphire
+     ```
+
+5. **Create a Desktop Entry (Optional):**
+   - If you want to create a desktop entry for easier access, you can create a `.desktop` file in `~/.local/share/applications/` with the following content:
+     ```ini
+     [Desktop Entry]
+     Name=Sapphire
+     Exec=/path/to/sapphire
+     Icon=/path/to/icon.png
+     Type=Application
+     Categories=Utility;
+     ```
+
+Now you are ready to use Sapphire on both Android and Linux!
+
+### Usage
+
+
 
 ## Developer Guide
 
