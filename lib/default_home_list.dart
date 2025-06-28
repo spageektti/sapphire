@@ -112,7 +112,7 @@ List<List<int>> defaultHomeList = [
     30,
     31
   ],
-  [
+  /*[
     32,
     33,
     34,
@@ -127,7 +127,7 @@ List<List<int>> defaultHomeList = [
     43,
     44,
     45,
-  ],
+  ],*/
   [
     46,
     47,
@@ -158,7 +158,7 @@ List<List<int>> defaultHomeList = [
     70,
     71,
   ],
-  [
+  /*[
     72,
     73,
     74,
@@ -173,8 +173,8 @@ List<List<int>> defaultHomeList = [
     83,
     84,
     85,
-  ],
-  [
+  ],*/
+  /*[
     86,
     87,
     88,
@@ -200,7 +200,7 @@ List<List<int>> defaultHomeList = [
     108,
     109,
     110,
-  ],
+  ],*/
 ];
 
 List<String> defaultHomeListNames = [
@@ -211,9 +211,9 @@ List<String> defaultHomeListNames = [
   'Units',
   'Cybersecurity',
   'Android',
-  'iOS',
+  /*'iOS',*/
   'GNU/Linux',
   'Web',
-  'MacOS',
-  'Windows',
+  /*'MacOS',
+  'Windows',*/
 ];
