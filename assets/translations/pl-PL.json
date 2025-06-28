@@ -1165,6 +1165,11 @@
     "md5ChecksumGeneratorLongName": "Generator sumy kontrolnej MD5",
     "md5ChecksumGeneratorShortDescription": "Generuj sumę kontrolną MD5 dla pliku",
     "md5ChecksumGeneratorLongDescription": "Generuj sumę kontrolną MD5 dla pliku, aby zweryfikować jego integralność. Jest to przydatne do sprawdzania, czy plik został zmieniony lub uszkodzony.",
-    "md5ChecksumLabel": "Suma kontrolna MD5: {checksum}"
+    "md5ChecksumLabel": "Suma kontrolna MD5: {checksum}",
+
+    "macOSActiveCpusShortName": "Aktywne CPU (macOS)",
+    "macOSActiveCpusLongName": "Aktywne CPU w macOS",
+    "macOSActiveCpusShortDescription": "Pobierz liczbę aktywnych CPU",
+    "macOSActiveCpusLongDescription": "Aktywne CPU podają liczbę aktualnie aktywnych rdzeni CPU na urządzeniu z macOS."
 
 }

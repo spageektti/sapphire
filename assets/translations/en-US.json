@@ -1166,6 +1166,11 @@
     "md5ChecksumGeneratorLongName": "MD5 Checksum Generator",
     "md5ChecksumGeneratorShortDescription": "Generate MD5 checksum for a file",
     "md5ChecksumGeneratorLongDescription": "Generate an MD5 checksum for a file to verify its integrity. This is useful for checking if a file has been altered or corrupted.",
-    "md5ChecksumLabel": "MD5 Checksum: {checksum}"
+    "md5ChecksumLabel": "MD5 Checksum: {checksum}",
+
+    "macOSActiveCpusShortName": "Active CPUs (macOS)",
+    "macOSActiveCpusLongName": "macOS Active CPUs",
+    "macOSActiveCpusShortDescription": "Get the number of active CPUs",
+    "macOSActiveCpusLongDescription": "The active CPUs provide the number of currently active CPU cores on the macOS device."
 
 }
