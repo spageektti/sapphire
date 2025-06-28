@@ -13,13 +13,13 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **SCROLL DOWN FOR USER AND DEVELOPER GUIDES**
 
 > [!IMPORTANT]  
-> The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests.
+> The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests. After all I am still only 15yo...
 
 > [!WARNING]  
 > Note that the browser version was tested only on Windows and Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
 
 ## Features
-- **Cross-Platform Compatibility:** Works seamlessly on Android, iOS, Windows, Linux, Mac, and in your browser.
+- **Cross-Platform Compatibility:** Works seamlessly on Android, Windows, Linux, and in your browser. Mac and iOS binaries planned.
 - **Extensive Feature Set:** Over 160 unique features, with new additions weekly.
 - **Calculators & Device Information:** Use our calculators and get detailed information about your device or browser.
 - **Customizable Experience:** Each feature comes with its own settings and descriptions, allowing you to tailor your experience.
