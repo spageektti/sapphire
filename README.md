@@ -19,7 +19,7 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 > Note that the browser version was tested only on Windows and GNU/Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
 
 ### For people that will be reviewing my project for Youth Hacking 4 Freedom contest
-I want to thank you for organizing this amazing contest. Even if I don't win anything I still learned a lot over the last 6 months. I also kindly ask you to not only judge my project by what is already done, but how the app can grow in the future.
+I want to thank you for organizing this amazing contest. Even if I don't win anything I still learned a lot over the last 6 months. I spent around 150 hours coding this app (not including other things like designing or thinking about new features) - at least that is what hackatime says. I also kindly ask you to not only judge my project by what is already done, but how the app can grow in the future.
 
 ## Features
 - **Cross-Platform Compatibility:** Works seamlessly on Android, Windows, GNU/Linux, and in your browser. Mac and iOS binaries planned.
