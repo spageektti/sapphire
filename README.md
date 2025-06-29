@@ -4,7 +4,7 @@
 
 **Small in Size, Infinite in Value; Your All-in-One Solution**
 
-Sapphire is an innovative application that provides a multitude of small yet incredibly useful features that are too valuable to overlook but too minor to warrant separate applications. With over 110 unique features and new ones added daily, Sapphire is designed to enhance your experience across various platforms.
+Sapphire is an innovative application that provides a multitude of small yet incredibly useful features that are too valuable to overlook but too minor to warrant separate applications. With over 160 unique features and new ones added daily, Sapphire is designed to enhance your experience across various platforms.
 
 ## Quick Links
 - **[DOWNLOAD](https://github.com/spageektti/sapphire/releases)**
@@ -13,13 +13,13 @@ Sapphire is an innovative application that provides a multitude of small yet inc
 - **SCROLL DOWN FOR USER AND DEVELOPER GUIDES**
 
 > [!IMPORTANT]  
-> The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer (will not push to the main branch because of YH4F submission deadline on 30 June). I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests. After all I am still only 15yo...
+> The app is not finished. I planned 1000 functions but deliviered only ~160. I will add the rest this summer. I planned online sync but that is also not implemented because of security and privacy concerns. I am really sorry for all the missing features. Last school year was very hard for me and I couldn't find much time before June. I was basically studying all day for the "Egzamin Ósmoklasisty" which is a very important exam in Poland and for other contests. After all I am still only 15yo...
 
 > [!WARNING]  
 > Note that the browser version was tested only on Windows and GNU/Linux in Chrome and Firefox with uBlock Origin both enabled and disabled. If you can please install local version because it supports more features and is better tested.
 
 ### For people that will be reviewing my project for Youth Hacking 4 Freedom contest
-I want to thank you for organizing this amazing contest. Even if I don't win anything I still learned a lot over the last 6 months. I spent around 150 hours coding this app (not including other things like designing or thinking about new features) - at least that is what hackatime says. I also kindly ask you to not only judge my project by what is already done, but how the app can grow in the future.
+I want to thank you for organizing this amazing contest. Even if I don't win anything I still learned a lot over the last 6 months. I spent around 150 hours coding this app (not including other things like designing or thinking about new features) - at least that is what hackatime says. I also kindly ask you to not only judge my project by what is already done, but how the app can grow in the future. Also, if you want to see the state of the project on 30 June (submission deadline) you can click [here](https://github.com/spageektti/sapphire/tree/v0.2.1) and download binaries from [here](https://github.com/spageektti/sapphire/releases/tag/v0.2.1).
 
 ## Features
 - **Cross-Platform Compatibility:** Works seamlessly on Android, Windows, GNU/Linux, and in your browser. Mac and iOS binaries planned.
