@@ -1,6 +1,8 @@
 ![](https://github.com/spageektti/sapphire/blob/main/assets/banner.png?raw=true)
 
 # Sapphire
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspageektti%2Fsapphire.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspageektti%2Fsapphire?ref=badge_shield)
+
 
 **Small in Size, Infinite in Value; Your All-in-One Solution**
 
@@ -228,3 +230,7 @@ New features are more than welcome! To ensure a smooth integration, please follo
    Now you can add your function to `default_home_list.dart` and submit a Pull Request (PR)!
 
 If you encounter any issues with these steps, feel free to contact me or open an issue!
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fspageektti%2Fsapphire.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fspageektti%2Fsapphire?ref=badge_large)
