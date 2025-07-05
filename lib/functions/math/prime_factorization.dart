@@ -128,6 +128,7 @@ class _PrimeFactorizationWidgetState extends State<PrimeFactorizationWidget> {
                       builder: (context) => const SettingsWidget(
                         settings: ['maxDigits', 'showInPowerForm'],
                         defaultValues: ['10', 'false'],
+                        possibleValues: [[], ['true', 'false']],
                         pageName: 'primeFactorization',
                       ),
                     ),
