@@ -1170,6 +1170,8 @@
     "macOSActiveCpusShortName": "Aktywne CPU (macOS)",
     "macOSActiveCpusLongName": "Aktywne CPU w macOS",
     "macOSActiveCpusShortDescription": "Pobierz liczbę aktywnych CPU",
-    "macOSActiveCpusLongDescription": "Aktywne CPU podają liczbę aktualnie aktywnych rdzeni CPU na urządzeniu z macOS."
+    "macOSActiveCpusLongDescription": "Aktywne CPU podają liczbę aktualnie aktywnych rdzeni CPU na urządzeniu z macOS.",
 
+    "true": "Tak",
+    "false": "Nie"
 }

@@ -1171,6 +1171,8 @@
     "macOSActiveCpusShortName": "Active CPUs (macOS)",
     "macOSActiveCpusLongName": "macOS Active CPUs",
     "macOSActiveCpusShortDescription": "Get the number of active CPUs",
-    "macOSActiveCpusLongDescription": "The active CPUs provide the number of currently active CPU cores on the macOS device."
+    "macOSActiveCpusLongDescription": "The active CPUs provide the number of currently active CPU cores on the macOS device.",
 
+    "true": "True",
+    "false": "False"
 }
