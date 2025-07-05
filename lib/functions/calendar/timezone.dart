@@ -69,7 +69,6 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
     _dateController = TextEditingController();
     _timeController = TextEditingController();
     _timezones = tz.timeZoneDatabase.locations.keys.toList()..sort();
-    _loadSettings();
   }
 
   @override
@@ -168,9 +167,10 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
               Navigator.of(context)
                   .push(
                 MaterialPageRoute(
-                  builder: (context) => const SettingsWidget(
+                  builder: (context) => SettingsWidget(
                     settings: ['defaultFromTimezone', 'defaultToTimezone'],
                     defaultValues: ['UTC', 'Europe/Warsaw'],
+                    possibleValues: [tz.timeZoneDatabase.locations.keys.toList()..sort(), tz.timeZoneDatabase.locations.keys.toList()..sort()],
                     pageName: 'timezone',
                   ),
                 ),
@@ -253,7 +253,7 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
                   items: _timezones
                       .map((tzName) => DropdownMenuItem(
                             value: tzName,
-                            child: Text(tzName),
+                            child: Text(context.tr(tzName)),
                           ))
                       .toList(),
                   decoration: InputDecoration(
@@ -288,7 +288,7 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
                   items: _timezones
                       .map((tzName) => DropdownMenuItem(
                             value: tzName,
-                            child: Text(tzName),
+                            child: Text(context.tr(tzName)),
                           ))
                       .toList(),
                   decoration: InputDecoration(
