@@ -126,6 +126,7 @@ class _RandomPasswordGeneratorWidgetState
                           'useSymbols',
                         ],
                         defaultValues: ['16', 'true', 'true', 'true', 'true'],
+                        possibleValues: [[], ['true', 'false'], ['true', 'false'], ['true', 'false'], ['true', 'false'],],
                         pageName: 'randomPassword',
                       ),
                     ),
