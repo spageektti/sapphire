@@ -212,13 +212,13 @@ List<FunctionItem> functionList = [
       icon: Icons.calculate,
       tags: ['math', 'lcm', 'gcd'],
       index: 1),
-  /*FunctionItem(
+  FunctionItem(
       widget: const math_root.RootWidget(),
       name: 'root',
       author: 'spageektti',
       icon: Icons.square_foot,
       tags: ['math', 'root', 'power'],
-      index: 2),*/
+      index: 2),
   FunctionItem(
       widget: const PowerWidget(),
       name: 'power',
