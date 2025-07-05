@@ -30,12 +30,14 @@ import 'package:easy_localization/easy_localization.dart';
 class SettingsWidget extends StatefulWidget {
   final List<String> settings;
   final List<String> defaultValues;
+  final List<List<String>> ?possibleValues;
   final String pageName;
 
   const SettingsWidget(
       {super.key,
       required this.settings,
       required this.defaultValues,
+      this.possibleValues,
       required this.pageName});
 
   @override
@@ -80,9 +82,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(context.tr(widget.settings[index])),
-            subtitle: Text(widget.defaultValues[index]),
+            subtitle: Text((widget.possibleValues == null || widget.possibleValues![index].isEmpty) ? widget.defaultValues[index] : context.tr(widget.defaultValues[index])),
             trailing: _loaded
-                ? Text(_currentValues[index],
+                ? Text((widget.possibleValues == null || widget.possibleValues![index].isEmpty) ? _currentValues[index] : context.tr(_currentValues[index]),
                     style: const TextStyle(fontSize: 18))
                 : const CircularProgressIndicator(),
             onTap: () {
@@ -93,8 +95,29 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                       TextEditingController(text: _currentValues[index]);
                   return AlertDialog(
                     title: Text(context.tr('editSetting')),
-                    content: TextField(
+                    content:
+                    (widget.possibleValues == null || widget.possibleValues![index].isEmpty) ?
+                    TextField(
                       controller: controller,
+                      decoration: InputDecoration(
+                        labelText: context.tr(widget.settings[index]),
+                      ),
+                    ) : 
+                    DropdownButtonFormField<String>(
+                      value: _currentValues[index],
+                      items: widget.possibleValues![index]
+                          .map((value) => DropdownMenuItem<String>(
+                                value: value,
+                                child: Text(context.tr(value)),
+                              ))
+                          .toList(),
+                      onChanged: (value) {
+                        if (value != null) {
+                          setState(() {
+                            controller.text = value;
+                          });
+                        }
+                      },
                       decoration: InputDecoration(
                         labelText: context.tr(widget.settings[index]),
                       ),
