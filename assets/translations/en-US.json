@@ -1174,5 +1174,6 @@
     "macOSActiveCpusLongDescription": "The active CPUs provide the number of currently active CPU cores on the macOS device.",
 
     "true": "True",
-    "false": "False"
+    "false": "False",
+    "api_key": "API Key"
 }

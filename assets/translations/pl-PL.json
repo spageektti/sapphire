@@ -1173,5 +1173,6 @@
     "macOSActiveCpusLongDescription": "Aktywne CPU podają liczbę aktualnie aktywnych rdzeni CPU na urządzeniu z macOS.",
 
     "true": "Tak",
-    "false": "Nie"
+    "false": "Nie",
+    "api_key": "Klucz API"
 }
