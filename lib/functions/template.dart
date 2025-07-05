@@ -32,7 +32,8 @@ import 'package:sapphire/widgets/settings_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // ? This is a template for creating new functions.
-// ? replace all instances of `Template` and `template` with the name of the function.
+// ? Please read developer guide in the README.md first.
+// ? replace all instances of `Template`, `template`, 'PAGENAME', etc. with the name of the function.
 // ! do not forget to update the `function_list.dart` and `default_home_list.dart` files in the `lib` directory.
 // ! do not forget to add translations to the `assets/translations/en.json` file. You can also add translations to other languages you know.
 
@@ -77,8 +78,9 @@ class _TemplateWidgetState extends State<TemplateWidget> {
                   .push(
                     MaterialPageRoute(
                       builder: (context) => const SettingsWidget(
-                        settings: ['maxDigits', 'minDigits'],
-                        defaultValues: ['value1', 'value2'],
+                        settings: ['maxDigits', 'minDigits', 'showLabels'],
+                        defaultValues: ['value1', 'value2', 'true'],
+                        possibleValues: [[], [], ['true', 'false']], // this line is optional, use only if you have settings with limited number of possible values
                         pageName: 'PAGENAME',
                       ),
                     ),
