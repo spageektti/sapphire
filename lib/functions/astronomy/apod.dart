@@ -161,6 +161,7 @@ class _ApodWidgetState extends State<ApodWidget> {
         builder: (context) => const SettingsWidget(
           settings: ['api_key', 'show_description'],
           defaultValues: ['DEMO_KEY', 'true'],
+          possibleValues: [[], ['true', 'false']],
           pageName: 'apod',
         ),
       ),
