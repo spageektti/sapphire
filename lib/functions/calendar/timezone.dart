@@ -91,7 +91,7 @@ class _TimezoneWidgetState extends State<TimezoneWidget> {
       final converted = tz.TZDateTime.from(_inputTzDateTime!, toLocation);
       setState(() {
         _convertedTime =
-            DateFormat('yyyy-MM-dd HH:mm:ss').format(converted) + ' ($_toTz)';
+            '${DateFormat('yyyy-MM-dd HH:mm:ss').format(converted)} ($_toTz)';
       });
     } catch (e) {
       setState(() {
