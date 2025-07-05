@@ -1607,5 +1607,22 @@
     "US/Hawaii": "US/Hawaii",
     "US/Mountain": "US/Mountain",
     "US/Pacific": "US/Pacific",
-    "UTC": "UTC"
+    "UTC": "UTC",
+
+    "passwordStrengthShortName": "Password Strength",
+    "passwordStrengthLongName": "Password Strength Checker",
+    "passwordStrengthShortDescription": "Check password strength",
+    "passwordStrengthLongDescription": "Evaluate the strength of a password. This tool helps you understand how secure your password is against brute-force attacks.",
+    "passwordStrength": "Strength: {result}",
+    "passwordStrengthSmallEnglish": "Lowercase letters: {count}",
+    "passwordStrengthBigEnglish": "Uppercase letters: {count}",
+    "passwordStrengthDigits": "Digits: {count}",
+    "passwordStrengthSpecial": "Special characters: {count}",
+    "passwordStrengthMoreSpecial": "Other special characters: {count}",
+    "passwordStrengthInputLabel": "Enter password",
+    "passwordStrengthVeryWeak": "Very Weak",
+    "passwordStrengthWeak": "Weak",
+    "passwordStrengthMedium": "Medium",
+    "passwordStrengthStrong": "Strong",
+    "passwordStrengthVeryStrong": "Very Strong"
 }

@@ -1606,5 +1606,22 @@
     "US/Hawaii": "Stany Zjednoczone/Hawaii",
     "US/Mountain": "Stany Zjednoczone/Mountain",
     "US/Pacific": "Stany Zjednoczone/Pacific",
-    "UTC": "UTC"
+    "UTC": "UTC",
+
+    "passwordStrengthShortName": "Siła hasła",
+    "passwordStrengthLongName": "Sprawdzanie siły hasła",
+    "passwordStrengthShortDescription": "Sprawdź siłę hasła",
+    "passwordStrengthLongDescription": "Oceń siłę hasła. To narzędzie pomaga zrozumieć, jak bezpieczne jest Twoje hasło przed atakami brute-force.",
+    "passwordStrength": "Siła: {result}",
+    "passwordStrengthSmallEnglish": "Małe litery: {count}",
+    "passwordStrengthBigEnglish": "Wielkie litery: {count}",
+    "passwordStrengthDigits": "Cyfry: {count}",
+    "passwordStrengthSpecial": "Znaki specjalne: {count}",
+    "passwordStrengthMoreSpecial": "Inne znaki specjalne: {count}",
+    "passwordStrengthInputLabel": "Wprowadź hasło",
+    "passwordStrengthVeryWeak": "Bardzo słabe",
+    "passwordStrengthWeak": "Słabe",
+    "passwordStrengthMedium": "Średnie",
+    "passwordStrengthStrong": "Silne",
+    "passwordStrengthVeryStrong": "Bardzo silne"
 }

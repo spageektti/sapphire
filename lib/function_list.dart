@@ -30,6 +30,7 @@ import 'package:sapphire/functions/astronomy/epic.dart';
 import 'package:sapphire/functions/calendar/birthday.dart';
 import 'package:sapphire/functions/calendar/datetime_difference.dart';
 import 'package:sapphire/functions/calendar/timezone.dart';
+import 'package:sapphire/functions/cybersecurity/password_strength.dart';
 import 'package:sapphire/functions/cybersecurity/random_password_generator.dart';
 import 'package:sapphire/functions/cybersecurity/sha256.dart';
 import 'package:sapphire/functions/cybersecurity/sha1.dart';
@@ -1566,5 +1567,13 @@ FunctionItem(
     ],
     index: 152,
   ),
-
+  FunctionItem(widget: passwordStrengthWidget(), name: "passwordStrength", author: 'spageektti', icon: Icons.key, tags: [
+      'password',
+      'generator',
+      'random',
+      'security',
+      'encryption',
+      'authentication',
+      'privacy'
+    ], index: 153),
 ];
